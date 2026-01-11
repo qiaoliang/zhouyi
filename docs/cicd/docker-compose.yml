@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  # 后端API服务
+  api:
+    build:
+      context: ../../
+      dockerfile: docs/cicd/Dockerfile.backend
+    container_name: zhouyi-api
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongodb:27017/zhouyi
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - zhouyi-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/api/v1/health')"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 40s
+
+  # MongoDB数据库
+  mongodb:
+    image: mongo:7
+    container_name: zhouyi-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=zhouyi
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=your_password
+    volumes:
+      - mongodb-data:/data/db
+      - mongodb-config:/data/configdb
+    restart: unless-stopped
+    networks:
+      - zhouyi-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  # Redis缓存
+  redis:
+    image: redis:7-alpine
+    container_name: zhouyi-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass your_redis_password
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - zhouyi-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # Nginx反向代理
+  nginx:
+    image: nginx:alpine
+    container_name: zhouyi-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - api
+    restart: unless-stopped
+    networks:
+      - zhouyi-network
+
+volumes:
+  mongodb-data:
+  mongodb-config:
+  redis-data:
+
+networks:
+  zhouyi-network:
+    driver: bridge
