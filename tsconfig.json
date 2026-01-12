@@ -1,51 +1,25 @@
 {
   "compilerOptions": {
-    // 目标 ECMAScript 版本
-    "target": "ES2020",
-    // 模块系统
-    "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    // JSX 支持
-    "jsx": "react-jsx",
-    // 模块解析策略
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    // 类型检查
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    // 允许导入 .ts 文件
-    "allowImportingTsExtensions": true,
-    // 不生成输出文件 (由打包工具处理)
-    "noEmit": true,
-    "isolatedModules": true,
-    // 路径别名
-    "baseUrl": ".",
-    "paths": {
-      "@shared/*": ["packages/shared/src/*"],
-      "@ui/*": ["packages/ui/src/*"],
-      "@utils/*": ["packages/utils/src/*"],
-      "@constants/*": ["packages/constants/src/*"],
-      "@types/*": ["packages/types/src/*"]
-    }
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
-  // 包含的文件
-  "include": [
-    "apps/*/src/**/*",
-    "packages/*/src/**/*"
-  ],
-  // 排除的文件
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    "**/*.spec.ts",
-    "**/*.test.ts"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
 }

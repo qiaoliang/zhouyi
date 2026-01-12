@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  # MongoDB 数据库
+  mongodb:
+    image: mongo:7.0
+    container_name: zhouyi-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: zhouyi
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    networks:
+      - zhouyi-network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis 缓存
+  redis:
+    image: redis:7-alpine
+    container_name: zhouyi-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass redis123
+    volumes:
+      - redis_data:/data
+    networks:
+      - zhouyi-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "redis123", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # MongoDB Express（可选，Web管理界面）
+  mongo-express:
+    image: mongo-express:1.0
+    container_name: zhouyi-mongo-express
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://admin:admin123@mongodb:27017/
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: admin123
+    depends_on:
+      - mongodb
+    networks:
+      - zhouyi-network
+
+  # Redis Commander（可选，Web管理界面）
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: zhouyi-redis-commander
+    restart: unless-stopped
+    ports:
+      - "8082:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379:0:redis123
+    depends_on:
+      - redis
+    networks:
+      - zhouyi-network
+
+volumes:
+  mongodb_data:
+    driver: local
+  mongodb_config:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  zhouyi-network:
+    driver: bridge
