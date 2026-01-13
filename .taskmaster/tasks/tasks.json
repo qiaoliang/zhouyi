@@ -157,7 +157,7 @@
         "id": "2",
         "title": "用户系统开发",
         "description": "实现用户注册登录功能,包括微信授权登录、手机验证码登录、游客模式",
-        "status": "in-progress",
+        "status": "done",
         "priority": "critical",
         "tags": [
           "user",
@@ -193,9 +193,10 @@
               1
             ],
             "details": "集成微信SDK，实现APP端微信登录和小程序端wx.login，处理授权回调，存储用户token，实现登录状态持久化",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "在真机上测试APP和小程序的微信授权登录流程",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:23:44.120Z"
           },
           {
             "id": 3,
@@ -218,9 +219,10 @@
               1
             ],
             "details": "实现游客模式登录入口，本地存储游客卜卦次数，在卜卦功能中添加游客限制判断，实现2次后弹出引导注册弹窗，禁用游客的付费功能入口",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试游客模式卜卦次数限制、历史记录不保存、引导注册弹窗触发时机",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:23:45.347Z"
           },
           {
             "id": 5,
@@ -256,9 +258,10 @@
               6
             ],
             "details": "1. 实现游客模式入口和游客身份标识生成；2. 开发游客卜卦次数计数器（限制2次）；3. 实现游客历史记录不保存逻辑；4. 禁用游客访问付费功能；5. 开发游客卜卦2次后的注册引导弹窗；6. 实现游客转正式用户的数据迁移逻辑",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "验证游客模式可以正常进入，测试卜卦次数限制、历史记录不保存、付费功能禁用等限制，确认2次后正确弹出注册引导",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:23:46.593Z"
           },
           {
             "id": 8,
@@ -269,9 +272,10 @@
               7
             ],
             "details": "1. 设计并实现个人中心页面UI布局；2. 展示用户头像、昵称、手机号等基本信息；3. 实现游客用户和正式用户的不同展示状态；4. 开发游客转正式用户的注册入口；5. 实现退出登录功能，清除本地缓存；6. 添加用户协议和隐私政策入口",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试个人中心页面UI展示，验证游客和正式用户状态切换，测试退出登录功能是否正确清除用户数据",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:23:47.816Z"
           },
           {
             "id": 9,
@@ -292,9 +296,10 @@
               9
             ],
             "details": "APP端集成微信SDK，实现微信授权登录流程。小程序端使用wx.login获取code，后端调用微信接口换取openid和session_key。后端实现微信登录接口，处理用户信息获取、用户创建/更新、token生成和返回。处理微信授权失败、用户取消授权等异常情况",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试APP和小程序端微信授权登录完整流程，验证新用户注册和老用户登录逻辑，测试各种异常场景",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:25:22.408Z"
           },
           {
             "id": 11,
@@ -304,9 +309,10 @@
               9
             ],
             "details": "集成短信服务（如阿里云短信），实现验证码发送接口，包含手机号格式校验、发送频率限制、验证码有效期控制。实现验证码验证接口，校验验证码正确性和时效性。实现手机号登录接口，处理用户创建/更新、token生成。考虑验证码缓存策略和防刷机制",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试验证码发送功能（包括频率限制），测试验证码正确性和过期逻辑，测试手机号登录完整流程，验证新用户注册和老用户登录",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:25:23.537Z"
           },
           {
             "id": 12,
@@ -316,9 +322,10 @@
               9
             ],
             "details": "实现游客模式入口，生成唯一游客标识并存储到本地。实现游客限制逻辑：历史记录不保存到服务器、仅可卜卦2次（本地计数）、不可用付费功能。实现卜卦次数检查和引导注册弹窗，当游客卜卦2次后弹出注册引导。实现游客转正式用户的数据迁移逻辑",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试游客模式入口和标识生成，验证卜卦次数限制和历史记录不保存逻辑，测试引导注册弹窗触发时机，验证游客转注册后的数据迁移",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:25:24.673Z"
           },
           {
             "id": 13,
@@ -330,9 +337,10 @@
               12
             ],
             "details": "设计个人中心页面UI布局，包括用户头像、昵称、登录状态显示。实现登录/注册入口按钮，游客用户显示引导注册。实现正式用户的个人信息展示和编辑功能。实现退出登录功能，清除本地token和用户信息。实现跳转到设置、关于等页面的入口",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试个人中心页面UI展示，验证游客和正式用户的不同显示状态，测试登录/注册跳转，测试退出登录功能，测试个人信息编辑功能",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:25:25.822Z"
           },
           {
             "id": 14,
@@ -389,9 +397,10 @@
               15
             ],
             "details": "设计并实现个人中心页面UI，包括用户头像、昵称、手机号/微信标识展示。实现账户设置入口，包括修改昵称、绑定手机号、隐私设置等。实现退出登录功能，清除本地token和用户信息。游客模式下个人中心显示引导注册入口。实现用户协议和隐私政策入口。",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试个人中心页面UI展示、用户信息显示、账户设置功能、退出登录功能，验证游客模式和正式用户模式的页面差异",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T13:25:26.970Z"
           },
           {
             "id": 19,
@@ -463,7 +472,7 @@
           }
         ],
         "dependencies": [],
-        "updatedAt": "2026-01-13T05:50:55.416Z",
+        "updatedAt": "2026-01-13T13:25:26.970Z",
         "complexity": 9,
         "recommendedSubtasks": 0,
         "expansionPrompt": "该任务已包含详细的子任务列表（ID 1-23），建议审查现有子任务的覆盖范围和依赖关系，确保后端API、前端实现及业务逻辑（如游客模式限制）的无缝衔接。"
@@ -1510,9 +1519,9 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-13T09:31:59.374Z",
+      "lastModified": "2026-01-13T13:25:26.971Z",
       "taskCount": 16,
-      "completedCount": 9,
+      "completedCount": 10,
       "tags": [
         "master"
       ]

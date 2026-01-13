@@ -25,8 +25,10 @@ async function bootstrap() {
   );
 
   // CORS 配置
+  const isDev = process.env.NODE_ENV === 'development';
+
   app.enableCors({
-    origin: process.env.CORS_ORIGIN?.split(',') || '*',
+    origin: isDev ? '*' : (process.env.CORS_ORIGIN?.split(',') || []),
     credentials: true,
   });
 
