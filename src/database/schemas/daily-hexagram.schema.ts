@@ -46,7 +46,7 @@ export type DailyHexagramDocument = DailyHexagram & Document;
  * 每日一卦Schema
  * 存储每日推送的卦象
  */
-@Schema({ timestamps: true, collection: 'daily_hexagrams' })
+@Schema({ timestamps: true, collection: 'daily_hexagrams', versionKey: false })
 export class DailyHexagram {
   /**
    * 主键ID

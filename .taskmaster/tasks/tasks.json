@@ -205,9 +205,10 @@
               1
             ],
             "details": "实现手机号输入页面、验证码发送按钮（带60秒倒计时）、验证码输入框、登录按钮，对接后端验证码发送和验证接口",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试验证码发送、倒计时功能、验证码正确性和错误处理",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T05:44:25.228Z"
           },
           {
             "id": 4,
@@ -231,9 +232,10 @@
               4
             ],
             "details": "实现个人中心页面UI，展示用户头像、昵称、登录状态（游客/已登录），提供登录/注册入口、设置入口、退出登录等功能",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试个人中心页面在不同登录状态下的显示效果，验证各功能入口跳转正确",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T05:44:25.232Z"
           },
           {
             "id": 6,
@@ -373,9 +375,10 @@
               16
             ],
             "details": "实现游客卜卦次数统计，使用本地存储记录卜卦次数。游客模式下历史记录不保存到服务器。限制游客不可使用付费功能，点击付费功能时弹出引导注册提示。当游客卜卦达到2次时，弹出注册引导弹窗，提供微信登录和手机号登录入口。实现游客转正式用户的数据迁移逻辑。",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试游客卜卦次数统计、历史记录不保存、付费功能限制、2次后引导注册弹窗等功能，验证所有限制逻辑正确执行",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T05:44:16.821Z"
           },
           {
             "id": 18,
@@ -409,9 +412,10 @@
               19
             ],
             "details": "1. 在APP端集成微信开放平台SDK，配置AppID和AppSecret；2. 实现微信授权按钮点击事件，调用wx.sendReq发起授权请求；3. 处理授权回调，获取微信返回的code；4. 后端实现微信登录接口，通过code调用微信API获取openid和session_key；5. 根据openid查询用户，存在则直接登录，不存在则创建新用户；6. 生成JWT token并返回用户信息；7. 处理授权失败、用户取消授权、网络异常等异常情况；8. 实现微信用户信息（昵称、头像）的绑定和更新逻辑",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试正常授权登录流程、首次授权自动注册、已授权用户直接登录、取消授权处理、网络异常处理、token生成和验证",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T05:44:16.817Z"
           },
           {
             "id": 21,
@@ -421,9 +425,10 @@
               19
             ],
             "details": "1. 小程序端调用wx.login()获取临时登录凭证code；2. 将code发送到后端登录接口；3. 后端通过code调用微信接口获取openid和session_key；4. 根据openid判断用户是否存在，存在则返回token，不存在则创建新用户；5. 实现用户信息授权获取（昵称、头像），使用wx.getUserProfile；6. 复用JWT认证系统，统一登录状态管理；7. 处理code失效、接口调用失败等异常；8. 实现session_key的安全存储和定期刷新机制",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "测试小程序静默登录、用户信息授权获取、新用户自动注册、老用户登录、code失效处理、token有效期管理",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T05:50:55.416Z"
           },
           {
             "id": 22,
@@ -458,7 +463,7 @@
           }
         ],
         "dependencies": [],
-        "updatedAt": "2026-01-13T12:00:00.000Z",
+        "updatedAt": "2026-01-13T05:50:55.416Z",
         "complexity": 9,
         "recommendedSubtasks": 0,
         "expansionPrompt": "该任务已包含详细的子任务列表（ID 1-23），建议审查现有子任务的覆盖范围和依赖关系，确保后端API、前端实现及业务逻辑（如游客模式限制）的无缝衔接。"
@@ -1059,9 +1064,9 @@
           }
         ],
         "dependencies": [],
-        "complexity": 7,
+        "complexity": 9,
         "recommendedSubtasks": 6,
-        "expansionPrompt": "任务已重构为使用模拟支付实现，子任务包括：1. 会员订单系统后端开发；2. 模拟支付接口实现；3. 会员权益验证中间件；4. 会员购买页面UI；5. 支付异常处理；6. 订单管理功能。真实支付SDK集成延后至生产环境前完成。",
+        "expansionPrompt": "请将任务分解为：1. 会员订单系统与状态管理后端开发；2. 微信支付SDK集成与回调处理；3. 支付宝支付SDK集成与回调处理；4. 会员权益验证中间件实现；5. 会员购买页面UI开发；6. 支付异常处理与对账逻辑。",
         "updatedAt": "2026-01-13T12:30:00.000Z"
       },
       {
@@ -1223,9 +1228,9 @@
           }
         ],
         "dependencies": [],
-        "complexity": 6,
+        "complexity": 8,
         "recommendedSubtasks": 5,
-        "expansionPrompt": "任务已调整优先级，支付SDK集成（子任务3、4）延后至生产环境。当前聚焦：1. 微信登录集成；2. 短信验证码服务；5. 消息推送服务。",
+        "expansionPrompt": "请将任务分解为：1. 微信开放平台登录集成（APP与小程序）；2. 短信验证码服务对接与防刷逻辑；3. 微信支付接口对接；4. 支付宝支付接口对接；5. 消息推送服务（厂商通道）的配置与测试。",
         "updatedAt": "2026-01-13T12:30:00.000Z"
       },
       {
@@ -1499,7 +1504,7 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-13T13:00:00.000Z",
+      "lastModified": "2026-01-13T05:50:55.417Z",
       "taskCount": 16,
       "completedCount": 9,
       "tags": [

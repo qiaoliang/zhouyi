@@ -1,0 +1,570 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "项目架构搭建",
+        "description": "搭建周易通APP的基础技术架构,包括前端框架选择、后端服务搭建、数据库设计等",
+        "status": "done",
+        "priority": "P0",
+        "tags": [
+          "architecture",
+          "setup"
+        ],
+        "details": "根据PRD要求,需要支持iOS/Android APP、微信小程序和H5网页版。需要选择合适的前端技术栈(如React Native/Flutter)和后端技术栈(Node.js),以及数据库选择(MongoDB或PostgreSQL)",
+        "acceptanceCriteria": [
+          "完成前端技术栈选型和环境搭建",
+          "完成后端服务基础框架",
+          "完成数据库设计和初始化",
+          "完成第三方服务接入准备(微信登录、短信、支付、推送)"
+        ],
+        "testStrategy": "验证各平台环境可以正常启动和运行基础功能",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "前端技术栈调研和选型",
+            "description": "调研并确定iOS/Android APP、微信小程序和H5的技术栈方案",
+            "status": "completed",
+            "priority": "P0",
+            "details": "需要评估:\n1. React Native vs Flutter(移动端)\n2. 微信小程序原生框架 vs uni-app vs taro\n3. React.js vs Vue.js(H5)\n4. 考虑团队技术栈、开发效率、性能、生态成熟度\n5. 代码复用可能性分析",
+            "acceptanceCriteria": [
+              "完成技术栈对比分析文档",
+              "确定各平台技术栈选型",
+              "评估开发成本和时间",
+              "确定代码复用策略"
+            ],
+            "testStrategy": "通过POC验证关键技术的可行性",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "前端开发环境搭建",
+            "description": "搭建移动端、小程序和H5的开发环境和项目脚手架",
+            "status": "completed",
+            "priority": "P0",
+            "details": "需要完成:\n1. iOS开发环境(Xcode、CocoaPods等)\n2. Android开发环境(Android Studio、SDK等)\n3. 微信开发者工具\n4. Node.js和包管理器(npm/yarn/pnpm)\n5. 代码编辑器配置(VS Code插件等)\n6. 项目初始化和脚手架搭建\n7. TypeScript配置\n8. 代码规范配置(ESLint、Prettier)",
+            "acceptanceCriteria": [
+              "各平台开发环境配置完成",
+              "项目脚手架可以正常运行",
+              "可以在模拟器/真机上运行Hello World",
+              "代码规范工具正常工作"
+            ],
+            "testStrategy": "在各平台环境成功运行基础项目",
+            "parentId": "undefined"
+          },
+          {
+            "id": 3,
+            "title": "后端技术栈选型和架构设计",
+            "description": "设计后端服务架构,确定技术栈和部署方案",
+            "status": "completed",
+            "priority": "P0",
+            "details": "需要设计:\n1. 后端框架选择(Express.js/Nest.js/Koa.js)\n2. 数据库选型(MongoDB/PostgreSQL)\n3. 缓存方案(Redis)\n4. 文件存储(云服务OSS)\n5. API设计规范(RESTful/GraphQL)\n6. 认证授权方案(JWT/Session)\n7. 微服务架构设计(如需要)\n8. 部署方案(云服务商选择)",
+            "acceptanceCriteria": [
+              "完成后端架构设计文档",
+              "确定技术栈选型",
+              "完成API接口设计草案",
+              "确定部署和运维方案"
+            ],
+            "testStrategy": "通过技术评审验证架构设计",
+            "parentId": "undefined"
+          },
+          {
+            "id": 4,
+            "title": "后端服务框架搭建",
+            "description": "搭建后端服务基础框架,包括项目结构、中间件配置等",
+            "status": "completed",
+            "priority": "P0",
+            "details": "需要完成:\n1. Node.js项目初始化\n2. Express/Nest.js框架配置\n3. 项目目录结构规划\n4. 中间件配置(日志、错误处理、CORS等)\n5. 路由设计\n6. 数据库连接配置\n7. Redis连接配置\n8. 环境变量管理\n9. 日志系统\n10. 基础API示例(Health Check等)",
+            "acceptanceCriteria": [
+              "后端服务可以正常启动",
+              "基础API可以正常访问",
+              "数据库连接正常",
+              "日志系统正常工作",
+              "代码结构清晰规范"
+            ],
+            "testStrategy": "测试后端服务启动和基础API响应",
+            "parentId": "undefined"
+          },
+          {
+            "id": 5,
+            "title": "数据库设计和初始化",
+            "description": "设计数据库表结构,创建索引,初始化数据",
+            "status": "completed",
+            "priority": "P0",
+            "details": "需要完成:\n1. 用户表设计(用户基本信息、会员信息等)\n2. 卜卦记录表设计\n3. 学习进度表设计\n4. 六十四卦数据表设计\n5. 每日一卦数据表设计\n6. 订单表设计\n7. 索引设计优化\n8. 数据库迁移方案\n9. 种子数据准备(六十四卦基础数据)\n10. 数据库备份策略",
+            "acceptanceCriteria": [
+              "完成数据库ER图设计",
+              "完成所有表结构创建",
+              "索引设计合理",
+              "种子数据导入成功",
+              "备份策略确定"
+            ],
+            "testStrategy": "验证数据库设计和查询性能",
+            "parentId": "undefined"
+          },
+          {
+            "id": 6,
+            "title": "第三方服务账号申请和配置",
+            "description": "申请各类第三方服务账号,完成基础配置",
+            "status": "completed",
+            "priority": "P0",
+            "details": "需要申请:\n1. 微信开放平台账号(移动应用登录)\n2. 微信小程序账号\n3. 微信商户号(支付)\n4. 支付宝商户号\n5. 短信服务商账号(阿里云/腾讯云)\n6. 推送服务账号(极光/个推)\n7. 云服务账号(阿里云/腾讯云)\n8. 域名和SSL证书",
+            "acceptanceCriteria": [
+              "所有第三方账号申请完成",
+              "完成开发环境配置",
+              "完成沙箱环境配置",
+              "API密钥安全存储"
+            ],
+            "testStrategy": "验证各第三方服务的基本连通性",
+            "parentId": "undefined"
+          },
+          {
+            "id": 7,
+            "title": "CI/CD流水线搭建",
+            "description": "搭建持续集成和持续部署流水线",
+            "status": "completed",
+            "priority": "P1",
+            "details": "需要完成:\n1. 代码仓库配置(GitLab/GitHub/Gitee)\n2. CI/CD工具选择(GitLab CI/GitHub Actions/Jenkins)\n3. 自动化测试流程\n4. 自动化构建流程\n5. 自动化部署流程\n6. 环境管理(开发/测试/生产)\n7. 代码质量检查\n8. 自动化通知机制",
+            "acceptanceCriteria": [
+              "代码提交自动触发构建",
+              "自动化测试通过",
+              "可以自动部署到测试环境",
+              "构建失败有通知"
+            ],
+            "testStrategy": "测试完整的CI/CD流程",
+            "parentId": "undefined"
+          },
+          {
+            "id": 8,
+            "title": "开发规范和代码规范制定",
+            "description": "制定项目开发规范、代码规范和文档规范",
+            "status": "completed",
+            "priority": "P1",
+            "details": "需要制定:\n1. 代码命名规范\n2. 代码注释规范\n3. Git提交规范(Conventional Commits)\n4. 代码审查规范\n5. API设计规范\n6. 数据库设计规范\n7. 错误处理规范\n8. 安全开发规范\n9. 文档编写规范\n10. 开发流程规范",
+            "acceptanceCriteria": [
+              "完成开发规范文档",
+              "团队Review并确认",
+              "配置自动化检查工具"
+            ],
+            "testStrategy": "团队评审确认规范可行性",
+            "parentId": "undefined"
+          }
+        ],
+        "updatedAt": "2026-01-11T23:27:46.778Z",
+        "dependencies": []
+      },
+      {
+        "id": 2,
+        "title": "用户系统开发",
+        "description": "实现用户注册登录功能,包括微信授权登录、手机验证码登录、游客模式",
+        "status": "pending",
+        "priority": "P0",
+        "tags": [
+          "user",
+          "auth"
+        ],
+        "details": "需要实现:\n1. 微信授权登录(APP和小程序)\n2. 手机号+验证码登录\n3. 游客模式(先体验后注册)\n4. 游客模式限制(历史记录不保存、仅可卜卦2次、不可用付费功能)\n5. 游客卜卦2次后引导注册\n6. 个人中心页面",
+        "acceptanceCriteria": [
+          "微信授权登录功能正常",
+          "手机验证码登录功能正常",
+          "游客模式可以正常体验",
+          "游客限制正确实施",
+          "引导注册弹窗正确触发",
+          "个人中心页面功能完整"
+        ],
+        "testStrategy": "测试各种登录方式的完整流程,验证游客模式限制和引导注册逻辑",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "用户认证后端API开发",
+            "description": "开发用户认证相关的后端接口，包括用户表设计、JWT token生成、微信登录接口、手机号登录接口",
+            "dependencies": [],
+            "details": "设计用户数据表结构，实现用户注册、登录、token刷新等API接口，集成微信开放平台SDK，实现短信验证码服务对接",
+            "status": "pending",
+            "testStrategy": "使用Postman测试所有API接口，验证token生成和验证逻辑"
+          },
+          {
+            "id": 2,
+            "title": "微信授权登录前端实现",
+            "description": "实现APP和小程序端的微信授权登录功能，包括授权页面、回调处理、登录状态管理",
+            "dependencies": [
+              1
+            ],
+            "details": "集成微信SDK，实现APP端微信登录和小程序端wx.login，处理授权回调，存储用户token，实现登录状态持久化",
+            "status": "pending",
+            "testStrategy": "在真机上测试APP和小程序的微信授权登录流程"
+          },
+          {
+            "id": 3,
+            "title": "手机验证码登录实现",
+            "description": "实现手机号+验证码登录功能，包括验证码发送、倒计时、登录验证",
+            "dependencies": [
+              1
+            ],
+            "details": "实现手机号输入页面、验证码发送按钮（带60秒倒计时）、验证码输入框、登录按钮，对接后端验证码发送和验证接口",
+            "status": "pending",
+            "testStrategy": "测试验证码发送、倒计时功能、验证码正确性和错误处理"
+          },
+          {
+            "id": 4,
+            "title": "游客模式及限制逻辑实现",
+            "description": "实现游客模式功能，包括游客身份标识、卜卦次数限制、历史记录不保存、付费功能禁用、引导注册弹窗",
+            "dependencies": [
+              1
+            ],
+            "details": "实现游客模式登录入口，本地存储游客卜卦次数，在卜卦功能中添加游客限制判断，实现2次后弹出引导注册弹窗，禁用游客的付费功能入口",
+            "status": "pending",
+            "testStrategy": "测试游客模式卜卦次数限制、历史记录不保存、引导注册弹窗触发时机"
+          },
+          {
+            "id": 5,
+            "title": "个人中心页面开发",
+            "description": "开发个人中心页面，展示用户信息、登录状态、功能入口等",
+            "dependencies": [
+              2,
+              3,
+              4
+            ],
+            "details": "实现个人中心页面UI，展示用户头像、昵称、登录状态（游客/已登录），提供登录/注册入口、设置入口、退出登录等功能",
+            "status": "pending",
+            "testStrategy": "测试个人中心页面在不同登录状态下的显示效果，验证各功能入口跳转正确"
+          },
+          {
+            "id": 6,
+            "title": "实现微信授权登录和手机验证码登录功能",
+            "description": "开发微信授权登录（支持APP和小程序）以及手机号+验证码登录两种登录方式",
+            "dependencies": [],
+            "details": "1. 集成微信SDK，实现APP端微信授权登录流程；2. 实现小程序端微信授权登录；3. 开发手机号输入和验证码发送接口；4. 实现验证码校验和登录逻辑；5. 统一登录状态管理，使用JWT或Session；6. 处理登录成功后的用户信息存储和Token管理",
+            "status": "pending",
+            "testStrategy": "测试APP和小程序微信授权登录完整流程，验证手机验证码发送、校验和登录功能，确保Token正确生成和存储"
+          },
+          {
+            "id": 7,
+            "title": "实现游客模式及其使用限制逻辑",
+            "description": "开发游客模式功能，包括游客身份识别、使用限制和引导注册机制",
+            "dependencies": [
+              6
+            ],
+            "details": "1. 实现游客模式入口和游客身份标识生成；2. 开发游客卜卦次数计数器（限制2次）；3. 实现游客历史记录不保存逻辑；4. 禁用游客访问付费功能；5. 开发游客卜卦2次后的注册引导弹窗；6. 实现游客转正式用户的数据迁移逻辑",
+            "status": "pending",
+            "testStrategy": "验证游客模式可以正常进入，测试卜卦次数限制、历史记录不保存、付费功能禁用等限制，确认2次后正确弹出注册引导"
+          },
+          {
+            "id": 8,
+            "title": "开发个人中心页面及用户信息管理",
+            "description": "实现个人中心页面UI和功能，包括用户信息展示、登录状态切换和退出登录",
+            "dependencies": [
+              6,
+              7
+            ],
+            "details": "1. 设计并实现个人中心页面UI布局；2. 展示用户头像、昵称、手机号等基本信息；3. 实现游客用户和正式用户的不同展示状态；4. 开发游客转正式用户的注册入口；5. 实现退出登录功能，清除本地缓存；6. 添加用户协议和隐私政策入口",
+            "status": "pending",
+            "testStrategy": "测试个人中心页面UI展示，验证游客和正式用户状态切换，测试退出登录功能是否正确清除用户数据"
+          }
+        ],
+        "dependencies": []
+      },
+      {
+        "id": 3,
+        "title": "金钱课起卦功能开发",
+        "description": "实现金钱课起卦功能,包括摇铜钱动画和一键起卦两种方式",
+        "status": "pending",
+        "priority": "P0",
+        "tags": [
+          "divination",
+          "core"
+        ],
+        "details": "需要实现:\n1. 摇铜钱动画:模拟真实摇铜钱,用户点击按钮或摇晃手机,连续摇6次生成卦象\n2. 一键起卦:简化流程,一次性生成卦象\n3. 两种方式可自由选择\n4. 卦象生成算法正确(六十四卦)",
+        "acceptanceCriteria": [
+          "摇铜钱动画流畅自然",
+          "支持点击和摇晃两种触发方式",
+          "连续摇6次正确生成卦象",
+          "一键起卦功能正常",
+          "生成的卦象符合金钱课规则",
+          "六十四卦数据完整准确"
+        ],
+        "testStrategy": "测试起卦流程,验证卦象生成算法的正确性和随机性",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 4,
+        "title": "基础解卦功能开发",
+        "description": "实现基础解卦功能(免费),包括卦象名称、卦辞原文、爻辞原文、白话解释",
+        "status": "pending",
+        "priority": "P0",
+        "tags": [
+          "divination",
+          "content"
+        ],
+        "details": "需要实现:\n1. 显示卦象名称(如'乾为天')\n2. 显示卦辞原文(传统通行本王弼注本)\n3. 显示六爻爻辞原文\n4. 显示卦辞和爻辞的白话解释\n5. 六十四卦的完整内容数据",
+        "acceptanceCriteria": [
+          "卦象名称正确显示",
+          "卦辞爻辞原文准确完整",
+          "白话解释清晰易懂",
+          "六十四卦数据完整准确",
+          "页面排版美观易读"
+        ],
+        "testStrategy": "验证每一卦的内容准确性,测试各种卦象的显示效果",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 5,
+        "title": "详细解卦功能开发(付费)",
+        "description": "实现详细解卦功能(付费),包括变卦分析、互卦分析、应期分析等高级分析",
+        "status": "pending",
+        "priority": "P0",
+        "tags": [
+          "divination",
+          "premium"
+        ],
+        "details": "需要实现:\n1. 包含基础解卦所有内容\n2. 变卦分析:分析爻变后的卦象变化\n3. 互卦分析:分析互卦的含义\n4. 应期分析:预测应验时间\n5. 其他高级分析要素\n6. 付费功能引导(非会员查看时弹窗提示)\n7. 会员权益展示和购买入口",
+        "acceptanceCriteria": [
+          "变卦分析准确专业",
+          "互卦分析准确专业",
+          "应期分析逻辑清晰",
+          "付费引导弹窗正确触发",
+          "会员权益页面完整展示",
+          "购买流程顺畅"
+        ],
+        "testStrategy": "测试付费功能的权限控制,验证高级分析内容的专业性",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 6,
+        "title": "精准解卦功能开发(付费)",
+        "description": "实现精准解卦功能(付费),需要收集用户个人信息进行精准解读",
+        "status": "pending",
+        "priority": "P1",
+        "tags": [
+          "divination",
+          "premium"
+        ],
+        "details": "需要实现:\n1. 用户信息收集表单(姓名、性别、出生日期、占问事项)\n2. 基于个人信息的精准解读算法\n3. 与详细解卦的内容整合\n4. 付费权限控制",
+        "acceptanceCriteria": [
+          "信息收集表单完整易用",
+          "精准解读结果专业准确",
+          "与详细解卦内容良好整合",
+          "付费权限正确控制"
+        ],
+        "testStrategy": "测试信息收集流程,验证精准解读的专业性",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 7,
+        "title": "学习路径功能开发",
+        "description": "实现零基础入门学习路径,包括5个课程模块和互动测验",
+        "status": "pending",
+        "priority": "P1",
+        "tags": [
+          "education",
+          "content"
+        ],
+        "details": "需要实现:\n1. 六十四卦解读方法\n2. 如何起卦\n3. 八卦介绍\n4. 如何看卦\n5. 周易起源与历史\n6. 每课1-3分钟阅读内容\n7. 配图和示意图解\n8. 互动练习选择题\n9. 学习进度保存\n10. 完成全部学习后解锁免费详细解卦1次",
+        "acceptanceCriteria": [
+          "5个课程模块内容完整",
+          "内容形式丰富(文字+配图+图解)",
+          "互动测验功能正常",
+          "学习进度正确保存",
+          "完成奖励正确解锁"
+        ],
+        "testStrategy": "测试学习流程,验证内容质量和互动功能",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 8,
+        "title": "每日一卦功能开发",
+        "description": "实现每日一卦推送功能,包括固定时间推送和当日卦象展示",
+        "status": "pending",
+        "priority": "P1",
+        "tags": [
+          "push",
+          "content"
+        ],
+        "details": "需要实现:\n1. 每天早上8点推送当日卦象+卦辞\n2. 当日卦象展示页面\n3. 历史记录查看(会员专享)\n4. 数据不保存过期失效\n5. 点击推送直接进入解释页面\n6. 推送开关设置",
+        "acceptanceCriteria": [
+          "推送时间准确",
+          "推送内容完整",
+          "当日卦象页面展示清晰",
+          "历史记录权限控制正确",
+          "推送跳转正确"
+        ],
+        "testStrategy": "测试推送功能和页面展示,验证权限控制",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 9,
+        "title": "历史记录功能开发",
+        "description": "实现卜卦历史记录功能,包括卡片式展示和用户权限差异",
+        "status": "pending",
+        "priority": "P2",
+        "tags": [
+          "history",
+          "storage"
+        ],
+        "details": "需要实现:\n1. 卡片式展示(日期+卦象名称+卦象符号+简短结果)\n2. 免费用户:仅保存1条、保存1个月、不可删除\n3. 付费用户:无限制保存、永久保存、支持单条删除或清空全部\n4. 云端同步\n5. 多设备自动同步\n6. 离线查看支持",
+        "acceptanceCriteria": [
+          "卡片展示清晰美观",
+          "免费用户限制正确实施",
+          "付费用户权限完全开放",
+          "云端同步功能正常",
+          "多设备同步准确",
+          "离线查看功能正常"
+        ],
+        "testStrategy": "测试各种用户权限的记录保存和同步功能",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 10,
+        "title": "会员和支付功能开发",
+        "description": "实现会员购买和支付功能,包括多种付费方式和会员权益管理",
+        "status": "pending",
+        "priority": "P0",
+        "tags": [
+          "payment",
+          "premium"
+        ],
+        "details": "需要实现:\n1. 按次详细解卦:10元/次\n2. 会员月费:30元/月\n3. 会员年费:300元/年\n4. 会员权益管理(详细解卦、精准解卦、收藏、无限制、无广告、专属客服、每日一卦历史、历史记录管理)\n5. 微信支付集成\n6. 支付宝支付集成\n7. 会员状态管理\n8. 到期时间管理",
+        "acceptanceCriteria": [
+          "各种付费方式功能正常",
+          "支付流程顺畅安全",
+          "会员权益正确实施",
+          "会员状态准确管理",
+          "到期提醒功能正常"
+        ],
+        "testStrategy": "测试各种支付流程,验证会员权益和状态管理",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 11,
+        "title": "UI界面设计和开发",
+        "description": "实现传统中国风的UI界面设计,包括首页、各功能页面和深色模式",
+        "status": "pending",
+        "priority": "P0",
+        "tags": [
+          "ui",
+          "design"
+        ],
+        "details": "需要实现:\n1. 传统中国风设计风格(水墨、书法、古典元素)\n2. 传统中国色配色方案(墨黑、朱红、古铜金等)\n3. 5个Tab底部导航栏(卜卦、学习、每日一卦、历史、我的)\n4. 启动页(APP名称+传统元素+每日一句易经名言)\n5. 深色模式支持\n6. 各功能页面UI开发",
+        "acceptanceCriteria": [
+          "设计风格统一符合中国风",
+          "配色方案美观协调",
+          "导航栏功能正常",
+          "启动页效果良好",
+          "深色模式切换正常",
+          "各页面UI完整美观"
+        ],
+        "testStrategy": "验证设计风格一致性,测试各页面和深色模式",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 12,
+        "title": "第三方服务集成",
+        "description": "集成微信登录、短信验证、支付、推送等第三方服务",
+        "status": "pending",
+        "priority": "P0",
+        "tags": [
+          "integration",
+          "external"
+        ],
+        "details": "需要集成:\n1. 微信开放平台授权登录\n2. 短信验证码服务\n3. 微信支付\n4. 支付宝支付\n5. 推送服务(个推/极光/厂商推送)",
+        "acceptanceCriteria": [
+          "微信登录功能正常",
+          "短信验证码功能正常",
+          "微信支付功能正常",
+          "支付宝支付功能正常",
+          "推送功能正常"
+        ],
+        "testStrategy": "测试各第三方服务的集成和功能",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 13,
+        "title": "数据安全和隐私保护",
+        "description": "实现用户数据加密存储、HTTPS传输、隐私保护等措施",
+        "status": "pending",
+        "priority": "P0",
+        "tags": [
+          "security",
+          "privacy"
+        ],
+        "details": "需要实现:\n1. 用户数据加密存储\n2. HTTPS加密传输\n3. 符合个人信息保护法要求\n4. 用户注销功能(删除所有数据)\n5. 隐私政策和用户协议",
+        "acceptanceCriteria": [
+          "敏感数据加密存储",
+          "全站HTTPS传输",
+          "隐私政策完整合规",
+          "用户协议完整合规",
+          "注销功能完全删除数据"
+        ],
+        "testStrategy": "进行安全测试,验证数据保护和注销功能",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 14,
+        "title": "性能优化和测试",
+        "description": "进行性能优化和全面测试,确保响应时间、并发支持等性能指标达标",
+        "status": "pending",
+        "priority": "P1",
+        "tags": [
+          "performance",
+          "testing"
+        ],
+        "details": "需要完成:\n1. 页面加载时间<2秒\n2. 支持1000+并发用户\n3. 多设备数据同步延迟<3秒\n4. 压力测试\n5. 兼容性测试(各平台各版本)\n6. 用户体验测试",
+        "acceptanceCriteria": [
+          "加载时间达标",
+          "并发支持达标",
+          "同步延迟达标",
+          "压力测试通过",
+          "兼容性测试通过",
+          "用户体验良好"
+        ],
+        "testStrategy": "执行全面性能测试和兼容性测试",
+        "subtasks": [],
+        "dependencies": []
+      },
+      {
+        "id": 15,
+        "title": "离线功能开发",
+        "description": "实现离线功能支持,包括离线起卦、离线查看已学习内容和历史记录",
+        "status": "pending",
+        "priority": "P2",
+        "tags": [
+          "offline",
+          "ux"
+        ],
+        "details": "需要实现:\n1. 已学习内容离线查看\n2. 卜卦历史离线查看\n3. 离线起卦功能\n4. 解卦需联网处理\n5. 离线数据缓存管理",
+        "acceptanceCriteria": [
+          "离线查看学习内容正常",
+          "离线查看历史正常",
+          "离线起卦功能正常",
+          "离线缓存管理合理",
+          "联网后数据正确同步"
+        ],
+        "testStrategy": "测试各种离线场景,验证缓存和同步逻辑",
+        "subtasks": [],
+        "dependencies": []
+      }
+    ],
+    "metadata": {
+      "version": "1.0.0",
+      "lastModified": "2026-01-11T23:27:46.778Z",
+      "taskCount": 15,
+      "completedCount": 1,
+      "tags": [
+        "master"
+      ],
+      "created": "2026-01-11T23:30:21.562Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

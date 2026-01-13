@@ -11,6 +11,8 @@ export default {
     'pages/profile/index',
     'pages/login/index',
     'pages/course-reader/index',
+    'pages/detailed-divination/index',
+    'pages/precise-form/index',
   ],
   window: {
     backgroundTextStyle: 'light',

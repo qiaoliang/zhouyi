@@ -23,5 +23,8 @@ export type { OrderType, PaymentMethod, PaymentChannel, PaymentStatus, OrderStat
 // 学习进度相关
 export { LearningProgress, LearningProgressDocument, LearningProgressSchema } from './learning-progress.schema';
 
+// 课程相关
+export { Course, CourseDocument, CourseSchema } from './course.schema';
+
 // 每日一卦相关
 export { DailyHexagram, DailyHexagramDocument, DailyHexagramSchema } from './daily-hexagram.schema';
