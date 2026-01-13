@@ -88,3 +88,6 @@ coverage/
 
 # 调试
 .vscode/chrome
+
+# 本地开发数据
+.dev/
