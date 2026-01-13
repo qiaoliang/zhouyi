@@ -1,0 +1,62 @@
+# 依赖
+node_modules
+npm-debug.log
+package-lock.json
+
+# 构建输出
+dist
+build
+
+# 测试
+coverage
+.nyc_output
+*.spec.ts
+*.test.ts
+__tests__
+test
+tests
+
+# 环境配置
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# 文档
+docs
+*.md
+README.md
+CHANGELOG.md
+LICENSE
+
+# 任务管理
+.taskmaster
+
+# 前端代码(不在后端镜像中)
+frontend
+
+# 脚本
+scripts
+
+# 其他
+*.log
+logs
+uploads
+tmp
+temp

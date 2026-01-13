@@ -8,19 +8,15 @@ WORKDIR /app
 
 # 复制package文件
 COPY package*.json ./
-COPY pnpm-lock.yaml ./
-
-# 安装pnpm
-RUN npm install -g pnpm@8
 
 # 安装依赖
-RUN pnpm install --frozen-lockfile
+RUN npm ci
 
 # 复制源代码
 COPY . .
 
 # 构建项目
-RUN pnpm run build
+RUN npm run build
 
 # 阶段2: 生产运行阶段
 FROM node:18-alpine
@@ -29,14 +25,11 @@ WORKDIR /app
 
 # 安装生产依赖
 COPY package*.json ./
-COPY pnpm-lock.yaml ./
-RUN npm install -g pnpm@8 && \
-    pnpm install --prod --frozen-lockfile && \
-    pnpm install -g pm2
+RUN npm ci --only=production && \
+    npm install -g pm2
 
 # 从构建阶段复制构建产物
 COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
 
 # 创建日志目录
 RUN mkdir -p /app/logs
