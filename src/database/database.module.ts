@@ -22,7 +22,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         if (username && password) {
           uri += `${username}:${password}@`;
         }
-        uri += `${host}:${port}/${database}`;
+        uri += `${host}:${port}/${database}?authSource=admin`;
         
         return {
           uri,
