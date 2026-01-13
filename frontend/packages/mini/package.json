@@ -1,0 +1,51 @@
+{
+  "name": "@zhouyi/mini",
+  "version": "1.0.0",
+  "private": true,
+  "description": "周易通微信小程序",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "sass"
+  },
+  "scripts": {
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "build:weapp": "taro build --type weapp",
+    "dev:swan": "npm run build:swan -- --watch",
+    "build:swan": "taro build --type swan"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "author": "",
+  "dependencies": {
+    "@tarojs/components": "^3.6.23",
+    "@tarojs/helper": "^3.6.23",
+    "@tarojs/plugin-framework-react": "^3.6.23",
+    "@tarojs/plugin-platform-weapp": "^3.6.23",
+    "@tarojs/react": "^3.6.23",
+    "@tarojs/runtime": "^3.6.23",
+    "@tarojs/taro": "^3.6.23",
+    "@tarojs/taro-h5": "^3.6.23",
+    "@zhouyi/shared": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tarojs/cli": "^3.6.23",
+    "@tarojs/webpack5-runner": "^3.6.23",
+    "@types/webpack-env": "^1.18.0",
+    "@types/react": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.12.0",
+    "eslint-config-taro": "^3.6.23",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "sass": "^1.56.0",
+    "typescript": "^4.9.4",
+    "webpack": "5.78.0"
+  }
+}

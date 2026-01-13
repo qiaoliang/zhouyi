@@ -6,13 +6,41 @@
 import { apiClient } from './api';
 import { AuthResponse, User } from '../types';
 
-// AsyncStorage导入
-let AsyncStorage: any;
+// 存储适配器 - 支持多平台
+let storageAdapter: {
+  setItem: (key: string, value: string) => Promise<void> | void;
+  getItem: (key: string) => Promise<string | null> | string | null;
+  removeItem: (key: string) => Promise<void> | void;
+} | null = null;
+
+// 检测运行环境并初始化存储适配器
 try {
+  // React Native环境
   AsyncStorage = require('@react-native-async-storage/async-storage').default;
+  storageAdapter = {
+    setItem: async (key, value) => await AsyncStorage.setItem(key, value),
+    getItem: async (key) => await AsyncStorage.getItem(key),
+    removeItem: async (key) => await AsyncStorage.removeItem(key),
+  };
 } catch (e) {
-  // Web环境使用localStorage
+  // 检查是否为小程序环境
+  if (typeof wx !== 'undefined' && wx.setStorageSync) {
+    storageAdapter = {
+      setItem: (key, value) => wx.setStorageSync(key, value),
+      getItem: (key) => wx.getStorageSync(key) || null,
+      removeItem: (key) => wx.removeStorageSync(key),
+    };
+  } else if (typeof localStorage !== 'undefined') {
+    // Web环境
+    storageAdapter = {
+      setItem: (key, value) => localStorage.setItem(key, value),
+      getItem: (key) => localStorage.getItem(key),
+      removeItem: (key) => localStorage.removeItem(key),
+    };
+  }
 }
+
+let AsyncStorage: any;
 
 export interface SendCodeResponse {
   expiresAt: number;
@@ -305,10 +333,8 @@ class AuthService {
    * 通用存储方法
    */
   private async setItem(key: string, value: string): Promise<void> {
-    if (AsyncStorage) {
-      await AsyncStorage.setItem(key, value);
-    } else if (typeof localStorage !== 'undefined') {
-      localStorage.setItem(key, value);
+    if (storageAdapter) {
+      await storageAdapter.setItem(key, value);
     }
   }
 
@@ -316,10 +342,8 @@ class AuthService {
    * 通用获取方法
    */
   private async getItem(key: string): Promise<string | null> {
-    if (AsyncStorage) {
-      return await AsyncStorage.getItem(key);
-    } else if (typeof localStorage !== 'undefined') {
-      return localStorage.getItem(key);
+    if (storageAdapter) {
+      return await storageAdapter.getItem(key);
     }
     return null;
   }
@@ -328,10 +352,8 @@ class AuthService {
    * 通用删除方法
    */
   private async removeItem(key: string): Promise<void> {
-    if (AsyncStorage) {
-      await AsyncStorage.removeItem(key);
-    } else if (typeof localStorage !== 'undefined') {
-      localStorage.removeItem(key);
+    if (storageAdapter) {
+      await storageAdapter.removeItem(key);
     }
   }
 }

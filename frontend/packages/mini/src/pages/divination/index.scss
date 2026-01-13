@@ -1,0 +1,140 @@
+/**
+ * 卜卦页面样式
+ */
+
+.divination-page {
+  min-height: 100vh;
+  background-color: #F5F5DC;
+}
+
+.header {
+  background: linear-gradient(135deg, #C8102E 0%, #A00D25 100%);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: 'STKaiti', 'KaiTi', serif;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.guest-hint {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+
+.guest-hint.warning {
+  background-color: rgba(255, 68, 68, 0.2);
+}
+
+.guest-hint-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.coin-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #D4AF37 0%, #B8962E 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.coin-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.divination-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #C8102E 0%, #A00D25 100%);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(200, 16, 46, 0.4);
+}
+
+.divination-button::after {
+  border: none;
+}
+
+.divination-button.disabled {
+  opacity: 0.5;
+}
+
+.button-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.result {
+  padding: 20px;
+}
+
+.hexagram-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hexagram-symbol {
+  font-size: 80px;
+  margin-bottom: 16px;
+}
+
+.hexagram-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.hexagram-pinyin {
+  font-size: 16px;
+  color: #999999;
+}
+
+.reset-button {
+  width: calc(100% - 40px);
+  margin: 20px;
+  height: 50px;
+  background-color: #C8102E;
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.reset-button::after {
+  border: none;
+}
