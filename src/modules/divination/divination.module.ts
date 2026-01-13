@@ -6,6 +6,7 @@ import { HexagramAnalysisService } from './hexagram-analysis.service';
 import { DivinationRecordSchema, DivinationRecord } from '../../database/schemas/divination-record.schema';
 import { HexagramSchema } from '../../database/schemas/hexagram.schema';
 import { MembershipModule } from '../membership/membership.module';
+import { UserModule } from '../../services/user/user.module';
 
 /**
  * 卜卦模块
@@ -24,6 +25,7 @@ import { MembershipModule } from '../membership/membership.module';
       },
     ]),
     MembershipModule,
+    UserModule,
   ],
   controllers: [DivinationController],
   providers: [DivinationService, HexagramAnalysisService],
