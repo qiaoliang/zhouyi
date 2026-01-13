@@ -1,7 +1,212 @@
+/**
+ * 学习页面样式
+ */
+
 .learning-page {
   min-height: 100vh;
+  background-color: #F5F5DC;
+}
+
+.learning-page.loading {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F5F5DC;
+}
+
+.header {
+  background: linear-gradient(135deg, #C8102E 0%, #A00D25 100%);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: 'STKaiti', 'KaiTi', serif;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.progress-card {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8962E 100%);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.progress-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.progress-percentage {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.module-list {
+  padding: 0 20px 20px;
+}
+
+.module-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.module-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.module-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #C8102E 0%, #A00D25 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.module-icon-text {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.module-info {
+  flex: 1;
+}
+
+.module-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.module-desc {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 4px;
+}
+
+.module-time {
+  font-size: 12px;
+  color: #C8102E;
+}
+
+.course-list {
+  margin-top: 8px;
+}
+
+.course-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.course-desc {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 4px;
+}
+
+.course-duration {
+  font-size: 12px;
+  color: #C8102E;
+}
+
+.course-arrow {
+  margin-left: 12px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #CCCCCC;
+}
+
+.login-tip {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.tip-text {
+  font-size: 14px;
+  color: #999999;
 }

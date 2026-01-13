@@ -10,6 +10,7 @@ export default {
     'pages/history/index',
     'pages/profile/index',
     'pages/login/index',
+    'pages/course-reader/index',
   ],
   window: {
     backgroundTextStyle: 'light',

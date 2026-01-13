@@ -13,4 +13,5 @@ export { apiClient, ApiClient } from './services/api';
 export { authService, AuthService } from './services/auth';
 export { divinationService, DivinationService } from './services/divination';
 export { learningService, LearningService } from './services/learning';
+export { dailyHexagramService } from './services/daily-hexagram';
 export * from './services/wechat';

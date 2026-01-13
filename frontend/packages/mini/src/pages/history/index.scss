@@ -1,7 +1,197 @@
+/**
+ * 历史记录页面样式
+ */
+
 .history-page {
   min-height: 100vh;
+  background-color: #F5F5DC;
+}
+
+.history-page.loading {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F5F5DC;
+}
+
+.header {
+  background: linear-gradient(135deg, #C8102E 0%, #A00D25 100%);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: 'STKaiti', 'KaiTi', serif;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.guest-hint {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
+.hint-icon {
+  font-size: 60px;
+  margin-bottom: 16px;
+}
+
+.hint-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.hint-text {
+  font-size: 16px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+
+.login-button {
+  width: 200px;
+  height: 50px;
+  background-color: #C8102E;
+  color: #FFFFFF;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.login-button::after {
+  border: none;
+}
+
+.empty-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.empty-icon {
+  font-size: 80px;
+  margin-bottom: 16px;
+}
+
+.empty-text {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.empty-subtext {
+  font-size: 14px;
+  color: #999999;
+}
+
+.record-list {
+  padding: 20px;
+}
+
+.record-item {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.record-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.record-symbol {
+  font-size: 40px;
+  margin-right: 12px;
+}
+
+.record-info {
+  flex: 1;
+}
+
+.record-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.record-time {
+  font-size: 13px;
+  color: #999999;
+}
+
+.record-changing {
+  padding-top: 12px;
+  border-top: 1px solid #F0F0F0;
+  margin-bottom: 12px;
+}
+
+.changing-text {
+  font-size: 14px;
+  color: #C8102E;
+  font-weight: bold;
+}
+
+.record-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.action-button {
+  flex: 1;
+  height: 40px;
+  background-color: #F8F8F8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+}
+
+.action-button::after {
+  border: none;
+}
+
+.action-button.delete {
+  background-color: #FFF5F5;
+}
+
+.action-icon {
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.action-text {
+  font-size: 14px;
+  color: #666666;
+}
+
+.load-more {
+  padding: 20px;
+  text-align: center;
+}
+
+.load-more-text {
+  font-size: 14px;
+  color: #999999;
 }

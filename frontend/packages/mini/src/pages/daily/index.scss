@@ -1,7 +1,184 @@
+/**
+ * 每日一卦页面样式
+ */
+
 .daily-page {
   min-height: 100vh;
+  background-color: #F5F5DC;
+}
+
+.daily-page.loading,
+.daily-page.empty {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F5F5DC;
+}
+
+.header {
+  background: linear-gradient(135deg, #C8102E 0%, #A00D25 100%);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.header-date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: 'STKaiti', 'KaiTi', serif;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.content {
+  padding: 20px;
+}
+
+.hexagram-card {
+  background: linear-gradient(135deg, #D4AF37 0%, #B8962E 100%);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+}
+
+.hexagram-symbol {
+  margin-bottom: 16px;
+}
+
+.symbol-text {
+  font-size: 80px;
+  color: #FFFFFF;
+}
+
+.hexagram-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.hexagram-pinyin {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.interpretation-section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin-bottom: 12px;
+}
+
+.title-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.interpretation-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.interpretation-text {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.8;
+}
+
+.fortune-section {
+  margin-bottom: 20px;
+}
+
+.fortune-item {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.fortune-icon {
+  font-size: 32px;
+  margin-right: 16px;
+}
+
+.fortune-content {
+  flex: 1;
+}
+
+.fortune-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.fortune-text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.interaction-section {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.like-button,
+.share-button {
+  flex: 1;
+  height: 50px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E0E0E0;
+  font-size: 16px;
+}
+
+.like-button::after,
+.share-button::after {
+  border: none;
+}
+
+.like-button.liked {
+  background-color: #FFEEEE;
+  border-color: #FF6B6B;
+}
+
+.like-icon,
+.share-icon {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.like-text,
+.share-text {
+  font-size: 16px;
+  color: #333333;
+  margin-right: 8px;
+}
+
+.like-count {
+  font-size: 14px;
+  color: #999999;
 }
