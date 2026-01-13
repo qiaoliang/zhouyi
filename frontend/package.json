@@ -1,0 +1,29 @@
+{
+  "name": "zhouyi-frontend",
+  "version": "1.0.0",
+  "description": "周易通APP前端项目",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "app": "cd packages/app && npm start",
+    "web": "cd packages/web && npm start",
+    "mini": "cd packages/mini && npm run dev",
+    "build:app": "cd packages/app && npm run build",
+    "build:web": "cd packages/web && npm run build",
+    "build:mini": "cd packages/mini && npm run build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}

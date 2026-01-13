@@ -10,6 +10,7 @@ import { Model } from 'mongoose';
 import { RedisService } from '../redis/redis.service';
 import { SmsService } from '../../services/sms/sms.service';
 import { WechatService } from '../../services/wechat/wechat.service';
+import { UserService } from '../../services/user/user.service';
 import { maskPhone } from '../../common/utils/phone.validator';
 import { User, UserDocument } from '../../database/schemas/user.schema';
 import { Gender } from '../../database/schemas/user.schema';
@@ -30,6 +31,7 @@ export class AuthService {
     private configService: ConfigService,
     private smsService: SmsService,
     private wechatService: WechatService,
+    private userService: UserService,
   ) {}
 
   /**
@@ -415,5 +417,21 @@ export class AuthService {
     };
 
     return value * multipliers[unit];
+  }
+
+  /**
+   * 请求用户注销
+   * 生成确认码并统计将要删除的数据
+   */
+  async requestAccountDeletion(userId: string) {
+    return this.userService.requestAccountDeletion(userId);
+  }
+
+  /**
+   * 删除用户账户
+   * 执行用户注销操作，删除所有相关数据
+   */
+  async deleteAccount(userId: string, confirmation: boolean) {
+    return this.userService.deleteAccount(userId, confirmation);
   }
 }

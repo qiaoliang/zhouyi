@@ -1,5 +1,6 @@
-import { Controller, Post, Body, UseGuards } from '@nestjs/common';
+import { Controller, Post, Body, UseGuards, Delete, Param } from '@nestjs/common';
 import { ThrottlerGuard } from '@nestjs/throttler';
+import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { AuthService } from './auth.service';
 import { SendCodeDto } from './dto/send-code.dto';
 import { VerifyCodeDto } from './dto/verify-code.dto';
@@ -27,8 +28,10 @@ export class AuthController {
   async sendCode(@Body() dto: SendCodeDto) {
     const result = await this.authService.sendVerificationCode(dto.phoneNumber);
     return {
+      success: true,
       message: '验证码发送成功',
       data: result,
+      timestamp: Date.now(),
     };
   }
 
@@ -41,8 +44,10 @@ export class AuthController {
   async login(@Body() dto: VerifyCodeDto) {
     const result = await this.authService.loginWithCode(dto.phoneNumber, dto.code);
     return {
+      success: true,
       message: '登录成功',
       data: result,
+      timestamp: Date.now(),
     };
   }
 
@@ -55,8 +60,10 @@ export class AuthController {
   async refresh(@Body() dto: RefreshTokenDto) {
     const result = await this.authService.refreshToken(dto.refreshToken);
     return {
+      success: true,
       message: 'Token刷新成功',
       data: result,
+      timestamp: Date.now(),
     };
   }
 
@@ -72,8 +79,10 @@ export class AuthController {
       dto.userInfo,
     );
     return {
+      success: true,
       message: '微信登录成功',
       data: result,
+      timestamp: Date.now(),
     };
   }
 
@@ -89,8 +98,10 @@ export class AuthController {
       dto.userInfo,
     );
     return {
+      success: true,
       message: '微信登录成功',
       data: result,
+      timestamp: Date.now(),
     };
   }
 
@@ -102,7 +113,46 @@ export class AuthController {
   async logout(@CurrentUser() user: any) {
     // TODO: 实现登出逻辑（Token黑名单）
     return {
+      success: true,
       message: '登出成功',
+      timestamp: Date.now(),
+    };
+  }
+
+  /**
+   * 请求注销账户
+   * POST /api/v1/auth/account/deletion/request
+   * 需要登录
+   */
+  @UseGuards(JwtAuthGuard)
+  @Post('account/deletion/request')
+  async requestAccountDeletion(@CurrentUser() user: any) {
+    const result = await this.authService.requestAccountDeletion(user.userId);
+    return {
+      success: true,
+      data: result,
+      message: '注销请求已受理，请查看确认码',
+      timestamp: Date.now(),
+    };
+  }
+
+  /**
+   * 确认注销账户
+   * DELETE /api/v1/auth/account/deletion/confirm
+   * 需要登录和确认
+   */
+  @UseGuards(JwtAuthGuard)
+  @Delete('account/deletion/confirm')
+  async confirmAccountDeletion(
+    @CurrentUser() user: any,
+    @Body('confirmation') confirmation: boolean,
+  ) {
+    const result = await this.authService.deleteAccount(user.userId, confirmation);
+    return {
+      success: true,
+      data: result,
+      message: '账户已成功注销，所有数据已被删除',
+      timestamp: Date.now(),
     };
   }
 }
