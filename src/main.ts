@@ -1,3 +1,4 @@
+import 'crypto'; // 显式导入 crypto 模块以解决 Node.js 18 兼容性问题
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { AppModule } from './app.module';
