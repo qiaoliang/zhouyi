@@ -1325,7 +1325,7 @@
         "id": "14",
         "title": "性能优化和测试",
         "description": "进行性能优化和全面测试,确保响应时间、并发支持等性能指标达标",
-        "status": "pending",
+        "status": "in-progress",
         "priority": "high",
         "tags": [
           "performance",
@@ -1348,9 +1348,10 @@
             "description": "实施前端代码分割策略及图片资源压缩，以减少初始加载时间，确保页面加载时间小于2秒。",
             "dependencies": [],
             "details": "使用Webpack或Vite配置路由懒加载和组件懒加载；对所有图片资源进行WebP格式转换及压缩；实施CDN加速策略；利用浏览器缓存机制优化静态资源加载。",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "使用Lighthouse工具进行性能评分，确保Performance分数>90，且首次内容绘制(FCP)时间达标。",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T09:25:53.523Z"
           },
           {
             "id": 2,
@@ -1358,9 +1359,10 @@
             "description": "优化数据库查询语句，调整索引结构，提升后端响应速度，确保支持1000+并发用户。",
             "dependencies": [],
             "details": "分析数据库慢查询日志，识别性能瓶颈；为高频查询字段添加合适的索引；优化复杂SQL查询，避免全表扫描；调整数据库连接池配置以应对高并发场景。",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "使用数据库监控工具（如MongoDB Profiler或pgBadger）验证查询响应时间，确保关键接口响应时间在预期范围内。",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T09:31:59.373Z"
           },
           {
             "id": 3,
@@ -1399,13 +1401,14 @@
         "dependencies": [],
         "complexity": 8,
         "recommendedSubtasks": 5,
-        "expansionPrompt": "请将任务分解为：1. 前端资源加载优化（代码分割、图片压缩）；2. 后端数据库查询优化与索引调整；3. 高并发压力测试脚本编写与瓶颈分析；4. 多机型/多系统兼容性测试；5. 弱网环境下的用户体验优化。"
+        "expansionPrompt": "请将任务分解为：1. 前端资源加载优化（代码分割、图片压缩）；2. 后端数据库查询优化与索引调整；3. 高并发压力测试脚本编写与瓶颈分析；4. 多机型/多系统兼容性测试；5. 弱网环境下的用户体验优化。",
+        "updatedAt": "2026-01-13T09:31:59.373Z"
       },
       {
         "id": "15",
         "title": "离线功能开发",
         "description": "实现离线功能支持,包括离线起卦、离线查看已学习内容和历史记录",
-        "status": "pending",
+        "status": "in-progress",
         "priority": "medium",
         "tags": [
           "offline",
@@ -1427,9 +1430,10 @@
             "description": "设计并封装本地数据库（如SQLite/Realm），为离线功能提供数据存储基础。",
             "dependencies": [],
             "details": "选择合适的本地数据库方案（SQLite或Realm），设计表结构（课程表、历史记录表、用户配置表），封装数据库操作接口（增删改查），确保线程安全和性能优化。",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "单元测试验证数据库操作的正确性，测试并发读写场景下的稳定性。",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T09:15:09.363Z"
           },
           {
             "id": 2,
@@ -1439,9 +1443,10 @@
               1
             ],
             "details": "定义缓存触发时机（如课程学习完成、卜卦结果生成），实现数据写入本地数据库的逻辑，设计缓存淘汰策略（如LRU），确保离线时能读取到最新已缓存的数据。",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "验证数据能否正确写入本地，断网后能否正确读取缓存数据，测试缓存更新机制。",
-            "parentId": "undefined"
+            "parentId": "undefined",
+            "updatedAt": "2026-01-13T09:19:41.562Z"
           },
           {
             "id": 3,
@@ -1471,7 +1476,8 @@
         "dependencies": [],
         "complexity": 7,
         "recommendedSubtasks": 4,
-        "expansionPrompt": "请将任务分解为：1. 本地数据库（如SQLite/Realm）架构设计与封装；2. 关键数据（课程、历史）的离线缓存策略；3. 离线状态下的UI交互与功能降级处理；4. 联网后的数据同步与一致性更新机制。"
+        "expansionPrompt": "请将任务分解为：1. 本地数据库（如SQLite/Realm）架构设计与封装；2. 关键数据（课程、历史）的离线缓存策略；3. 离线状态下的UI交互与功能降级处理；4. 联网后的数据同步与一致性更新机制。",
+        "updatedAt": "2026-01-13T09:19:41.562Z"
       },
       {
         "id": "16",
@@ -1504,7 +1510,7 @@
     ],
     "metadata": {
       "version": "1.0.0",
-      "lastModified": "2026-01-13T05:50:55.417Z",
+      "lastModified": "2026-01-13T09:31:59.374Z",
       "taskCount": 16,
       "completedCount": 9,
       "tags": [
