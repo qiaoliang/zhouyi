@@ -12,12 +12,22 @@ import { RedisService } from './redis.service';
   imports: [
     NestRedisModule.forRootAsync({
       inject: [ConfigService],
-      useFactory: (configService: ConfigService) => ({
-        type: 'single',
-        url: `redis://${configService.get('REDIS_HOST') || 'localhost'}:${configService.get('REDIS_PORT') || 6379}`,
-        password: configService.get('REDIS_PASSWORD') || undefined,
-        db: parseInt(configService.get('REDIS_DB') || '0', 10),
-      }),
+      useFactory: (configService: ConfigService) => {
+        const host = configService.get<string>('REDIS_HOST', 'localhost');
+        const port = configService.get<number>('REDIS_PORT', 6379);
+        const password = configService.get<string>('REDIS_PASSWORD');
+        const db = parseInt(configService.get<string>('REDIS_DB', '0'), 10);
+        
+        return {
+          type: 'single',
+          options: {
+            host,
+            port,
+            password,
+            db,
+          },
+        };
+      },
     }),
   ],
   providers: [RedisService],

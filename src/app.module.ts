@@ -14,6 +14,7 @@ import { MembershipModule } from './modules/membership/membership.module';
 import { UserModule } from './services/user/user.module';
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
+import databaseConfig from './config/database.config';
 
 /**
  * 应用根模块
@@ -24,6 +25,7 @@ import { HttpExceptionFilter } from './common/filters/http-exception.filter';
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: '.env',
+      load: [databaseConfig],
     }),
 
     // 数据库模块

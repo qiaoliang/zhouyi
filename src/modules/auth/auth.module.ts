@@ -12,6 +12,7 @@ import { User, UserSchema } from '../../database/schemas/user.schema';
 import { RedisModule } from '../redis/redis.module';
 import { SmsModule } from '../../services/sms/sms.module';
 import { WechatModule } from '../../services/wechat/wechat.module';
+import { UserModule } from '../../services/user/user.module';
 
 /**
  * 认证模块
@@ -21,6 +22,9 @@ import { WechatModule } from '../../services/wechat/wechat.module';
   imports: [
     // MongoDB 用户模型
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
+
+    // 用户服务模块
+    UserModule,
 
     // Redis 模块
     RedisModule,

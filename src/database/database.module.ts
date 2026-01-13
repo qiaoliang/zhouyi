@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import databaseConfig from '../config/database.config';
 
 /**
  * 数据库模块
@@ -12,11 +11,27 @@ import databaseConfig from '../config/database.config';
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => {
-        const config = configService.get('database');
+        const host = configService.get<string>('MONGODB_HOST', 'localhost');
+        const port = configService.get<number>('MONGODB_PORT', 27017);
+        const database = configService.get<string>('MONGODB_DATABASE', 'zhouyi');
+        const username = configService.get<string>('MONGODB_USERNAME');
+        const password = configService.get<string>('MONGODB_PASSWORD');
+        
+        // 构建连接字符串
+        let uri = `mongodb://`;
+        if (username && password) {
+          uri += `${username}:${password}@`;
+        }
+        uri += `${host}:${port}/${database}`;
+        
         return {
-          uri: config.uri,
-          dbName: config.dbName,
-          ...config.options,
+          uri,
+          autoIndex: configService.get<string>('NODE_ENV') !== 'production',
+          maxPoolSize: configService.get<number>('MONGO_MAX_POOL_SIZE', 10),
+          minPoolSize: configService.get<number>('MONGO_MIN_POOL_SIZE', 2),
+          serverSelectionTimeoutMS: configService.get<number>('MONGO_SERVER_SELECTION_TIMEOUT', 5000),
+          socketTimeoutMS: configService.get<number>('MONGO_SOCKET_TIMEOUT', 45000),
+          heartbeatFrequencyMS: configService.get<number>('MONGO_HEARTBEAT_FREQUENCY', 10000),
         };
       },
       inject: [ConfigService],
