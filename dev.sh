@@ -46,6 +46,30 @@ start_all() {
   print_info "开始启动所有服务..."
   echo ""
   
+  # 检查 Docker 容器
+  local docker_containers=($(check_docker_containers))
+  if [[ ${#docker_containers[@]} -gt 0 ]]; then
+    print_warning "检测到 Docker 容器正在运行："
+    for item in "${docker_containers[@]}"; do
+      local service=$(echo "$item" | cut -d'|' -f1)
+      local container=$(echo "$item" | cut -d'|' -f2)
+      echo "  - $service: $container"
+    done
+    echo ""
+    read -p "是否停止 Docker 容器并启动本地服务? [y/N]: " choice
+    
+    if [[ "$choice" == "y" ]] || [[ "$choice" == "Y" ]]; then
+      stop_docker_containers
+    else
+      print_info "使用 Docker 容器模式"
+      echo ""
+      echo "提示：使用 Docker Compose 管理 Docker 容器"
+      echo "  启动: docker-compose -f docker-compose.app.yml up -d"
+      echo "  停止: docker-compose -f docker-compose.app.yml down"
+      exit 0
+    fi
+  fi
+  
   # 前置检查
   check_node_version
   check_mongodb

@@ -78,6 +78,42 @@ get_port_pid() {
   lsof -ti:$port 2>/dev/null | head -1
 }
 
+# 检查端口是否被 Docker 容器占用
+is_port_used_by_docker() {
+  local port=$1
+  local pid=$(get_port_pid "$port")
+  
+  if [[ -z "$pid" ]]; then
+    return 1
+  fi
+  
+  # 检查进程是否属于 Docker
+  ps -p "$pid" -o command= 2>/dev/null | grep -q "docker"
+}
+
+# 获取占用端口的 Docker 容器名称
+get_docker_container_for_port() {
+  local port=$1
+  local pid=$(get_port_pid "$port")
+  
+  if [[ -z "$pid" ]]; then
+    echo ""
+    return
+  fi
+  
+  # 获取容器 ID
+  local container_id=$(docker ps -q --filter "ancestor=$pid" 2>/dev/null)
+  
+  if [[ -z "$container_id" ]]; then
+    # 尝试通过端口映射查找
+    container_id=$(docker ps -q --filter "publish=$port" 2>/dev/null | head -1)
+  fi
+  
+  if [[ -n "$container_id" ]]; then
+    docker inspect --format='{{.Name}}' "$container_id" 2>/dev/null | sed 's/\///'
+  fi
+}
+
 # 检查服务是否运行
 is_service_running() {
   local service=$1

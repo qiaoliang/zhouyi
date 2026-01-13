@@ -5,6 +5,49 @@
 # 加载配置
 source "$(dirname "${BASH_SOURCE[0]}")/config.sh"
 
+# 检查 Docker 容器是否正在运行
+check_docker_containers() {
+  local services=("mongodb" "redis" "backend")
+  local docker_containers=()
+  
+  for service in "${services[@]}"; do
+    local port=$(get_service_port "$service")
+    if is_port_in_use "$port" && is_port_used_by_docker "$port"; then
+      local container_name=$(get_docker_container_for_port "$port")
+      docker_containers+=("$service|$container_name")
+    fi
+  done
+  
+  echo "${docker_containers[@]}"
+}
+
+# 停止 Docker 容器
+stop_docker_containers() {
+  print_info "检测到 Docker 容器正在运行，正在停止..."
+  
+  local docker_containers=($(check_docker_containers))
+  
+  if [[ ${#docker_containers[@]} -eq 0 ]]; then
+    return 0
+  fi
+  
+  echo ""
+  echo "以下 Docker 容器正在运行："
+  for item in "${docker_containers[@]}"; do
+    local service=$(echo "$item" | cut -d'|' -f1)
+    local container=$(echo "$item" | cut -d'|' -f2)
+    echo "  - $service: $container"
+  done
+  echo ""
+  
+  # 停止 Docker 容器
+  docker-compose -f "$PROJECT_ROOT/docker-compose.app.yml" down
+  
+  echo ""
+  print_success "Docker 容器已停止"
+  sleep 2
+}
+
 # 启动 MongoDB
 start_mongodb() {
   local pid_file=$(get_pid_file "mongodb")
@@ -19,8 +62,40 @@ start_mongodb() {
   # 检查端口占用
   if is_port_in_use "27017"; then
     local pid=$(get_port_pid "27017")
-    print_error "MongoDB 端口 27017 已被占用 (PID: $pid)"
-    return 1
+    
+    # 检查是否是 Docker 容器
+    if is_port_used_by_docker "27017"; then
+      local container=$(get_docker_container_for_port "27017")
+      print_error "MongoDB 端口 27017 被 Docker 容器占用 ($container)"
+      echo ""
+      echo "请选择操作："
+      echo "  1. 停止 Docker 容器并启动本地服务"
+      echo "  2. 使用 Docker 容器（取消本地启动）"
+      echo ""
+      read -p "请输入选择 [1/2]: " choice
+      
+      case $choice in
+        1)
+          stop_docker_containers
+          # 重新检查端口
+          if is_port_in_use "27017"; then
+            print_error "端口仍被占用，请手动处理"
+            return 1
+          fi
+          ;;
+        2)
+          print_info "使用 Docker 容器模式"
+          return 1
+          ;;
+        *)
+          print_error "无效选择"
+          return 1
+          ;;
+      esac
+    else
+      print_error "MongoDB 端口 27017 已被占用 (PID: $pid)"
+      return 1
+    fi
   fi
   
   print_service "mongodb" "启动服务..."
@@ -69,8 +144,16 @@ start_redis() {
   # 检查端口占用
   if is_port_in_use "6379"; then
     local pid=$(get_port_pid "6379")
-    print_error "Redis 端口 6379 已被占用 (PID: $pid)"
-    return 1
+    
+    # 检查是否是 Docker 容器
+    if is_port_used_by_docker "6379"; then
+      local container=$(get_docker_container_for_port "6379")
+      print_error "Redis 端口 6379 被 Docker 容器占用 ($container)"
+      return 1
+    else
+      print_error "Redis 端口 6379 已被占用 (PID: $pid)"
+      return 1
+    fi
   fi
   
   print_service "redis" "启动服务..."
@@ -120,8 +203,16 @@ start_backend() {
   # 检查端口占用
   if is_port_in_use "3000"; then
     local pid=$(get_port_pid "3000")
-    print_error "Backend 端口 3000 已被占用 (PID: $pid)"
-    return 1
+    
+    # 检查是否是 Docker 容器
+    if is_port_used_by_docker "3000"; then
+      local container=$(get_docker_container_for_port "3000")
+      print_error "Backend 端口 3000 被 Docker 容器占用 ($container)"
+      return 1
+    else
+      print_error "Backend 端口 3000 已被占用 (PID: $pid)"
+      return 1
+    fi
   fi
   
   print_service "backend" "启动服务..."
