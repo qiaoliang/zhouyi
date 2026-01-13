@@ -94,7 +94,7 @@ export class QueryOptimizerService {
    */
   async analyzeQuery(model: Model<any>, filter: any): Promise<any> {
     try {
-      const explainResult = await model.find(filter).explain('executionStats');
+      const explainResult = await model.find(filter).explain('executionStats') as any;
 
       return {
         executionTimeMillis: explainResult.executionTimeMillis,

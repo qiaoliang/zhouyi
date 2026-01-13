@@ -1,9 +1,9 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Order, OrderDocument, OrderType, OrderStatus, PaymentStatus } from '../../database/schemas/order.schema';
-import { User, UserDocument } from '../../database/schemas/user.schema';
-import { MembershipType } from '../../database/schemas/user.schema';
+import { Order, OrderDocument, OrderType, OrderStatus, PaymentStatus } from '../../../database/schemas/order.schema';
+import { User, UserDocument } from '../../../database/schemas/user.schema';
+import { MembershipType } from '../../../database/schemas/user.schema';
 
 /**
  * 订单创建参数接口
@@ -247,7 +247,7 @@ export class MembershipService {
    * 获取会员套餐列表
    */
   async getMembershipPlans(): Promise<Array<{
-    type: OrderType;
+    type: MembershipType;
     name: string;
     price: number;
     duration: string;
@@ -256,7 +256,7 @@ export class MembershipService {
   }>> {
     return [
       {
-        type: OrderType.MEMBERSHIP_MONTHLY,
+        type: MembershipType.MONTHLY,
         name: '月卡会员',
         price: 30,
         duration: '30天',
@@ -264,7 +264,7 @@ export class MembershipService {
         recommended: false,
       },
       {
-        type: OrderType.MEMBERSHIP_YEARLY,
+        type: MembershipType.YEARLY,
         name: '年卡会员',
         price: 300,
         duration: '365天',
@@ -272,7 +272,7 @@ export class MembershipService {
         recommended: true,
       },
       {
-        type: OrderType.SINGLE_DIVINATION,
+        type: MembershipType.FREE,
         name: '按次详细解卦',
         price: 10,
         duration: '单次',

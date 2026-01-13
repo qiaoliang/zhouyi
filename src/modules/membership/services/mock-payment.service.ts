@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { Cron, CronExpression } from '@nestjs/schedule';
 import { MembershipService } from './membership.service';
-import { PaymentStatus } from '../../database/schemas/order.schema';
+import { PaymentStatus } from '../../../database/schemas/order.schema';
 
 /**
  * 模拟支付场景配置

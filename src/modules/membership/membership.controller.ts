@@ -14,13 +14,8 @@ import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagg
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { MembershipService } from './services/membership.service';
 import { MockPaymentService, MockPaymentScenario } from './services/mock-payment.service';
-import {
-  CreateOrderDto,
-  OrderResponseDto,
-  QueryOrdersDto,
-  UserMembershipResponseDto,
-  MembershipPlanDto,
-} from './dto/membership.dto';
+import { CreateOrderDto, OrderResponseDto, QueryOrdersDto } from './dto/create-order.dto';
+import { UserMembershipResponseDto, MembershipPlanDto } from './dto/membership.dto';
 
 @ApiTags('会员管理')
 @Controller('membership')

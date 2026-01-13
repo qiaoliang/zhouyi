@@ -111,8 +111,8 @@ export class IndexManagerService {
       name?: string;
     } = {}
   ): Promise<string> {
+    const fieldNames = Object.keys(fields).join('_');
     try {
-      const fieldNames = Object.keys(fields).join('_');
       const indexName = options.name || `${fieldNames}_compound`;
 
       await model.collection.createIndex(fields, {
@@ -242,7 +242,7 @@ export class IndexManagerService {
    */
   async rebuildIndex(model: Model<any>, indexName: string): Promise<boolean> {
     try {
-      await model.collection.reIndex();
+      await (model.collection as any).reIndex();
       this.logger.log(`重建索引成功: ${model.collection.name}.${indexName}`);
       return true;
     } catch (error) {
@@ -257,7 +257,7 @@ export class IndexManagerService {
   async getIndexStats(model: Model<any>): Promise<IndexStats> {
     try {
       const indexes = await this.getIndexes(model);
-      const stats = await model.collection.stats();
+      const stats = await (model.collection as any).stats();
 
       return {
         collection: model.collection.name,

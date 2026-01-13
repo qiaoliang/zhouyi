@@ -1,5 +1,5 @@
 import { IsEnum, IsNotEmpty, IsOptional, IsString } from 'class-validator';
-import { OrderType } from '../entities/order.entity';
+import { OrderType } from '../../../database/schemas/order.schema';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 /**
@@ -9,7 +9,7 @@ export class CreateOrderDto {
   @ApiProperty({
     description: '订单类型',
     enum: OrderType,
-    example: OrderType.MONTHLY,
+    example: OrderType.MEMBERSHIP_MONTHLY,
   })
   @IsEnum(OrderType)
   @IsNotEmpty()
@@ -21,7 +21,7 @@ export class CreateOrderDto {
   })
   @IsString()
   @IsOptional()
-  paymentMethod?: string;
+  paymentMethod?: 'wechat' | 'alipay';
 }
 
 /**

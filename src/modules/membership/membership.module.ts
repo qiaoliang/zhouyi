@@ -30,8 +30,6 @@ import { UserSchema } from '../../database/schemas/user.schema';
     MockPaymentService,
     PaymentRetryService,
   ],
-  exports: [SubscriptionGuard, MembershipService, PaymentRetryService, RequireSubscription],
+  exports: [SubscriptionGuard, MembershipService, PaymentRetryService],
 })
-export class MembershipModule {
-  static exports = [SubscriptionGuard, RequireSubscription];
-}
+export class MembershipModule {}

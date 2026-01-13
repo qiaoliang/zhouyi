@@ -1,5 +1,3 @@
-import { EntityRepository } from '../../database/entity.repository';
-
 /**
  * 订单状态枚举
  */

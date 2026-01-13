@@ -2,7 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import { Cron, CronExpression } from '@nestjs/schedule';
 import { Model, Types } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { Order, OrderDocument, OrderStatus, PaymentStatus } from '../../database/schemas/order.schema';
+import { Order, OrderDocument, OrderStatus, PaymentStatus } from '../../../database/schemas/order.schema';
 
 /**
  * 支付异常类型
