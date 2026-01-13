@@ -26,10 +26,10 @@
     "react-native-safe-area-context": "^4.7.4",
     "react-native-screens": "^3.27.0",
     "react-native-vector-icons": "^10.0.2",
-    "react-native-wechat-lib": "1.1.38",
+    "react-native-wechat-lib": "^1.0.38",
     "axios": "^1.6.0",
     "dayjs": "^1.11.10",
-    "@zhouyi/shared": "*"
+    "@zhouyi/shared": "workspace:*"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",

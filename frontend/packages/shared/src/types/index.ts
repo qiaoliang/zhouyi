@@ -26,15 +26,15 @@ export interface User {
   phoneNumber?: string;
   nickname: string;
   avatar: string;
-  gender: Gender;
+  gender?: Gender;  // 改为可选，因为服务器可能不总是返回
   isGuest: boolean;
   membership?: {
     type: MembershipType;
     level: MembershipLevel;
     expireAt?: string;
   };
-  createdAt: string;
-  lastLoginAt: string;
+  createdAt?: string;  // 改为可选
+  lastLoginAt?: string;  // 改为可选
 }
 
 /**

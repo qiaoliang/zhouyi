@@ -9,10 +9,10 @@
     "css": "sass"
   },
   "scripts": {
-    "dev:weapp": "npm run build:weapp -- --watch",
-    "build:weapp": "taro build --type weapp",
-    "dev:swan": "npm run build:swan -- --watch",
-    "build:swan": "taro build --type swan"
+    "dev:weapp": "pnpm run build:weapp -- --watch",
+    "build:weapp": "pnpm exec taro build --type weapp",
+    "dev:swan": "pnpm run build:swan -- --watch",
+    "build:swan": "pnpm exec taro build --type swan"
   },
   "browserslist": [
     "last 3 versions",
@@ -29,7 +29,7 @@
     "@tarojs/runtime": "^3.6.23",
     "@tarojs/taro": "^3.6.23",
     "@tarojs/taro-h5": "^3.6.23",
-    "@zhouyi/shared": "*",
+    "@zhouyi/shared": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -46,6 +46,6 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "sass": "^1.56.0",
     "typescript": "^4.9.4",
-    "webpack": "5.78.0"
+    "webpack": "5.91.0"
   }
 }

@@ -1,4 +1,4 @@
-import { api } from './api';
+import { apiClient } from './api';
 
 /**
  * 订单类型枚举
@@ -106,24 +106,21 @@ export const membershipService = {
    * 获取会员套餐列表
    */
   async getPlans(): Promise<MembershipPlan[]> {
-    const response = await api.get<MembershipPlan[]>('/membership/plans');
-    return response.data;
+    return apiClient.get<MembershipPlan[]>('/membership/plans');
   },
 
   /**
    * 创建订单
    */
   async createOrder(params: CreateOrderParams): Promise<Order> {
-    const response = await api.post<Order>('/membership/orders', params);
-    return response.data;
+    return apiClient.post<Order>('/membership/orders', params);
   },
 
   /**
    * 获取订单详情
    */
   async getOrder(orderId: string): Promise<Order> {
-    const response = await api.get<Order>(`/membership/orders/${orderId}`);
-    return response.data;
+    return apiClient.get<Order>(`/membership/orders/${orderId}`);
   },
 
   /**
@@ -134,26 +131,23 @@ export const membershipService = {
     limit?: number;
     status?: OrderStatus;
   }): Promise<{ orders: Order[]; total: number }> {
-    const response = await api.get<{ orders: Order[]; total: number }>('/membership/orders', {
-      params,
-    });
-    return response.data;
+    // 简化处理，将参数作为查询字符串
+    const queryString = params ? `?${new URLSearchParams(params as any).toString()}` : '';
+    return apiClient.get<{ orders: Order[]; total: number }>(`/membership/orders${queryString}`);
   },
 
   /**
    * 取消订单
    */
   async cancelOrder(orderId: string): Promise<Order> {
-    const response = await api.post<Order>(`/membership/orders/${orderId}/cancel`);
-    return response.data;
+    return apiClient.post<Order>(`/membership/orders/${orderId}/cancel`);
   },
 
   /**
    * 获取用户会员信息
    */
   async getUserMembership(): Promise<UserMembershipInfo> {
-    const response = await api.get<UserMembershipInfo>('/membership/info');
-    return response.data;
+    return apiClient.get<UserMembershipInfo>('/membership/info');
   },
 
   /**
@@ -166,8 +160,7 @@ export const membershipService = {
     message: string;
     note: string;
   }> {
-    const response = await api.post('/membership/payments/mock', params);
-    return response.data;
+    return apiClient.post('/membership/payments/mock', params);
   },
 
   /**
@@ -181,8 +174,7 @@ export const membershipService = {
     message: string;
     paidAt?: string;
   }> {
-    const response = await api.post(`/membership/payments/mock/${paymentId}/confirm`);
-    return response.data;
+    return apiClient.post(`/membership/payments/mock/${paymentId}/confirm`);
   },
 
   /**
@@ -194,7 +186,6 @@ export const membershipService = {
     status: string;
     message: string;
   }> {
-    const response = await api.post(`/membership/payments/mock/${paymentId}/cancel`);
-    return response.data;
+    return apiClient.post(`/membership/payments/mock/${paymentId}/cancel`);
   },
 };

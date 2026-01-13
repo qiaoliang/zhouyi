@@ -85,7 +85,7 @@ function DetailedDivinationPage() {
       setHasMembership(isMember)
 
       if (!isMember) {
-        setShowUpgradeModal)
+        setShowUpgradeModal(true)
         return
       }
 

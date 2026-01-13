@@ -6,6 +6,9 @@
 import { apiClient } from './api';
 import { AuthResponse, User } from '../types';
 
+// 声明 AsyncStorage 变量
+let AsyncStorage: any;
+
 // 存储适配器 - 支持多平台
 let storageAdapter: {
   setItem: (key: string, value: string) => Promise<void> | void;
@@ -39,8 +42,6 @@ try {
     };
   }
 }
-
-let AsyncStorage: any;
 
 export interface SendCodeResponse {
   expiresAt: number;

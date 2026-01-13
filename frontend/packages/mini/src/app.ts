@@ -2,11 +2,11 @@
  * 周易通微信小程序 - 主入口
  */
 
-import { PropsWithChildren } from 'react'
 import { useLaunch } from '@tarojs/taro'
 import './app.scss'
 
-function App({ children }: PropsWithChildren<any>) {
+function App(props) {
+  const { children } = props
 
   useLaunch(() => {
     console.log('App launched.')

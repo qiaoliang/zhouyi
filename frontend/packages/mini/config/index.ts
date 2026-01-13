@@ -30,6 +30,20 @@ const config = {
   cache: {
     enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
+  webpackChain(chain) {
+    // 确保 shared 包中的 TypeScript 文件通过 babel-loader 处理
+    chain.module
+      .rule('compile-shared')
+      .test(/\.ts?x$/)
+      .include
+      .add(path.resolve(__dirname, '../../shared/src'))
+      .end()
+      .use('babel-loader')
+      .loader('babel-loader')
+      .options({
+        cacheDirectory: true
+      })
+  },
   mini: {
     postcss: {
       pxtransform: {
@@ -71,7 +85,7 @@ const config = {
   },
   alias: {
     '@': path.resolve(__dirname, '..', 'src'),
-    '@zhouyi/shared': path.resolve(__dirname, '../shared/src')
+    '@zhouyi/shared': path.resolve(__dirname, '../../shared/dist')
   }
 }
 

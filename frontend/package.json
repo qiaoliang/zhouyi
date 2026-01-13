@@ -7,16 +7,18 @@
     "packages/*"
   ],
   "scripts": {
-    "app": "cd packages/app && npm start",
-    "web": "cd packages/web && npm start",
-    "mini": "cd packages/mini && npm run dev",
-    "build:app": "cd packages/app && npm run build",
-    "build:web": "cd packages/web && npm run build",
-    "build:mini": "cd packages/mini && npm run build",
+    "app": "cd packages/app && pnpm run start",
+    "web": "cd packages/web && pnpm run start",
+    "mini": "cd packages/mini && pnpm run dev",
+    "build:app": "cd packages/app && pnpm run build",
+    "build:web": "cd packages/web && pnpm run build",
+    "build:mini": "cd packages/mini && pnpm run build:weapp",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.28.5",
+    "@tarojs/cli": "^3.6.23",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.50.0",
@@ -25,5 +27,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.19"
   }
 }
