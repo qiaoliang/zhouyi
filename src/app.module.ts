@@ -5,6 +5,13 @@ import { DatabaseModule } from './database/database.module';
 import { RedisModule } from './modules/redis/redis.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { SmsModule } from './services/sms/sms.module';
+import { CryptoModule } from './services/crypto/crypto.module';
+import { HexagramModule } from './modules/hexagram/hexagram.module';
+import { DivinationModule } from './modules/divination/divination.module';
+import { LearningModule } from './modules/learning/learning.module';
+import { DailyHexagramModule } from './modules/daily-hexagram/daily-hexagram.module';
+import { MembershipModule } from './modules/membership/membership.module';
+import { UserModule } from './services/user/user.module';
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 
@@ -28,8 +35,29 @@ import { HttpExceptionFilter } from './common/filters/http-exception.filter';
     // 短信服务模块
     SmsModule,
 
+    // 加密服务模块
+    CryptoModule,
+
     // 认证模块
     AuthModule,
+
+    // 卦象模块
+    HexagramModule,
+
+    // 卜卦模块
+    DivinationModule,
+
+    // 学习模块
+    LearningModule,
+
+    // 每日一卦模块
+    DailyHexagramModule,
+
+    // 会员模块
+    MembershipModule,
+
+    // 用户服务模块
+    UserModule,
   ],
   controllers: [],
   providers: [
