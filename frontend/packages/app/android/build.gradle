@@ -9,6 +9,9 @@ buildscript {
 
         // We use NDK 23 which has both M1 support and is the side-by-side NDK version from AGP.
         ndkVersion = "23.1.7779620"
+
+        // Kotlin version compatible with React Native 0.84.0
+        kotlinVersion = "2.1.20"
     }
     repositories {
         google()
@@ -18,7 +21,8 @@ buildscript {
         maven { url 'https://maven.aliyun.com/repository/central' }
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.2.0")
+        classpath("com.android.tools.build:gradle:8.3.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
         // classpath("com.facebook.react:react-native-gradle-plugin")  // React Native 0.72.0 不支持
     }
 }

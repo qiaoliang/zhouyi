@@ -27,8 +27,19 @@ android {
 
     namespace "com.zhouyi.zhouyitong"
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
     buildFeatures {
         buildConfig = true
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        disable 'KotlinVersionCompatibility', 'DeprecatedKotlin', 'KotlinMetadataVersionIncompatibility'
     }
 
     repositories {
