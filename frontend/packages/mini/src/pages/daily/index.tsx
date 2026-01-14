@@ -112,19 +112,6 @@ function DailyPage() {
     }
   }
 
-  /**
-   * 分享到微信
-   */
-  const onShareAppMessage = () => {
-    if (!dailyHexagram) return {}
-
-    return {
-      title: `今日一卦：${dailyHexagram.hexagram.primary.name}`,
-      path: '/pages/daily/index',
-      imageUrl: ''
-    }
-  }
-
   if (loading) {
     return (
       <View className='daily-page loading'>
@@ -229,8 +216,5 @@ function DailyPage() {
     </View>
   )
 }
-
-// 定义分享配置
-DailyPage.onShareAppMessage = onShareAppMessage
 
 export default DailyPage

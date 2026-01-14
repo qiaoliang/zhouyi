@@ -13,6 +13,7 @@ const config = {
   outputRoot: 'dist',
   plugins: [],
   defineConstants: {
+    __DEV__: JSON.stringify(true)
   },
   copy: {
     patterns: [
@@ -29,7 +30,7 @@ const config = {
     }
   },
   cache: {
-    enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
+    enable: true
   },
   webpackChain(chain) {
     // 确保 shared 包中的 TypeScript 文件通过 babel-loader 处理

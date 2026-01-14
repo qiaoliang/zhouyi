@@ -16,30 +16,36 @@ let storageAdapter: {
   removeItem: (key: string) => Promise<void> | void;
 } | null = null;
 
-// 检测运行环境并初始化存储适配器
-try {
-  // React Native环境
-  AsyncStorage = require('@react-native-async-storage/async-storage').default;
-  storageAdapter = {
-    setItem: async (key, value) => await AsyncStorage.setItem(key, value),
-    getItem: async (key) => await AsyncStorage.getItem(key),
-    removeItem: async (key) => await AsyncStorage.removeItem(key),
-  };
-} catch (e) {
-  // 检查是否为小程序环境
-  if (typeof wx !== 'undefined' && wx.setStorageSync) {
+// 初始化存储适配器（懒加载）
+function initStorageAdapter() {
+  if (storageAdapter) return;
+
+  try {
+    // React Native环境
+    AsyncStorage = require('@react-native-async-storage/async-storage').default;
     storageAdapter = {
-      setItem: (key, value) => wx.setStorageSync(key, value),
-      getItem: (key) => wx.getStorageSync(key) || null,
-      removeItem: (key) => wx.removeStorageSync(key),
+      setItem: async (key, value) => await AsyncStorage.setItem(key, value),
+      getItem: async (key) => await AsyncStorage.getItem(key),
+      removeItem: async (key) => await AsyncStorage.removeItem(key),
     };
-  } else if (typeof localStorage !== 'undefined') {
-    // Web环境
-    storageAdapter = {
-      setItem: (key, value) => localStorage.setItem(key, value),
-      getItem: (key) => localStorage.getItem(key),
-      removeItem: (key) => localStorage.removeItem(key),
-    };
+  } catch (e) {
+    // 检查是否为小程序环境
+    if (typeof wx !== 'undefined' && wx.setStorageSync) {
+      storageAdapter = {
+        setItem: (key, value) => wx.setStorageSync(key, value),
+        getItem: (key) => wx.getStorageSync(key) || null,
+        removeItem: (key) => wx.removeStorageSync(key),
+      };
+    } else if (typeof localStorage !== 'undefined') {
+      // Web环境
+      storageAdapter = {
+        setItem: (key, value) => localStorage.setItem(key, value),
+        getItem: (key) => localStorage.getItem(key),
+        removeItem: (key) => localStorage.removeItem(key),
+      };
+    } else {
+      console.warn('No storage adapter available');
+    }
   }
 }
 
@@ -334,6 +340,7 @@ class AuthService {
    * 通用存储方法
    */
   private async setItem(key: string, value: string): Promise<void> {
+    initStorageAdapter();
     if (storageAdapter) {
       await storageAdapter.setItem(key, value);
     }
@@ -343,6 +350,7 @@ class AuthService {
    * 通用获取方法
    */
   private async getItem(key: string): Promise<string | null> {
+    initStorageAdapter();
     if (storageAdapter) {
       return await storageAdapter.getItem(key);
     }
@@ -353,6 +361,7 @@ class AuthService {
    * 通用删除方法
    */
   private async removeItem(key: string): Promise<void> {
+    initStorageAdapter();
     if (storageAdapter) {
       await storageAdapter.removeItem(key);
     }

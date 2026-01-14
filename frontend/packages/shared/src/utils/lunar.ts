@@ -186,7 +186,7 @@ export class LunarDatePicker {
       const year = currentYear - i;
       years.push({
         value: year,
-        label: `${year}年 (${LunarUtils.getZodiac(year)})"
+        label: `${year}年 (${LunarUtils.getZodiac(year)})`
       });
     }
 
