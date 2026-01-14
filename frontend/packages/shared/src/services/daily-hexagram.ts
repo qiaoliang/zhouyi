@@ -12,7 +12,11 @@ import { Hexagram } from '../types';
 export interface DailyHexagram {
   id: string;
   date: string;
-  hexagram: Hexagram;
+  hexagram: {
+    name: string;
+    symbol: string;
+    sequence: number;
+  };
   interpretation: {
     overall: string;
     career: string;

@@ -29,11 +29,19 @@ export class DailyHexagramService {
     }
 
     return {
+      id: todayHexagram._id?.toString() || '',
       date: todayHexagram.date,
       hexagram: todayHexagram.hexagram,
-      content: todayHexagram.content,
-      quote: todayHexagram.quote,
-      stats: todayHexagram.stats,
+      interpretation: {
+        overall: todayHexagram.content?.guaci || '',
+        career: todayHexagram.content?.advice || '',
+        relationships: todayHexagram.content?.advice || '',
+        health: todayHexagram.content?.advice || '',
+        wealth: todayHexagram.content?.advice || '',
+      },
+      likes: todayHexagram.stats?.likes || 0,
+      shares: todayHexagram.stats?.shares || 0,
+      likedByUser: false,
     };
   }
 
@@ -66,6 +74,7 @@ export class DailyHexagramService {
     await dailyHexagram.save();
 
     return {
+      liked: true,
       likes: dailyHexagram.stats.likes,
     };
   }
@@ -84,6 +93,7 @@ export class DailyHexagramService {
     await dailyHexagram.save();
 
     return {
+      shared: true,
       shares: dailyHexagram.stats.shares,
     };
   }

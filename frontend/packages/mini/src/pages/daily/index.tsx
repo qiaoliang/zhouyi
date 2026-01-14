@@ -141,10 +141,9 @@ function DailyPage() {
         {/* 卦象卡片 */}
         <View className='hexagram-card'>
           <View className='hexagram-symbol'>
-            <Text className='symbol-text'>{dailyHexagram.hexagram.primary.symbol}</Text>
+            <Text className='symbol-text'>{dailyHexagram.hexagram.symbol}</Text>
           </View>
-          <Text className='hexagram-name'>{dailyHexagram.hexagram.primary.name}</Text>
-          <Text className='hexagram-pinyin'>{dailyHexagram.hexagram.primary.pinyin}</Text>
+          <Text className='hexagram-name'>{dailyHexagram.hexagram.name}</Text>
         </View>
 
         {/* 解读 */}
