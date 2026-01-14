@@ -16,8 +16,16 @@ const TOKEN_KEY = 'auth_token'
  */
 const getToken = (): string | null => {
   try {
-    return wx.getStorageSync(TOKEN_KEY) || null
-  } catch {
+    // 检查 wx 对象是否存在
+    if (typeof wx === 'undefined' || !wx.getStorageSync) {
+      console.warn('wx.getStorageSync is not available')
+      return null
+    }
+    const token = wx.getStorageSync(TOKEN_KEY)
+    // 检查返回值是否为 undefined（游客模式下可能返回 undefined）
+    return token !== undefined ? token : null
+  } catch (error) {
+    console.error('获取 Token 失败:', error)
     return null
   }
 }
@@ -27,6 +35,11 @@ const getToken = (): string | null => {
  */
 export const setToken = (token: string): void => {
   try {
+    // 检查 wx 对象是否存在
+    if (typeof wx === 'undefined' || !wx.setStorageSync) {
+      console.warn('wx.setStorageSync is not available')
+      return
+    }
     wx.setStorageSync(TOKEN_KEY, token)
   } catch (error) {
     console.error('设置 Token 失败:', error)
@@ -38,6 +51,11 @@ export const setToken = (token: string): void => {
  */
 export const removeToken = (): void => {
   try {
+    // 检查 wx 对象是否存在
+    if (typeof wx === 'undefined' || !wx.removeStorageSync) {
+      console.warn('wx.removeStorageSync is not available')
+      return
+    }
     wx.removeStorageSync(TOKEN_KEY)
   } catch (error) {
     console.error('移除 Token 失败:', error)

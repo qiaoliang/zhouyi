@@ -20,31 +20,35 @@ let storageAdapter: {
 function initStorageAdapter() {
   if (storageAdapter) return;
 
-  try {
-    // React Native环境
-    AsyncStorage = require('@react-native-async-storage/async-storage').default;
+  // 优先检查运行环境，避免加载不兼容的依赖
+  if (typeof wx !== 'undefined' && wx.setStorageSync) {
+    // 小程序环境
     storageAdapter = {
-      setItem: async (key, value) => await AsyncStorage.setItem(key, value),
-      getItem: async (key) => await AsyncStorage.getItem(key),
-      removeItem: async (key) => await AsyncStorage.removeItem(key),
+      setItem: (key, value) => wx.setStorageSync(key, value),
+      getItem: (key) => {
+        const value = wx.getStorageSync(key);
+        return value !== '' ? value : null;
+      },
+      removeItem: (key) => wx.removeStorageSync(key),
     };
-  } catch (e) {
-    // 检查是否为小程序环境
-    if (typeof wx !== 'undefined' && wx.setStorageSync) {
+  } else if (typeof localStorage !== 'undefined') {
+    // Web环境
+    storageAdapter = {
+      setItem: (key, value) => localStorage.setItem(key, value),
+      getItem: (key) => localStorage.getItem(key),
+      removeItem: (key) => localStorage.removeItem(key),
+    };
+  } else {
+    // React Native环境
+    try {
+      AsyncStorage = require('@react-native-async-storage/async-storage').default;
       storageAdapter = {
-        setItem: (key, value) => wx.setStorageSync(key, value),
-        getItem: (key) => wx.getStorageSync(key) || null,
-        removeItem: (key) => wx.removeStorageSync(key),
+        setItem: async (key, value) => await AsyncStorage.setItem(key, value),
+        getItem: async (key) => await AsyncStorage.getItem(key),
+        removeItem: async (key) => await AsyncStorage.removeItem(key),
       };
-    } else if (typeof localStorage !== 'undefined') {
-      // Web环境
-      storageAdapter = {
-        setItem: (key, value) => localStorage.setItem(key, value),
-        getItem: (key) => localStorage.getItem(key),
-        removeItem: (key) => localStorage.removeItem(key),
-      };
-    } else {
-      console.warn('No storage adapter available');
+    } catch (e) {
+      console.warn('No storage adapter available:', e);
     }
   }
 }
@@ -341,9 +345,11 @@ class AuthService {
    */
   private async setItem(key: string, value: string): Promise<void> {
     initStorageAdapter();
-    if (storageAdapter) {
-      await storageAdapter.setItem(key, value);
+    if (!storageAdapter) {
+      console.warn('Storage adapter not available');
+      return;
     }
+    await storageAdapter.setItem(key, value);
   }
 
   /**
@@ -351,10 +357,11 @@ class AuthService {
    */
   private async getItem(key: string): Promise<string | null> {
     initStorageAdapter();
-    if (storageAdapter) {
-      return await storageAdapter.getItem(key);
+    if (!storageAdapter) {
+      console.warn('Storage adapter not available');
+      return null;
     }
-    return null;
+    return await storageAdapter.getItem(key);
   }
 
   /**
@@ -362,9 +369,11 @@ class AuthService {
    */
   private async removeItem(key: string): Promise<void> {
     initStorageAdapter();
-    if (storageAdapter) {
-      await storageAdapter.removeItem(key);
+    if (!storageAdapter) {
+      console.warn('Storage adapter not available');
+      return;
     }
+    await storageAdapter.removeItem(key);
   }
 }
 

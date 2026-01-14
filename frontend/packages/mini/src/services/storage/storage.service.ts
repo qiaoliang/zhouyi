@@ -33,6 +33,12 @@ export class StorageService {
    */
   async set<T>(key: string, data: T, options?: StorageOptions): Promise<boolean> {
     try {
+      // 检查 wx 对象是否存在
+      if (typeof wx === 'undefined' || !wx.setStorage) {
+        console.warn('[StorageService] wx.setStorage is not available');
+        return false;
+      }
+
       const storageKey = this.getKey(key);
       const value = {
         data,
@@ -61,6 +67,12 @@ export class StorageService {
    */
   async get<T>(key: string): Promise<T | null> {
     try {
+      // 检查 wx 对象是否存在
+      if (typeof wx === 'undefined' || !wx.getStorage) {
+        console.warn('[StorageService] wx.getStorage is not available');
+        return null;
+      }
+
       const storageKey = this.getKey(key);
 
       const value = await new Promise<any>((resolve, reject) => {
@@ -69,7 +81,7 @@ export class StorageService {
           success: (res) => resolve(res.data),
           fail: (err) => {
             // 数据不存在是正常情况,不报错
-            if (err.errMsg.includes('data not found')) {
+            if (err.errMsg && err.errMsg.includes('data not found')) {
               resolve(null);
             } else {
               reject(err);
@@ -100,6 +112,12 @@ export class StorageService {
    */
   async remove(key: string): Promise<boolean> {
     try {
+      // 检查 wx 对象是否存在
+      if (typeof wx === 'undefined' || !wx.removeStorage) {
+        console.warn('[StorageService] wx.removeStorage is not available');
+        return false;
+      }
+
       const storageKey = this.getKey(key);
 
       await new Promise((resolve, reject) => {
@@ -122,6 +140,12 @@ export class StorageService {
    */
   async clear(): Promise<boolean> {
     try {
+      // 检查 wx 对象是否存在
+      if (typeof wx === 'undefined' || !wx.clearStorage) {
+        console.warn('[StorageService] wx.clearStorage is not available');
+        return false;
+      }
+
       await new Promise((resolve, reject) => {
         wx.clearStorage({
           success: () => resolve(true),
@@ -141,6 +165,12 @@ export class StorageService {
    */
   async getInfo(): Promise<WechatMiniprogram.GetStorageInfoOptionResult | null> {
     try {
+      // 检查 wx 对象是否存在
+      if (typeof wx === 'undefined' || !wx.getStorageInfo) {
+        console.warn('[StorageService] wx.getStorageInfo is not available');
+        return null;
+      }
+
       return await new Promise((resolve, reject) => {
         wx.getStorageInfo({
           success: (res) => resolve(res),
