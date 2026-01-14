@@ -78,6 +78,10 @@ export interface IInterpretation {
     mutualAnalysis: string;    // 互卦分析
     timingAnalysis: string;    // 应期分析
     advice: string;            // 综合建议
+    career?: string;           // 事业解读
+    relationship?: string;     // 感情解读
+    health?: string;           // 健康解读
+    wealth?: string;           // 财运解读
   };                        // 详细解卦 (付费)
   precise?: string;        // 精准解卦 (付费)
 }
@@ -221,6 +225,10 @@ export class DivinationRecord {
           mutualAnalysis: { type: String },
           timingAnalysis: { type: String },
           advice: { type: String },
+          career: { type: String },
+          relationship: { type: String },
+          health: { type: String },
+          wealth: { type: String },
         },
         _id: false,
       },
