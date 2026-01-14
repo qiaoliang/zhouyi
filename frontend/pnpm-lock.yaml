@@ -106,6 +106,9 @@ importers:
       '@babel/runtime':
         specifier: ^7.23.0
         version: 7.28.6
+      '@react-native-community/cli-platform-android':
+        specifier: ^20.1.0
+        version: 20.1.0
       '@react-native/eslint-config':
         specifier: ^0.72.0
         version: 0.72.2(eslint@8.57.1)(jest@29.7.0(@types/node@25.0.7))(prettier@3.7.4)(typescript@5.9.3)
@@ -1573,6 +1576,9 @@ packages:
   '@react-native-community/cli-clean@11.4.1':
     resolution: {integrity: sha512-cwUbY3c70oBGv3FvQJWe2Qkq6m1+/dcEBonMDTYyH6i+6OrkzI4RkIGpWmbG1IS5JfE9ISUZkNL3946sxyWNkw==}
 
+  '@react-native-community/cli-config-android@20.1.0':
+    resolution: {integrity: sha512-3A01ZDyFeCALzzPcwP/fleHoP3sGNq1UX7FzxkTrOFX8RRL9ntXNXQd27E56VU4BBxGAjAJT4Utw8pcOjJceIA==}
+
   '@react-native-community/cli-config@11.4.1':
     resolution: {integrity: sha512-sLdv1HFVqu5xNpeaR1+std0t7FFZaobpmpR0lFCOzKV7H/l611qS2Vo8zssmMK+oQbCs5JsX3SFPciODeIlaWA==}
 
@@ -1588,6 +1594,9 @@ packages:
   '@react-native-community/cli-platform-android@11.4.1':
     resolution: {integrity: sha512-VMmXWIzk0Dq5RAd+HIEa3Oe7xl2jso7+gOr6E2HALF4A3fCKUjKZQ6iK2t6AfnY04zftvaiKw6zUXtrfl52AVQ==}
 
+  '@react-native-community/cli-platform-android@20.1.0':
+    resolution: {integrity: sha512-TeHPDThOwDppQRpndm9kCdRCBI8AMy3HSIQ+iy7VYQXL5BtZ5LfmGdusoj7nVN/ZGn0Lc6Gwts5qowyupXdeKg==}
+
   '@react-native-community/cli-platform-ios@11.4.1':
     resolution: {integrity: sha512-RPhwn+q3IY9MpWc9w/Qmzv03mo8sXdah2eSZcECgweqD5SHWtOoRCUt11zM8jASpAQ8Tm5Je7YE9bHvdwGl4hA==}
 
@@ -1599,6 +1608,9 @@ packages:
 
   '@react-native-community/cli-tools@11.4.1':
     resolution: {integrity: sha512-GuQIuY/kCPfLeXB1aiPZ5HvF+e/wdO42AYuNEmT7FpH/0nAhdTxA9qjL8m3vatDD2/YK7WNOSVNsl2UBZuOISg==}
+
+  '@react-native-community/cli-tools@20.1.0':
+    resolution: {integrity: sha512-/YmzHGOkY6Bgrv4OaA1L8rFqsBlQd1EB2/ipAoKPiieV0EcB5PUamUSuNeFU3sBZZTYQCUENwX4wgOHgFUlDnQ==}
 
   '@react-native-community/cli-types@11.4.1':
     resolution: {integrity: sha512-B3q9A5BCneLDSoK/iSJ06MNyBn1qTxjdJeOgeS3MiCxgJpPcxyn/Yrc6+h0Cu9T9sgWj/dmectQPYWxtZeo5VA==}
@@ -2436,6 +2448,9 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+
+  '@vscode/sudo-prompt@9.3.2':
+    resolution: {integrity: sha512-gcXoCN00METUNFeQOFJ+C9xUI0DKB+0EGMVg7wbVYRHBw2Eq3fKisDZOkRdOz3kqXRKOENMfShPOmypw1/8nOw==}
 
   '@vue/compiler-core@3.5.26':
     resolution: {integrity: sha512-vXyI5GMfuoBCnv5ucIT7jhHKl55Y477yxP6fc4eUswjP8FG3FFVFd41eNDArR+Uk3QKn2Z85NavjaxLxOC19/w==}
@@ -9769,6 +9784,13 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
+  '@react-native-community/cli-config-android@20.1.0':
+    dependencies:
+      '@react-native-community/cli-tools': 20.1.0
+      fast-glob: 3.3.3
+      fast-xml-parser: 4.5.3
+      picocolors: 1.1.1
+
   '@react-native-community/cli-config@11.4.1':
     dependencies:
       '@react-native-community/cli-tools': 11.4.1
@@ -9826,6 +9848,14 @@ snapshots:
       logkitty: 0.7.1
     transitivePeerDependencies:
       - encoding
+
+  '@react-native-community/cli-platform-android@20.1.0':
+    dependencies:
+      '@react-native-community/cli-config-android': 20.1.0
+      '@react-native-community/cli-tools': 20.1.0
+      execa: 5.1.1
+      logkitty: 0.7.1
+      picocolors: 1.1.1
 
   '@react-native-community/cli-platform-ios@11.4.1':
     dependencies:
@@ -9888,6 +9918,19 @@ snapshots:
       shell-quote: 1.8.3
     transitivePeerDependencies:
       - encoding
+
+  '@react-native-community/cli-tools@20.1.0':
+    dependencies:
+      '@vscode/sudo-prompt': 9.3.2
+      appdirsjs: 1.2.7
+      execa: 5.1.1
+      find-up: 5.0.0
+      launch-editor: 2.12.0
+      mime: 2.6.0
+      ora: 5.4.1
+      picocolors: 1.1.1
+      prompts: 2.4.2
+      semver: 7.7.3
 
   '@react-native-community/cli-types@11.4.1':
     dependencies:
@@ -11314,6 +11357,8 @@ snapshots:
       eslint-visitor-keys: 3.4.3
 
   '@ungap/structured-clone@1.3.0': {}
+
+  '@vscode/sudo-prompt@9.3.2': {}
 
   '@vue/compiler-core@3.5.26':
     dependencies:
@@ -14973,7 +15018,6 @@ snapshots:
     dependencies:
       picocolors: 1.1.1
       shell-quote: 1.8.3
-    optional: true
 
   less-loader@10.2.0(less@4.5.1)(webpack@5.91.0(@swc/core@1.3.96)):
     dependencies:
