@@ -57,6 +57,10 @@ interface DetailedDivinationData {
       luckyRating: number
     }
   }
+  precise?: {
+    personalizedAdvice: string
+    precise: string
+  }
 }
 
 function DetailedDivinationPage() {
@@ -91,6 +95,17 @@ function DetailedDivinationPage() {
 
       // 加载详细解卦数据
       const detailedData = await divinationService.getDetailedDivination(recordId)
+
+      // 尝试加载精准解读数据
+      try {
+        const preciseData = await divinationService.getPreciseInterpretation(recordId)
+        detailedData.precise = preciseData
+      } catch (preciseError) {
+        // 精准解读未填写或加载失败，不阻塞主流程
+        console.log('精准解读数据未填写或加载失败:', preciseError)
+        detailedData.precise = undefined
+      }
+
       setData(detailedData)
     } catch (error: any) {
       console.error('加载详细解卦失败:', error)
@@ -246,6 +261,53 @@ function DetailedDivinationPage() {
               </View>
             </View>
           </View>
+
+          {/* 精准解读部分 */}
+          {data.precise ? (
+            <View className='analysis-section precise-section'>
+              <Text className='section-title'>✨ 精准解读</Text>
+              <View className='analysis-card precise-card'>
+                <View className='precise-header'>
+                  <Text className='precise-icon'>🎯</Text>
+                  <Text className='precise-title'>基于您个人信息的专属解读</Text>
+                </View>
+                <View className='precise-content'>
+                  <Text className='precise-text'>{data.precise.precise}</Text>
+                </View>
+                <View className='precise-advice'>
+                  <Text className='advice-label'>个性化建议：</Text>
+                  <Text className='advice-text'>{data.precise.personalizedAdvice}</Text>
+                </View>
+              </View>
+            </View>
+          ) : (
+            <View className='analysis-section precise-section'>
+              <View className='analysis-card precise-upsell-card'>
+                <View className='upsell-header'>
+                  <Text className='upsell-icon'>🎁</Text>
+                  <Text className='upsell-title'>获取精准解读</Text>
+                </View>
+                <Text className='upsell-desc'>
+                  填写您的个人信息，获得基于生辰八字的专属精准解读
+                </Text>
+                <View className='upsell-features'>
+                  <Text className='feature-item'>✓ 基于您的生辰八字</Text>
+                  <Text className='feature-item'>✓ 针对您的问题量身定制</Text>
+                  <Text className='feature-item'>✓ 更精准的解读和建议</Text>
+                </View>
+                <Button
+                  className='upsell-button'
+                  onClick={() => {
+                    Taro.navigateTo({
+                      url: `/pages/precise-form/index?recordId=${recordId}`
+                    })
+                  }}
+                >
+                  填写信息获取精准解读
+                </Button>
+              </View>
+            </View>
+          )}
         </ScrollView>
       )}
     </View>

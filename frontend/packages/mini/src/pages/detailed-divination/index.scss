@@ -310,3 +310,96 @@
   font-size: 20px;
   color: #D4AF37;
 }
+
+/* 精准解读部分样式 */
+.precise-section {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.precise-card {
+  background: linear-gradient(135deg, #FFF9E6 0%, #FFF4D6 100%);
+  border-left: 4px solid #F5A623;
+}
+
+.precise-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.precise-icon {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.precise-title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+  color: #F5A623;
+}
+
+.precise-content {
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+.precise-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333333;
+}
+
+.precise-upsell-card {
+  background: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%);
+  border-left: 4px solid #6C757D;
+}
+
+.upsell-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.upsell-icon {
+  font-size: 32px;
+  margin-right: 12px;
+}
+
+.upsell-title {
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.upsell-desc {
+  font-size: 14px;
+  color: #6C757D;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.upsell-features {
+  margin-bottom: 20px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.upsell-button {
+  width: 100%;
+  background: linear-gradient(135deg, #F5A623 0%, #E8941C 100%);
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.upsell-button::after {
+  border: none;
+}
