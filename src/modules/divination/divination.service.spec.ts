@@ -154,11 +154,20 @@ describe('DivinationService', () => {
     countDocuments: jest.fn(),
   };
 
-  const mockDivinationRecordModel = {
-    find: jest.fn().mockReturnValue(mockSortSkipLimit),
-    countDocuments: jest.fn(),
-    findOne: jest.fn().mockReturnValue({ exec: mockFindOneExec }),
-  };
+  const mockDivinationRecordModel = function(data: any) {
+    return {
+      ...data,
+      _id: '507f1f77bcf86cd799439012',
+      save: jest.fn().mockResolvedValue({
+        _id: '507f1f77bcf86cd799439012',
+        ...data,
+      }),
+    };
+  } as any;
+
+  mockDivinationRecordModel.find = jest.fn().mockReturnValue(mockSortSkipLimit);
+  mockDivinationRecordModel.countDocuments = jest.fn();
+  mockDivinationRecordModel.findOne = jest.fn().mockReturnValue({ exec: mockFindOneExec });
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({

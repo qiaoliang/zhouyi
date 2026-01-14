@@ -87,20 +87,20 @@ export class User {
    * 微信开放平台UnionID (唯一标识)
    * 同一用户在不同应用下唯一
    */
-  @Prop({ type: String, sparse: true, index: true })
+  @Prop({ type: String, sparse: true })
   unionId?: string;
 
   /**
    * 微信小程序OpenID
    * 用户在某个小程序下的唯一标识
    */
-  @Prop({ type: String, sparse: true, index: true })
+  @Prop({ type: String, sparse: true })
   openId?: string;
 
   /**
    * 手机号 (加密存储)
    */
-  @Prop({ type: String, sparse: true, index: true })
+  @Prop({ type: String, sparse: true })
   phoneNumber?: string;
 
   /**
@@ -155,7 +155,7 @@ export class User {
    * true: 游客模式 (功能受限)
    * false: 正式用户
    */
-  @Prop({ type: Boolean, default: false, index: true })
+  @Prop({ type: Boolean, default: false })
   isGuest: boolean;
 
   /**

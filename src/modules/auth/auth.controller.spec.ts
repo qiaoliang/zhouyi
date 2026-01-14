@@ -9,6 +9,7 @@ import { AuthService } from './auth.service';
 import { RedisService } from '../redis/redis.service';
 import { SmsService } from '../../services/sms/sms.service';
 import { WechatService } from '../../services/wechat/wechat.service';
+import { UserService } from '../../services/user/user.service';
 import { ResponseInterceptor } from '../../common/interceptors/response.interceptor';
 import { HttpExceptionFilter } from '../../common/filters/http-exception.filter';
 import { UserDataBuilder } from '../../test/helpers/test-data.builder';
@@ -50,6 +51,7 @@ describe('AuthController (e2e)', () => {
       context.configService as any,
       context.smsService as any,
       context.wechatService as any,
+      {} as any, // UserService mock
     );
 
     const moduleFixture: TestingModule = await Test.createTestingModule({

@@ -119,13 +119,13 @@ export class DivinationRecord {
   /**
    * 用户ID (正式用户)
    */
-  @Prop({ type: Types.ObjectId, index: true })
+  @Prop({ type: Types.ObjectId })
   userId?: Types.ObjectId;
 
   /**
    * 游客设备ID (游客模式)
    */
-  @Prop({ type: String, index: true })
+  @Prop({ type: String })
   guestId?: string;
 
   /**
@@ -248,7 +248,7 @@ export class DivinationRecord {
   /**
    * 是否收藏
    */
-  @Prop({ type: Boolean, default: false, index: true })
+  @Prop({ type: Boolean, default: false })
   isFavorite: boolean;
 
   /**

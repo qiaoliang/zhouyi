@@ -7,6 +7,7 @@ import { User, UserDocument } from '../../database/schemas/user.schema';
 import { RedisService } from '../redis/redis.service';
 import { SmsService } from '../../services/sms/sms.service';
 import { WechatService } from '../../services/wechat/wechat.service';
+import { UserService } from '../../services/user/user.service';
 import { UserDataBuilder, VerificationCodeDataBuilder } from '../../test/helpers/test-data.builder';
 import { MockFactory, TestContext } from '../../test/helpers/mock.factory';
 
@@ -44,6 +45,10 @@ describe('AuthService', () => {
         { provide: RedisService, useValue: context.redisService },
         { provide: SmsService, useValue: context.smsService },
         { provide: WechatService, useValue: context.wechatService },
+        { provide: UserService, useValue: {
+          updateLastLogin: jest.fn().mockResolvedValue({}),
+          updateUserFromWechat: jest.fn().mockResolvedValue({}),
+        }},
         {
           provide: 'UserModel',
           useValue: MockFactory.createUserModel(mockUsers),
