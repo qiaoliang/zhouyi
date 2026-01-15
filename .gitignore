@@ -91,3 +91,6 @@ coverage/
 
 # 本地开发数据
 .dev/
+
+# Redis 数据库文件
+dump.rdb
