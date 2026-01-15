@@ -15,6 +15,7 @@ import { HexagramAnalysisService } from './hexagram-analysis.service';
 import { InterpretationService } from './interpretation.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { SubscriptionGuard, RequireSubscription } from '../membership/guards/subscription.guard';
+import { RateLimitGuard } from './guards/rate-limit.guard';
 import { Public } from '../../common/decorators/public.decorator';
 import { CurrentUser } from '../../common/decorators/current-user.decorator';
 import { PreciseInterpretationDto, UpdatePreciseInfoDto } from './dto/precise-interpretation.dto';
@@ -100,6 +101,7 @@ export class DivinationController {
    * }
    */
   @Public()
+  @UseGuards(RateLimitGuard)
   @Post('divinate/guest')
   async guestDivinate(@Body() dto: GuestDivinateDto, @Req() req: any) {
     // 执行起卦
