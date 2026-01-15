@@ -79,10 +79,16 @@ check_docker() {
     print_success "Docker环境检查通过"
 }
 
+# 全局变量：端口占用类型
+PORT_OCCUPANCY_TYPE=0
+
 # 检查端口是否被占用
 check_port() {
     local port=$1
     local service_name=$2
+    
+    # 重置全局变量
+    PORT_OCCUPANCY_TYPE=0
     
     if lsof -Pi :$port -sTCP:LISTEN -t >/dev/null 2>&1; then
         print_warning "端口 $port ($service_name) 已被占用"
@@ -93,18 +99,18 @@ check_port() {
         if [ -n "$container_name" ]; then
             local container_info=$(docker inspect --format='{{.Name}}' $container_name 2>/dev/null | sed 's/\///')
             print_warning "端口被 Docker 容器占用: $container_info"
-            return 1
+            PORT_OCCUPANCY_TYPE=1
+            return 0
         else
             # 检查是否被本地进程占用
             local pid=$(lsof -ti:$port 2>/dev/null | head -1)
             if [ -n "$pid" ]; then
                 local process_info=$(ps -p $pid -o command= 2>/dev/null)
                 print_warning "端口被进程占用 (PID: $pid): $process_info"
-                return 2
+                PORT_OCCUPANCY_TYPE=2
+                return 0
             fi
         fi
-        
-        return 0
     fi
     
     return 0
@@ -179,9 +185,8 @@ check_and_cleanup_ports() {
         IFS=':' read -r port service_name <<< "$port_info"
         
         check_port $port "$service_name"
-        local status=$?
         
-        if [ $status -eq 1 ]; then
+        if [ $PORT_OCCUPANCY_TYPE -eq 1 ]; then
             # Docker 容器占用
             conflicts_found=1
             if [ "$auto_cleanup" = true ]; then
@@ -204,7 +209,7 @@ check_and_cleanup_ports() {
                     exit 1
                 fi
             fi
-        elif [ $status -eq 2 ]; then
+        elif [ $PORT_OCCUPANCY_TYPE -eq 2 ]; then
             # 本地进程占用
             conflicts_found=1
             if [ "$auto_cleanup" = true ]; then
@@ -497,4 +502,4 @@ main() {
 }
 
 # 运行主函数
-main
+main "$@"
