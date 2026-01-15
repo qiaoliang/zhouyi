@@ -71,4 +71,4 @@ fi
 
 # 启动应用
 echo "[ENTRYPOINT] 启动应用..."
-exec pm2-runtime start dist/main.js --name zhouyi-api
+exec pm2-runtime start dist/src/main.js --name zhouyi-api

@@ -71,7 +71,6 @@ services:
       - zhouyi-network
     volumes:
       - ./logs:/app/logs
-    command: sh -c "npm run start:prod"
 
   # MongoDB Express（Web管理界面）
   mongo-express:
