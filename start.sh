@@ -3,6 +3,24 @@
 # 周易通 - 一键启动脚本
 # 自动启动所有Docker服务
 
+# 先检查帮助参数
+for arg in "$@"; do
+    case $arg in
+        --help|-h)
+            echo "用法: $0 [选项]"
+            echo ""
+            echo "选项:"
+            echo "  --auto-cleanup    自动清理端口冲突和容器冲突，无需手动确认"
+            echo "  --help, -h        显示此帮助信息"
+            echo ""
+            echo "示例:"
+            echo "  $0                # 交互模式启动"
+            echo "  $0 --auto-cleanup # 自动清理并启动"
+            exit 0
+            ;;
+    esac
+done
+
 set -e
 
 # 颜色定义
@@ -59,6 +77,146 @@ check_docker() {
     fi
 
     print_success "Docker环境检查通过"
+}
+
+# 检查端口是否被占用
+check_port() {
+    local port=$1
+    local service_name=$2
+    
+    if lsof -Pi :$port -sTCP:LISTEN -t >/dev/null 2>&1; then
+        print_warning "端口 $port ($service_name) 已被占用"
+        
+        # 检查是否被 Docker 容器占用
+        local container_name=$(docker ps -q --filter "publish=$port" 2>/dev/null | head -1)
+        
+        if [ -n "$container_name" ]; then
+            local container_info=$(docker inspect --format='{{.Name}}' $container_name 2>/dev/null | sed 's/\///')
+            print_warning "端口被 Docker 容器占用: $container_info"
+            return 1
+        else
+            # 检查是否被本地进程占用
+            local pid=$(lsof -ti:$port 2>/dev/null | head -1)
+            if [ -n "$pid" ]; then
+                local process_info=$(ps -p $pid -o command= 2>/dev/null)
+                print_warning "端口被进程占用 (PID: $pid): $process_info"
+                return 2
+            fi
+        fi
+        
+        return 0
+    fi
+    
+    return 0
+}
+
+# 清理端口占用
+cleanup_port() {
+    local port=$1
+    local service_name=$2
+    
+    print_info "清理端口 $port ($service_name) 的占用..."
+    
+    # 先尝试停止 Docker 容器
+    local container_name=$(docker ps -q --filter "publish=$port" 2>/dev/null | head -1)
+    if [ -n "$container_name" ]; then
+        local container_info=$(docker inspect --format='{{.Name}}' $container_name 2>/dev/null | sed 's/\///')
+        print_info "停止 Docker 容器: $container_info"
+        docker stop $container_name >/dev/null 2>&1
+        sleep 2
+        
+        # 检查端口是否释放
+        if lsof -Pi :$port -sTCP:LISTEN -t >/dev/null 2>&1; then
+            print_warning "Docker 容器停止后端口仍被占用"
+        else
+            print_success "端口已释放"
+            return 0
+        fi
+    fi
+    
+    # 如果端口仍被占用，尝试终止进程
+    local pid=$(lsof -ti:$port 2>/dev/null | head -1)
+    if [ -n "$pid" ]; then
+        print_warning "终止占用端口的进程 (PID: $pid)"
+        kill -9 $pid >/dev/null 2>&1
+        sleep 2
+        
+        # 检查端口是否释放
+        if lsof -Pi :$port -sTCP:LISTEN -t >/dev/null 2>&1; then
+            print_error "无法释放端口 $port"
+            return 1
+        else
+            print_success "端口已释放"
+            return 0
+        fi
+    fi
+    
+    return 0
+}
+
+# 检查并清理端口冲突
+check_and_cleanup_ports() {
+    print_info "检查端口冲突..."
+    
+    local ports_to_check=(
+        "3000:后端API"
+        "27017:MongoDB"
+        "6379:Redis"
+        "8081:MongoDB Express"
+        "8082:Redis Commander"
+    )
+    
+    local conflicts_found=0
+    local auto_cleanup=false
+    
+    # 检查是否传入自动清理参数
+    if [ "$1" = "--auto-cleanup" ]; then
+        auto_cleanup=true
+        print_info "自动清理模式已启用"
+    fi
+    
+    for port_info in "${ports_to_check[@]}"; do
+        IFS=':' read -r port service_name <<< "$port_info"
+        
+        check_port $port "$service_name"
+        local status=$?
+        
+        if [ $status -eq 1 ]; then
+            # Docker 容器占用
+            conflicts_found=1
+            if [ "$auto_cleanup" = true ]; then
+                print_info "自动停止占用端口的 Docker 容器..."
+                cleanup_port $port "$service_name"
+            else
+                read -p "$(echo -e ${YELLOW}是否停止占用端口的 Docker 容器? [y/N]: ${NC})" stop_container
+                if [ "$stop_container" = "y" ] || [ "$stop_container" = "Y" ]; then
+                    cleanup_port $port "$service_name"
+                else
+                    print_error "端口冲突未解决，无法启动服务"
+                    exit 1
+                fi
+            fi
+        elif [ $status -eq 2 ]; then
+            # 本地进程占用
+            conflicts_found=1
+            if [ "$auto_cleanup" = true ]; then
+                print_info "自动终止占用端口的进程..."
+                cleanup_port $port "$service_name"
+            else
+                read -p "$(echo -e ${YELLOW}是否终止占用端口的进程? [y/N]: ${NC})" kill_process
+                if [ "$kill_process" = "y" ] || [ "$kill_process" = "Y" ]; then
+                    cleanup_port $port "$service_name"
+                else
+                    print_error "端口冲突未解决，无法启动服务"
+                    exit 1
+                fi
+            fi
+        fi
+    done
+    
+    if [ $conflicts_found -eq 0 ]; then
+        print_success "所有端口可用"
+    fi
 }
 
 # 检查环境变量文件
@@ -131,6 +289,62 @@ build_images() {
     fi
 
     print_success "镜像构建完成"
+}
+
+# 检查并停止冲突的 Docker 容器
+check_and_stop_conflicting_containers() {
+    print_info "检查 Docker 容器冲突..."
+    
+    # 定义需要检查的容器名称
+    local containers=(
+        "zhouyi-mongodb"
+        "zhouyi-redis"
+        "zhouyi-backend"
+        "zhouyi-mongo-express"
+        "zhouyi-redis-commander"
+    )
+    
+    local conflicts_found=0
+    
+    for container in "${containers[@]}"; do
+        if docker ps -a --format '{{.Names}}' | grep -q "^${container}$"; then
+            if docker ps --format '{{.Names}}' | grep -q "^${container}$"; then
+                print_warning "发现运行中的容器: $container"
+                conflicts_found=1
+            fi
+        fi
+    done
+    
+    if [ $conflicts_found -eq 1 ]; then
+        echo ""
+        read -p "$(echo -e ${YELLOW}检测到有 Docker 容器正在运行，是否停止它们? [y/N]: ${NC})" stop_containers
+        
+        if [ "$stop_containers" = "y" ] || [ "$stop_containers" = "Y" ]; then
+            print_info "停止所有相关容器..."
+            
+            if docker compose version &> /dev/null; then
+                docker compose -f $COMPOSE_FILE down 2>/dev/null || true
+            else
+                docker-compose -f $COMPOSE_FILE down 2>/dev/null || true
+            fi
+            
+            # 手动停止可能残留的容器
+            for container in "${containers[@]}"; do
+                if docker ps --format '{{.Names}}' | grep -q "^${container}$"; then
+                    print_info "停止容器: $container"
+                    docker stop $container >/dev/null 2>&1
+                fi
+            done
+            
+            sleep 2
+            print_success "所有容器已停止"
+        else
+            print_error "容器冲突未解决，无法启动服务"
+            exit 1
+        fi
+    else
+        print_success "无容器冲突"
+    fi
 }
 
 # 启动服务
@@ -247,12 +461,42 @@ show_access_info() {
 
 # 主函数
 main() {
+    local auto_cleanup=false
+    
+    # 检查命令行参数
+    for arg in "$@"; do
+        case $arg in
+            --auto-cleanup)
+                auto_cleanup=true
+                ;;
+        esac
+    done
+    
     print_title
 
     # 检查环境
     check_docker
     check_env_file
     create_directories
+
+    # 检查并清理端口冲突
+    if [ "$auto_cleanup" = true ]; then
+        check_and_cleanup_ports --auto-cleanup
+    else
+        check_and_cleanup_ports
+    fi
+    
+    # 检查并停止冲突的容器
+    if [ "$auto_cleanup" = true ]; then
+        print_info "自动停止冲突的容器..."
+        if docker compose version &> /dev/null; then
+            docker compose -f $COMPOSE_FILE down 2>/dev/null || true
+        else
+            docker-compose -f $COMPOSE_FILE down 2>/dev/null || true
+        fi
+    else
+        check_and_stop_conflicting_containers
+    fi
 
     # 询问是否重新构建
     echo ""
