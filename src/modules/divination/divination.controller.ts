@@ -12,12 +12,14 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsString, IsNumber } from 'class-validator';
 import { DivinationService } from './divination.service';
 import { HexagramAnalysisService } from './hexagram-analysis.service';
+import { InterpretationService } from './interpretation.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { SubscriptionGuard, RequireSubscription } from '../membership/guards/subscription.guard';
 import { Public } from '../../common/decorators/public.decorator';
 import { CurrentUser } from '../../common/decorators/current-user.decorator';
 import { PreciseInterpretationDto, UpdatePreciseInfoDto } from './dto/precise-interpretation.dto';
 import { DivinateDto } from './dto/divinate.dto';
+import { GuestDivinateDto } from './dto/guest-divinate.dto';
 
 /**
  * 分页查询DTO
@@ -43,6 +45,7 @@ export class DivinationController {
   constructor(
     private readonly divinationService: DivinationService,
     private readonly analysisService: HexagramAnalysisService,
+    private readonly interpretationService: InterpretationService,
   ) {}
 
   /**
@@ -73,6 +76,83 @@ export class DivinationController {
         hexagram,
         recordId: record._id,
         timestamp: record.createdAt,
+      },
+      message: '起卦成功',
+      timestamp: Date.now(),
+    };
+  }
+
+  /**
+   * 游客卜卦接口
+   * 公开接口，无需认证
+   *
+   * @param dto 游客卜卦请求参数
+   * @param req 请求对象
+   * @returns 卦象信息和解读
+   *
+   * @example
+   * POST /api/v1/divination/divinate/guest
+   * {
+   *   "device": {
+   *     "platform": "mini",
+   *     "deviceId": "unique-device-id-123"
+   *   }
+   * }
+   */
+  @Public()
+  @Post('divinate/guest')
+  async guestDivinate(@Body() dto: GuestDivinateDto, @Req() req: any) {
+    // 执行起卦
+    const hexagram = await this.divinationService.performDivination();
+
+    // 获取卦象详细数据用于生成解读
+    const hexagramData = await this.divinationService['hexagramModel']
+      .findOne({ sequence: hexagram.primary.sequence })
+      .exec();
+
+    if (!hexagramData) {
+      return {
+        success: false,
+        error: {
+          code: 'HEXAGRAM_NOT_FOUND',
+          message: '卦象数据不存在',
+        },
+        timestamp: Date.now(),
+      };
+    }
+
+    // 生成 guestId
+    const guestId = dto.device.deviceId;
+
+    // 生成解读
+    const interpretation = await this.interpretationService.generateBasicInterpretation(
+      hexagramData,
+    );
+
+    // 保存游客记录
+    const record = await this.divinationService.saveGuestDivinationRecord(
+      hexagram,
+      guestId,
+      dto.device,
+      req.ip,
+    );
+
+    return {
+      success: true,
+      data: {
+        hexagram,
+        interpretation,
+        recordId: record._id,
+        timestamp: record.createdAt,
+        loginPrompt: {
+          title: '解锁专业解卦',
+          message: '登录后可获得基于动爻的精准解读和个性化建议',
+          features: [
+            '基于动爻的精准解读',
+            '个性化建议',
+            '会员专属深度解读',
+          ],
+        },
       },
       message: '起卦成功',
       timestamp: Date.now(),
