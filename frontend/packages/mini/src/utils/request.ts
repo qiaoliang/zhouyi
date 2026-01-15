@@ -167,14 +167,8 @@ const errorHandler = (error: RequestError, config: RequestConfig): void => {
 
     // 根据错误码显示不同提示
     if (error.code === 401) {
-      message = '登录已过期，请重新登录'
-      // 跳转到登录页
-      setTimeout(() => {
-        removeToken()
-        wx.navigateTo({
-          url: '/pages/login/index',
-        })
-      }, 1500)
+      message = '请先登录'
+      // 不自动跳转到登录页，让用户自己决定
     } else if (error.code === 403) {
       message = '没有权限访问'
     } else if (error.code === 404) {

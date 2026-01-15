@@ -77,10 +77,17 @@ function HistoryPage() {
 
       setHasMore(pageNum < result.pagination.totalPages)
       setPage(pageNum)
-    } catch (error) {
+    } catch (error: any) {
       console.error('加载历史记录失败:', error)
+
+      // 根据错误类型显示不同的提示
+      let message = '加载失败'
+      if (error.message?.includes('401') || error.message?.includes('Unauthorized')) {
+        message = '请先登录'
+      }
+
       Taro.showToast({
-        title: '加载失败',
+        title: message,
         icon: 'none'
       })
     } finally {
