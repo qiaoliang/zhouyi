@@ -309,62 +309,6 @@ build_images() {
     print_success "镜像构建完成"
 }
 
-# 检查并停止冲突的 Docker 容器
-check_and_stop_conflicting_containers() {
-    print_info "检查 Docker 容器冲突..."
-    
-    # 定义需要检查的容器名称
-    local containers=(
-        "zhouyi-mongodb"
-        "zhouyi-redis"
-        "zhouyi-backend"
-        "zhouyi-mongo-express"
-        "zhouyi-redis-commander"
-    )
-    
-    local conflicts_found=0
-    
-    for container in "${containers[@]}"; do
-        if docker ps -a --format '{{.Names}}' | grep -q "^${container}$"; then
-            if docker ps --format '{{.Names}}' | grep -q "^${container}$"; then
-                print_warning "发现运行中的容器: $container"
-                conflicts_found=1
-            fi
-        fi
-    done
-    
-    if [ $conflicts_found -eq 1 ]; then
-        echo ""
-        read -p "$(echo -e ${YELLOW}检测到有 Docker 容器正在运行，是否停止它们? [y/N]: ${NC})" stop_containers
-        
-        if [ "$stop_containers" = "y" ] || [ "$stop_containers" = "Y" ]; then
-            print_info "停止所有相关容器..."
-            
-            if docker compose version &> /dev/null; then
-                docker compose -f $COMPOSE_FILE down 2>/dev/null || true
-            else
-                docker-compose -f $COMPOSE_FILE down 2>/dev/null || true
-            fi
-            
-            # 手动停止可能残留的容器
-            for container in "${containers[@]}"; do
-                if docker ps --format '{{.Names}}' | grep -q "^${container}$"; then
-                    print_info "停止容器: $container"
-                    docker stop $container >/dev/null 2>&1
-                fi
-            done
-            
-            sleep 2
-            print_success "所有容器已停止"
-        else
-            print_error "容器冲突未解决，无法启动服务"
-            exit 1
-        fi
-    else
-        print_success "无容器冲突"
-    fi
-}
-
 # 启动服务
 start_services() {
     print_info "启动Docker服务..."
@@ -497,23 +441,39 @@ main() {
     check_env_file
     create_directories
 
-    # 检查并清理端口冲突
+    # 步骤1: 先停止所有相关 Docker 容器
+    print_info "停止所有相关 Docker 容器..."
+    if docker compose version &> /dev/null; then
+        docker compose -f $COMPOSE_FILE down 2>/dev/null || true
+    else
+        docker-compose -f $COMPOSE_FILE down 2>/dev/null || true
+    fi
+    
+    # 手动停止可能残留的容器
+    local containers=(
+        "zhouyi-mongodb"
+        "zhouyi-redis"
+        "zhouyi-backend"
+        "zhouyi-mongo-express"
+        "zhouyi-redis-commander"
+    )
+    
+    for container in "${containers[@]}"; do
+        if docker ps --format '{{.Names}}' | grep -q "^${container}$"; then
+            print_info "停止容器: $container"
+            docker stop $container >/dev/null 2>&1
+        fi
+    done
+    
+    sleep 2
+    print_success "所有容器已停止"
+
+    # 步骤2: 检查并清理端口冲突
+    print_info "检查端口占用情况..."
     if [ "$auto_cleanup" = true ]; then
         check_and_cleanup_ports --auto-cleanup
     else
         check_and_cleanup_ports
-    fi
-    
-    # 检查并停止冲突的容器
-    if [ "$auto_cleanup" = true ]; then
-        print_info "自动停止冲突的容器..."
-        if docker compose version &> /dev/null; then
-            docker compose -f $COMPOSE_FILE down 2>/dev/null || true
-        else
-            docker-compose -f $COMPOSE_FILE down 2>/dev/null || true
-        fi
-    else
-        check_and_stop_conflicting_containers
     fi
 
     # 询问是否重新构建
