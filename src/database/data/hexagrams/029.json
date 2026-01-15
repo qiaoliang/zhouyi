@@ -1,101 +1,106 @@
 {
   "symbol": "䷜",
   "name": "坎为水",
-  "pinyin": "",
+  "pinyin": "kǎn wéi shuǐ",
   "sequence": 29,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "习坎，有孚，维心亨，行有尚。",
+    "translation": "重重险陷，心怀诚信，唯有内心坚守正道方能亨通，前行建功会得到推崇。",
+    "annotation": "坎卦上下皆坎，坎为水、为险、为陷，重坎相叠，险中有险，象征险陷之象，坎有“险陷”“坎坷”“行险”之意，此卦主身处重重险难，唯以诚信守心、坚毅前行，方能涉险过关，行险而不失其正则获推崇。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：习坎，重险也。水流而不盈，行险而不失其信。维心亨，乃以刚中也。行有尚，往有功也。天险不可升也，地险山川丘陵也，王公设险以守其国。险之时用大矣哉！",
+    "translation": "彖传曰：习坎，是重重险陷的意思。水流动而不充盈于险陷，行于险难而不失去诚信。唯有内心亨通，是因为刚爻居守中道。前行得到推崇，是因为往去行动能建功劳。上天的险陷是不可攀登的，大地的险陷是山川丘陵，王公设置险隘以守护自己的国家。险陷顺应时机的作用太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：水洊至，习坎；君子以常德行，习教事。",
+    "translation": "象传曰：水接连不断地涌来，重重险陷相叠，是坎卦之象；君子因此要恒久保持德行，反复研习政教之事，以修德习能应对险难。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "习坎，入于坎窞，凶。",
+      "translation": "身处重重险陷，又坠入深险的陷穴，凶险，初入险地而妄动则深陷。",
+      "xiang": "象曰：习坎入窞，失道凶也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "坎有险，求小得。",
+      "translation": "险陷之中仍有危险，求取小的收获则能得到，身处险难宜循序渐进、不贪大求全。",
+      "xiang": "象曰：求小得，未出中也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "来之坎坎，险且枕，入于坎窞，勿用。",
+      "translation": "来去皆遇重重险陷，险难相伴且枕险而居，又坠入深险陷穴，不可有所作为，宜静守待时。",
+      "xiang": "象曰：来之坎坎，终无功也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "樽酒簋贰，用缶，纳约自牖，终无咎。",
+      "translation": "一樽酒、两碗饭，用朴素的瓦器盛放，从窗户送入简约的盟约，最终没有灾祸，处险以俭、以诚相交则能化险。",
+      "xiang": "象曰：樽酒簋贰，刚柔际也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "坎不盈，祇既平，无咎。",
+      "translation": "险陷尚未充盈，险难的根基已被铲平，没有灾祸，刚中守正而渐平险难。",
+      "xiang": "象曰：坎不盈，中未大也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "系用徽纆，寘于丛棘，三岁不得，凶。",
+      "translation": "被绳索捆绑，放置在荆棘丛中，三年不能脱身，凶险，深陷险难而无刚济则难以脱困。",
+      "xiang": "象曰：上六失道，凶三岁也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "水",
+    "nature": "险陷、坎坷、行险守正、诚信涉险、坚毅克难",
+    "direction": "北",
+    "season": "冬",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、中男、流动、艰难",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、中男、幽深、险阻",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中男",
+    "body": "耳",
+    "animal": "豕、鱼",
+    "color": "黑"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
+    "nature": "yin",
+    "quality": "negative",
     "difficulty": "complex"
   },
   "tags": [
-    "待补充"
+    "险陷",
+    "行险守正",
+    "水洊至",
+    "诚信涉险",
+    "坚毅克难",
+    "修德习能"
   ]
 }

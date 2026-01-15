@@ -1,101 +1,105 @@
 {
   "symbol": "䷴",
   "name": "风山渐",
-  "pinyin": "",
+  "pinyin": "fēng shān jiàn",
   "sequence": 53,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "女归吉，利贞。",
+    "translation": "女子出嫁吉祥，利于坚守正道。",
+    "annotation": "渐卦上巽下艮，巽为风、为顺、为女，艮为山、为止、为静，风渐过山、徐徐而行，女子出嫁、循序渐进，象征渐进之象，渐有“渐进”“渐次”“循序而进”之意，此卦主凡事宜循序渐进、不可躁进，女子出嫁依礼而行、循序归宗则吉，渐道贵在守正、循序、安固，躁进则凶，循序则吉。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：渐之进也，女归吉也。进得位，往有功也。进以正，可以正邦也。其位刚得中也。止而巽，动不穷也。",
+    "translation": "彖传曰：渐卦的进，是女子出嫁的吉祥之进。前进而获得正位，往去能建立功绩。依正道而进，可以端正邦国。卦中阳爻居守中道。静止而又巽顺，行动则不会陷入困穷。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：山上有木，渐；君子以居贤德，善俗。",
+    "translation": "象传曰：高山之上生长树木，木自下而上、渐次生长，是渐卦之象；君子因此修积贤良的德行，改善风俗，以德行渐染世人，循序化民。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "鸿渐于干，小子厉，有言，无咎。",
+      "translation": "鸿雁渐进于水岸，小子有危厉，虽有言语纷争，没有灾祸，初逢渐道，循序而进于水岸，小子躁进则有危，虽有言语之扰，守正循序则无咎。",
+      "xiang": "象曰：小子之厉，义无咎也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "鸿渐于磐，饮食衎衎，吉。",
+      "translation": "鸿雁渐进于磐石之上，饮食安乐，吉祥，柔中守正，循序而进于安固之地，安享其福，吉祥无咎。",
+      "xiang": "象曰：饮食衎衎，不素饱也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "鸿渐于陆，夫征不复，妇孕不育，凶，利御寇。",
+      "translation": "鸿雁渐进于高平之地，丈夫出征而不返回，妻子怀孕而不能生育，凶险，利于抵御寇盗，刚爻居正，躁进于陆，夫妇乖离，生息不成，唯守正御寇则利。",
+      "xiang": "象曰：夫征不复，离群丑也。妇孕不育，失其道也。利御寇，顺相保也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "鸿渐于木，或得其桷，无咎。",
+      "translation": "鸿雁渐进于树木之上，或许能得到平直的椽子，没有灾祸，柔爻居柔，循序而进于木，虽位非其宜，得桷则安，守正无咎。",
+      "xiang": "象曰：或得其桷，顺以巽也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "鸿渐于陵，妇三岁不孕，终莫之胜，吉。",
+      "translation": "鸿雁渐进于高陵之上，妻子三年未能怀孕，最终无人能加以胜害，吉祥，刚中居尊，循序而进于尊位，虽有小人阻隔，终不能胜，守正则吉。",
+      "xiang": "象曰：终莫之胜吉，得所愿也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "鸿渐于逵，其羽可用为仪，吉。",
+      "translation": "鸿雁渐进于四通八达的大路，它的羽毛可用作礼器的装饰，吉祥，阳刚至极，渐道大成，循序而进于通逵，德泽遍及，羽为仪则，吉祥无不利。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "木+土",
+    "nature": "渐进、循序而进、女归吉、居贤德、善风俗",
+    "direction": "东南偏北",
+    "season": "暮春",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "巽",
+        "symbol": "☴",
+        "nature": "巽顺、风、女、顺进、上渐",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、止、静进、下渐",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少男",
+    "body": "手",
+    "animal": "鸡、狗",
+    "color": "青、黄"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "渐进",
+    "循序而进",
+    "山上有木",
+    "女归吉祥",
+    "居贤德",
+    "善风俗"
   ]
 }

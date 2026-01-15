@@ -1,101 +1,106 @@
 {
   "symbol": "䷳",
   "name": "艮为山",
-  "pinyin": "",
+  "pinyin": "gèn wéi shān",
   "sequence": 52,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "艮其背，不获其身，行其庭，不见其人，无咎。",
+    "translation": "静止在背部，不关注自身的感受，行走在庭院中，却看不见他人，没有灾祸。",
+    "annotation": "艮卦上下皆艮，艮为山、为止、为阴、为静，山相叠而静止，山峙不动、各止其位，象征静止之象，艮有“静止”“艮止”“知止”“守位”之意，此卦主知止守正、各安其位，艮其背则不随欲动，不获其身则忘己，行庭不见其人则忘人，忘己忘人、心无妄动，各止其位则无咎，艮道贵在知止、守正、不动心。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：艮，止也。时止则止，时行则行，动静不失其时，其道光明。艮其止，止其所也。上下敌应，不相与也。是以艮其背，不获其身，行其庭，不见其人，无咎也。",
+    "translation": "彖传曰：艮，是静止的意思。应当静止时就静止，应当行动时就行动，动静都不违背时机，其道则光明。艮的静止，是静止在适宜的位置。上下爻相互敌对相应，不相交往。因此静止在背部，不关注自身，行走在庭院中看不见他人，没有灾祸。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：兼山，艮；君子以思不出其位。",
+    "translation": "象传曰：两山相叠、峙立不动，是艮卦之象；君子因此思考问题不超出自己的本位，安守其位、思不出位，知止不妄。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "艮其趾，无咎，利永贞。",
+      "translation": "静止在脚趾，没有灾祸，利于恒久坚守正道，初爻居下，止之于始、动之先，防微杜渐，守正不妄则无咎。",
+      "xiang": "象曰：艮其趾，未失正也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "艮其腓，不拯其随，其心不快。",
+      "translation": "静止在小腿，不能拯救跟随的人，心中不快，柔中守正，止之于腓，动则有随，欲止而不能全止，故心有不快。",
+      "xiang": "象曰：不拯其随，未退听也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "艮其限，列其夤，厉薰心。",
+      "translation": "静止在腰际，脊背的肉被撕裂，危厉如同烈火熏心，刚爻居正，止之过甚、位置不当，强行静止则身心俱伤，招至危厉。",
+      "xiang": "象曰：艮其限，危薰心也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "艮其身，无咎。",
+      "translation": "静止在身体，没有灾祸，柔爻居柔，止之于身、不随欲动，守位知止，故无咎害。",
+      "xiang": "象曰：艮其身，止诸躬也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "艮其辅，言有序，悔亡。",
+      "translation": "静止在口舌，言语有条理，悔恨消亡，柔中居尊，止之于言、谨言慎行，言语有序则无愆，悔亡咎消。",
+      "xiang": "象曰：艮其辅，以中正也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "敦艮，吉。",
+      "translation": "敦厚地坚守静止，吉祥，阳刚至极，艮道大成，敦厚知止、守正不移，不妄动、不逾位，故吉无不利。",
+      "xiang": "象曰：敦艮之吉，以厚终也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土",
+    "nature": "静止、艮止、知止守正、安守本位、思不出位",
+    "direction": "东北",
+    "season": "冬末春初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、止、上止、远止",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、守、下止、近止",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少男",
+    "body": "手",
+    "animal": "狗、鼠",
+    "color": "黄"
   },
   "category": {
     "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "艮止",
+    "知止守正",
+    "兼山艮",
+    "安守本位",
+    "思不出位",
+    "静守正道"
   ]
 }

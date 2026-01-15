@@ -1,101 +1,106 @@
 {
   "symbol": "䷍",
   "name": "火天大有",
-  "pinyin": "",
+  "pinyin": "huǒ tiān dà yǒu",
   "sequence": 14,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "元亨。",
+    "translation": "大为亨通顺利。",
+    "annotation": "大有卦上离下乾，离为火、为光明，乾为天、为刚健，火行天上，光明遍照天下，阳刚之爻居五正位而众阴归从，象征大有所得之象，大有有“大获所有”“丰饶”“富有”之意，此卦主德位兼备、众望所归，是万物丰饶、事业有成的吉祥之象。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：大有，柔得尊位，大中而上下应之，曰大有。其德刚健而文明，应乎天而时行，是以元亨。",
+    "translation": "彖传曰：大有卦，阴柔之爻登上尊贵的君位，居中守大正而上下阳刚之爻皆来应合，所以称大有。卦的德行刚健而又文明，顺应天道且依循时节行事，因此大为亨通。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：火在天上，大有；君子以遏恶扬善，顺天休命。",
+    "translation": "象传曰：火焰在天空中燃烧，光明普照万物，是大有卦之象；君子因此要制止邪恶、宣扬善行，顺应上天的美好天命，保有大有所得的局面。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "无交害，匪咎，艰则无咎。",
+      "translation": "不与人交结而生祸害，本身没有灾祸，在艰难中坚守正道则无任何灾祸。",
+      "xiang": "象曰：大有初九，无交害也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "大车以载，有攸往，无咎。",
+      "translation": "用大车装载财物，有所前往，没有灾祸，才能足以承载所得的福泽。",
+      "xiang": "象曰：大车以载，积中不败也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "公用亨于天子，小人弗克。",
+      "translation": "王公诸侯向天子进献贡品，小人则无法承担这样的重任，也不配拥有如此的富有。",
+      "xiang": "象曰：公用亨于天子，小人害也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "匪其彭，无咎。",
+      "translation": "不自我夸耀所拥有的丰盛财富，谦逊自持，没有灾祸。",
+      "xiang": "象曰：匪其彭无咎，明辨皙也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "厥孚交如，威如，吉。",
+      "translation": "诚信与众人相交，又保有自身的威严，吉祥，恩威并施则能守住大有之势。",
+      "xiang": "象曰：厥孚交如，信以发志也。威如之吉，易而无备也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "自天祐之，吉无不利。",
+      "translation": "得到上天的庇佑，吉祥而无所不利。",
+      "xiang": "象曰：大有上吉，自天祐也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "火+金",
+    "nature": "富有、丰饶、众望所归、文明、刚健",
+    "direction": "东偏南",
+    "season": "春夏之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "离",
+        "symbol": "☲",
+        "nature": "光明、火、中女、文明、照耀",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
+        "name": "乾",
         "symbol": "☰",
-        "nature": "待补充",
+        "nature": "刚健、天、君、父、刚劲",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中女",
+    "body": "目",
+    "animal": "雉、龙",
+    "color": "赤、白"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "simple"
   },
   "tags": [
-    "待补充"
+    "富有",
+    "丰饶",
+    "火在天上",
+    "遏恶扬善",
+    "恩威并施",
+    "众望所归"
   ]
 }

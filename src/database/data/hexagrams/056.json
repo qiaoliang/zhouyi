@@ -1,101 +1,105 @@
 {
   "symbol": "䷷",
   "name": "火山旅",
-  "pinyin": "",
+  "pinyin": "huǒ shān lǚ",
   "sequence": 56,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "小亨，旅贞吉。",
+    "translation": "小有亨通，行旅坚守正道则吉祥。",
+    "annotation": "旅卦上离下艮，离为火、为明、为动，艮为山、为止、为静，火行山上、无依无附，如同行人在外、行旅不定，象征行旅之象，旅有“行旅”“羁旅”“在外漂泊”之意，此卦主身处羁旅、无依无附，行旅之时宜守正、谦柔、明察，不可刚亢、妄动，守正则小有亨通，吉无不利，旅道贵在安身、守正、顺时，躁进则凶，静守则吉。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：旅，小亨，柔得中乎外，而顺乎刚，止而丽乎明，是以小亨旅贞吉也。旅之时义大矣哉！",
+    "translation": "彖传曰：旅卦，小有亨通，阴柔居守外卦的中道，而顺从阳刚，静止而附丽于光明，因此小有亨通，行旅坚守正道则吉祥。旅卦顺应时机的意义太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：山上有火，旅；君子以明慎用刑，而不留狱。",
+    "translation": "象传曰：高山之上有火焰，火行山上、明而不定，是旅卦之象；君子因此明察谨慎地施行刑罚，而不拖延狱讼，明察秋毫、用刑有度，不滞狱讼。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "旅琐琐，斯其所取灾。",
+      "translation": "行旅之时猥琐卑劣，这是自取灾祸，初逢旅道，阴柔居下，行旅猥琐、言行不正，故自取其灾。",
+      "xiang": "象曰：旅琐琐，志穷灾也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "旅即次，怀其资，得童仆贞。",
+      "translation": "行旅来到客舍，怀揣资财，得到忠贞的童仆，柔中守正，行旅得次、怀资得仆，守正安身，吉祥无咎。",
+      "xiang": "象曰：得童仆贞，终无尤也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "旅焚其次，丧其童仆，贞厉。",
+      "translation": "行旅时客舍被焚烧，失去了忠贞的童仆，坚守正道仍有危厉，刚爻居正，刚亢妄动，行旅失次、丧仆焚舍，虽守正仍有危厉。",
+      "xiang": "象曰：旅焚其次，亦以伤矣。以旅与下，其义丧也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "旅于处，得其资斧，我心不快。",
+      "translation": "行旅暂居一处，得到资财与斧钺，心中却不快，刚爻居柔，行旅得位、获资得斧，然居位不当，无久安之地，故心有不快。",
+      "xiang": "象曰：旅于处，未得位也。得其资斧，心未快也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "射雉，一矢亡，终以誉命。",
+      "translation": "射猎雉鸟，丢失一支箭，最终却获得荣誉与天命，柔中居尊，行旅明察，虽失一矢，终获誉命，吉无不利。",
+      "xiang": "象曰：终以誉命，上逮也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "鸟焚其巢，旅人先笑后号咷。丧牛于易，凶。",
+      "translation": "鸟儿的巢穴被焚烧，行旅之人起初欢笑，后来号啕大哭。在易地丢失了牛，凶险，旅极而刚，亢极妄动，巢焚牛丧、先吉后凶，行旅之凶至极。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "火+土",
+    "nature": "行旅、羁旅、在外漂泊、守正安身、明察谦柔",
+    "direction": "南偏北",
+    "season": "晚夏",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "离",
+        "symbol": "☲",
+        "nature": "光明、火、明、动旅、上明",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、止、静旅、下止",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少男",
+    "body": "手",
+    "animal": "雉、狗",
+    "color": "赤、黄"
   },
   "category": {
-    "nature": "yin",
+    "nature": "mixed",
     "quality": "neutral",
-    "difficulty": "complex"
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "行旅",
+    "羁旅漂泊",
+    "山上有火",
+    "守正安身",
+    "明察谦柔",
+    "旅道守正"
   ]
 }

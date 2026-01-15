@@ -1,101 +1,105 @@
 {
   "symbol": "䷘",
   "name": "天雷无妄",
-  "pinyin": "",
+  "pinyin": "tiān léi wú wàng",
   "sequence": 25,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "元亨，利贞。其匪正有眚，不利有攸往。",
+    "translation": "大为亨通，利于坚守正道。若偏离正道则会有灾祸，不宜有所前往。",
+    "annotation": "无妄卦上乾下震，乾为天、为刚健，震为雷、为动，天雷相应，动合天道，象征无妄之象，无妄有“不妄为”“循理而动”“真实无伪”之意，此卦主顺天而行、不妄作非为，坚守正道则亨通，背道妄动则招灾。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：无妄，刚自外来，而为主于内。动而健，刚中而应，大亨以正，天之命也。其匪正有眚，不利有攸往，无妄之往，何之矣？天命不祐，行矣哉？",
+    "translation": "彖传曰：无妄卦，阳刚之爻从外部而来，成为卦内的主宰。行动而刚健，刚爻居守中道而与阴爻相应，大为亨通且坚守正道，这是上天的命令。若偏离正道则有灾祸，不宜有所前往，处于无妄之时却妄动前往，又能去往何处呢？上天的天命不加庇佑，岂能贸然行动呢？"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：天下雷行，物与无妄；先王以茂对时，育万物。",
+    "translation": "象传曰：天空之下雷声震行，万物顺应天道而真实无妄、各循其理；古代先王因此勉力顺应时节，养育世间万物，不违天时。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "无妄，往吉。",
+      "translation": "不妄为、循理而动，有所前往则吉祥。",
+      "xiang": "象曰：无妄之往，得志也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "不耕获，不菑畬，则利有攸往。",
+      "translation": "不刻意追求耕种便收获、不垦荒便得熟田，顺应自然、不妄求功利，如此则利于有所前往。",
+      "xiang": "象曰：不耕获，未富也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "无妄之灾，或系之牛，行人之得，邑人之灾。",
+      "translation": "无妄而来的灾祸，如同有人拴住牛，路人牵走牛得利，邑中主人却遭灾祸，无故遇灾而非自招。",
+      "xiang": "象曰：行人得牛，邑人灾也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "可贞，无咎。",
+      "translation": "能够坚守正道，不妄作非为，便没有灾祸。",
+      "xiang": "象曰：可贞无咎，固有之也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "无妄之疾，勿药有喜。",
+      "translation": "无妄之时患上的小病，无需用药医治，自然会有痊愈的喜报，顺任自然即可。",
+      "xiang": "象曰：无妄之药，不可试也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "无妄，行有眚，无攸利。",
+      "translation": "即便身处无妄之时，若贸然行动仍会有灾祸，没有任何好处，动必有度、不妄行。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "金+木",
+    "nature": "无妄、不妄为、循理而动、真实无伪、顺天而行",
+    "direction": "北偏东",
+    "season": "孟春",
     "trigrams": {
       "upper": {
-        "name": "待补充",
+        "name": "乾",
         "symbol": "☰",
-        "nature": "待补充",
+        "nature": "刚健、天、君、父、天道",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、长男、动进、刚动",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长男",
+    "body": "足",
+    "animal": "龙、马",
+    "color": "白、青"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "无妄",
+    "循理而动",
+    "天下雷行",
+    "顺天而行",
+    "不妄为",
+    "真实无伪"
   ]
 }

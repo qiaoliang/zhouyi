@@ -1,101 +1,105 @@
 {
   "symbol": "䷩",
   "name": "风雷益",
-  "pinyin": "",
+  "pinyin": "fēng léi yì",
   "sequence": 42,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "利有攸往，利涉大川。",
+    "translation": "利于有所前往，利于渡过大河巨川，益道之时，顺时增益、刚健前行，则无往不利。",
+    "annotation": "益卦上巽下震，巽为风、为顺、为入，震为雷、为动、为出，风雷相薄，风助雷势、雷动风行，上顺下动，象征增益之象，益有“增益”“益下利上”“损上益下”之意，此卦主损上益下、惠民利民，上顺下动、上下相益，则事业昌隆，可勇闯险难、建功立业。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：益，损上益下，民说无疆，自上下下，其道大光。利有攸往，中正有庆。利涉大川，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。",
+    "translation": "彖传曰：益卦，减损上方的增益下方的，百姓的喜悦无穷无尽，从上位来到下位，其道理大为光明。利于有所前往，是因为居守中道正直而有吉庆。利于渡过大河巨川，是因为木行水上的道路得以通行。增益而行动，行动而巽顺，日日进步无穷无尽。上天施予、大地化生，其增益没有固定的方向。大凡增益的道理，皆顺应时节而运行。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：风雷，益；君子以见善则迁，有过则改。",
+    "translation": "象传曰：风雷相伴、彼此增益，是益卦之象；君子因此看见善行就前去追随，有了过错就及时改正，增益善德、减损过失，日进其德。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "利用为大作，元吉，无咎。",
+      "translation": "适宜大有作为，大为吉祥，没有灾祸，初受益道，刚健有为，顺时大作则获吉。",
+      "xiang": "象曰：元吉无咎，下不厚事也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "或益之，十朋之龟弗克违，永贞吉。王用享于帝，吉。",
+      "translation": "有人来增益他，即便是价值十朋的大宝龟也不能违背，恒久坚守正道则吉祥。君王以此祭祀天帝，吉祥，柔中守正，得天之益，祭天则获福。",
+      "xiang": "象曰：或益之，自外来也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "益之用凶事，无咎。有孚中行，告公用圭。",
+      "translation": "在凶险之事中施行增益，没有灾祸。心怀诚信、行于中道，持圭玉向王公禀报，益道贵诚，险中益人，诚中而行则无咎。",
+      "xiang": "象曰：益用凶事，固有之也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "中行，告公从。利用为依迁国。",
+      "translation": "行于中道，禀报王公而得到依从。适宜依靠君王迁徙封国，柔顺居上，中行益下，得君助则大业可成。",
+      "xiang": "象曰：告公从，以益志也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "有孚惠心，勿问元吉。有孚惠我德。",
+      "translation": "心怀诚信、存有惠民之心，无需占问也大为吉祥。百姓也心怀诚信，感念我的恩德，刚中居尊，损上益下，以诚信惠民，民亦益之。",
+      "xiang": "象曰：有孚惠心，勿问之矣。惠我德，大得志也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "莫益之，或击之，立心勿恒，凶。",
+      "translation": "没有人来增益他，反而有人来攻击他，立心不恒久，凶险，益道至极，贪益无度、立心不恒，则反受其害。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "木+木",
+    "nature": "增益、损上益下、惠民利民、见善则迁、有过则改",
+    "direction": "东",
+    "season": "春",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "巽",
+        "symbol": "☴",
+        "nature": "巽顺、风、顺、上损、入益",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、动、下益、出益",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长男",
+    "body": "足",
+    "animal": "龙、鸡",
+    "color": "青"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "增益",
+    "损上益下",
+    "风雷益",
+    "惠民利民",
+    "见善则迁",
+    "上下相益"
   ]
 }

@@ -1,101 +1,106 @@
 {
   "symbol": "䷱",
   "name": "火风鼎",
-  "pinyin": "",
+  "pinyin": "huǒ fēng dǐng",
   "sequence": 50,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "元吉，亨。",
+    "translation": "大为吉祥，亨通顺利。",
+    "annotation": "鼎卦上离下巽，离为火、为明、为阳，巽为木、为顺、为阴，木上有火，鼎以木燃火、烹饪成食，鼎又为礼器、重器，象征鼎新、鼎立之象，鼎有“鼎烹”“鼎新”“鼎立”“任贤”之意，此卦主革故鼎新、定鼎安邦，鼎为器之重、食之主，任贤用能、烹饪养贤，则天下安定，故元吉亨通，鼎道贵在居正、养贤、安固。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：鼎，象也。以木巽火，亨饪也。圣人亨以享上帝，而大亨以养圣贤。巽而耳目聪明，柔进而上行，得中而应乎刚，是以元亨。",
+    "translation": "彖传曰：鼎卦，是取法鼎器之象。以木顺火，是烹饪的意思。圣人烹饪祭品以祭祀上帝，而大肆烹饪以奉养圣贤。巽顺而耳目聪明，阴柔渐进而向上前行，居守中道而与阳刚相应，因此大为亨通。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：木上有火，鼎；君子以正位凝命。",
+    "translation": "象传曰：木材之上有火焰，以木燃火、鼎烹成食，是鼎卦之象；君子因此端正居位、凝聚天命，位正则邦安，命凝则国固，鼎定天下。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "鼎颠趾，利出否，得妾以其子，无咎。",
+      "translation": "鼎器颠倒足趾，利于倒出鼎中污浊之物，娶得妾室并生有儿子，没有灾祸，初逢鼎道，颠鼎倒否、革故纳新，虽位卑却能除秽，无咎。",
+      "xiang": "象曰：鼎颠趾，未悖也。利出否，以从贵也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "鼎有实，我仇有疾，不我能即，吉。",
+      "translation": "鼎器中有实食，我的仇怨之人有疾患，不能接近我，吉祥，刚中守正，鼎有实德、养贤有物，虽有小人相忌，却不能加害，吉无不利。",
+      "xiang": "象曰：鼎有实，慎所之也。我仇有疾，终无尤也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "鼎耳革，其行塞，雉膏不食，方雨亏悔，终吉。",
+      "translation": "鼎器的耳柄被革去，移动出行受阻，精美的野鸡肉不能食用，恰逢降雨而消减悔恨，最终吉祥，刚爻居巽，鼎器有缺、行止受阻，然守正待时，雨为和润，终能补缺成吉。",
+      "xiang": "象曰：鼎耳革，失其义也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "鼎折足，覆公餗，其形渥，凶。",
+      "translation": "鼎器折断足趾，倾覆了王公的美食，鼎身被汤汁沾湿，凶险，刚爻居柔，才不胜任、鼎折覆食，居位不当而任重，必招凶灾。",
+      "xiang": "象曰：覆公餗，信如何也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "鼎黄耳金铉，利贞。",
+      "translation": "鼎器有黄色的耳柄、金属的铉杆，利于坚守正道，柔中居尊，鼎道大成，黄为中色、金为刚质，刚柔相济、位正器全，守正则吉。",
+      "xiang": "象曰：鼎黄耳，中以为实也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "鼎玉铉，大吉，无不利。",
+      "translation": "鼎器有玉制的铉杆，大为吉祥，无所不利，阳刚至极，鼎道至善，玉为温润之质，刚柔相济、器美用全，鼎定天下而无所不利。",
+      "xiang": "象曰：玉铉在上，刚柔节也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "火+木",
+    "nature": "鼎新、鼎立、革故鼎新、任贤养贤、正位凝命",
+    "direction": "东南",
+    "season": "春夏之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "离",
+        "symbol": "☲",
+        "nature": "光明、火、明、烹饪、鼎之焰",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "巽",
+        "symbol": "☴",
+        "nature": "巽顺、风、木、顺燃、鼎之薪",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长女",
+    "body": "股",
+    "animal": "雉、鸡",
+    "color": "赤、青"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "鼎新",
+    "革故鼎新",
+    "木上有火",
+    "任贤养贤",
+    "正位凝命",
+    "鼎立安邦"
   ]
 }

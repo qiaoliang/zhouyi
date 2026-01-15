@@ -1,101 +1,106 @@
 {
   "symbol": "䷣",
   "name": "地火明夷",
-  "pinyin": "",
+  "pinyin": "dì huǒ míng yí",
   "sequence": 36,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "利艰贞。",
+    "translation": "利于在艰难中坚守正道，光明被伤、守艰贞则存明。",
+    "annotation": "明夷卦上坤下离，坤为地、为阴、为暗，离为火、为明、为阳，火入地中，光明被遮蔽、阳刚受损伤，象征光明被伤之象，明夷有“光明晦藏”“蒙难”“守明待时”之意，此卦主身处乱世、光明被抑，宜隐忍守正、在艰难中保全自身与明德，静待光明复现之时。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：明入地中，明夷。内文明而外柔顺，以蒙大难，文王以之。利艰贞，晦其明也，内难而能正其志，箕子以之。",
+    "translation": "彖传曰：光明隐入大地之中，就是明夷。内心有文明之德而外表持柔顺之态，以此承受巨大的危难，周文王便是这样做的。利于在艰难中坚守正道，是隐晦自身的光明，身处内部的危难而能端正自己的志向，箕子便是这样做的。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：明入地中，明夷；君子以莅众，用晦而明。",
+    "translation": "象传曰：光明隐入大地之中，光明被蔽而晦藏，是明夷卦之象；君子因此治理众人，外表隐晦自身的智慧，内心却保持光明，外柔内明、以晦保明。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "明夷于飞，垂其翼。君子于行，三日不食。有攸往，主人有言。",
+      "translation": "光明被伤的鸟儿飞翔，低垂着翅膀；君子被迫出行，三天没有进食。有所前往，主人会有言语指责，初遭明夷、宜隐遁避祸，不与人争。",
+      "xiang": "象曰：君子于行，义不食也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "明夷，夷于左股，用拯马壮，吉。",
+      "translation": "光明被伤，伤在左边的大腿，借助强壮的马来拯救，吉祥，柔中守正、得助则能保全明德，化难呈吉。",
+      "xiang": "象曰：六二之吉，顺以则也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "明夷于南狩，得其大首，不可疾贞。",
+      "translation": "在南方狩猎而光明被伤，俘获了首领，不宜急于坚守正道，刚猛抗难、虽获小胜，仍宜隐忍、不可操之过急。",
+      "xiang": "象曰：南狩之志，乃大得也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "入于左腹，获明夷之心，于出门庭。",
+      "translation": "进入左方的腹地，探知光明被伤的内情，于是走出家门庭院，柔婉避祸、洞察局势，明哲保身而遁退。",
+      "xiang": "象曰：入于左腹，获心意也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "箕子之明夷，利贞。",
+      "translation": "如同箕子一般的光明被伤，利于坚守正道，柔中居尊、晦明守正，保全明德而不折，为明夷之正。",
+      "xiang": "象曰：箕子之贞，明不可息也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "不明晦，初登于天，后入于地。",
+      "translation": "没有光明只有晦暗，起初登上天空（光明普照），后来隐入大地（光明全晦），明夷至极、光明尽被遮蔽，警示物极必反，晦极则明将复。",
+      "xiang": "象曰：初登于天，照四国也。后入于地，失则也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+火",
+    "nature": "光明晦藏、蒙难、守明待时、隐忍守正、外柔内明",
+    "direction": "西南",
+    "season": "秋初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "柔顺、地、阴、暗、遮蔽",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "离",
+        "symbol": "☲",
+        "nature": "光明、火、阳、明、文明",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中女",
+    "body": "目",
+    "animal": "雉、牛",
+    "color": "黄、赤"
   },
   "category": {
-    "nature": "yin",
+    "nature": "mixed",
     "quality": "neutral",
     "difficulty": "complex"
   },
   "tags": [
-    "待补充"
+    "明夷",
+    "光明晦藏",
+    "明入地中",
+    "守明待时",
+    "隐忍守正",
+    "外柔内明"
   ]
 }

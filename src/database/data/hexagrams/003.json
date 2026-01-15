@@ -1,101 +1,105 @@
 {
   "symbol": "䷂",
   "name": "水雷屯",
-  "pinyin": "",
+  "pinyin": "shuǐ léi tún",
   "sequence": 3,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "元亨，利贞。勿用有攸往，利建侯。",
+    "translation": "大为亨通，利于坚守正道。不宜有所前往，利于封立诸侯。",
+    "annotation": "屯卦上坎下震，坎为水、为险，震为雷、为动，动于险中，象征万物初生的艰难之象，屯有“难”“聚”之意，此时宜守不宜进，宜立君聚众。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：屯，刚柔始交而难生，动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+    "translation": "彖传曰：屯卦，阳刚与阴柔开始相交，艰难由此产生，在危险中行动，大为亨通而坚守正道。雷雨的变动充塞天地，上天创造万物于草创蒙昧之时，适宜封立诸侯，而天下尚未安宁。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：云雷，屯；君子以经纶。",
+    "translation": "象传曰：云气与雷声相合，是屯卦之象；君子因此要经营筹划，整顿天下大事。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "磐桓，利居贞，利建侯。",
+      "translation": "徘徊不前，利于安守正道，利于封立诸侯。",
+      "xiang": "象曰：虽磐桓，志行正也。以贵下贱，大得民也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "屯如邅如，乘马班如。匪寇婚媾，女子贞不字，十年乃字。",
+      "translation": "艰难不前、徘徊不进，骑着马盘旋而行。不是强盗，而是来求婚的；女子坚守正道不嫁人，十年后才出嫁。",
+      "xiang": "象曰：六二之难，乘刚也。十年乃字，反常也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "即鹿无虞，惟入于林中，君子几不如舍，往吝。",
+      "translation": "追逐鹿却没有管山的人引导，只会进入树林，君子见机行事不如舍弃，继续前往会有憾惜。",
+      "xiang": "象曰：即鹿无虞，以从禽也。君子舍之，往吝穷也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "乘马班如，求婚媾，往吉，无不利。",
+      "translation": "骑着马盘旋而行，前去求婚，前往吉祥，无任何不利。",
+      "xiang": "象曰：求而往，明也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "屯其膏，小贞吉，大贞凶。",
+      "translation": "囤积膏泽（恩惠）不施，占问小事吉祥，占问大事凶险。",
+      "xiang": "象曰：屯其膏，施未光也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "乘马班如，泣血涟如。",
+      "translation": "骑着马盘旋而行，哭得血泪涟涟。",
+      "xiang": "象曰：泣血涟如，何可长也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "水+木",
+    "nature": "艰难、初创、积聚、动险",
+    "direction": "北东",
+    "season": "冬春之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、雨、智",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "动、雷、龙、勇",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长男",
+    "body": "耳",
+    "animal": "龙、鱼",
+    "color": "黑、青"
   },
   "category": {
-    "nature": "yang",
+    "nature": "mixed",
     "quality": "neutral",
     "difficulty": "complex"
   },
   "tags": [
-    "待补充"
+    "初创",
+    "艰难",
+    "动于险中",
+    "积聚",
+    "建侯"
   ]
 }

@@ -1,101 +1,105 @@
 {
   "symbol": "䷵",
   "name": "雷泽归妹",
-  "pinyin": "",
+  "pinyin": "léi zé guī mèi",
   "sequence": 54,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "征凶，无攸利。",
+    "translation": "贸然前往则凶险，没有任何好处。",
+    "annotation": "归妹卦上震下兑，震为雷、为动、为长男，兑为泽、为悦、为少女，长男求少女、动而悦之，女子出嫁、归往其妹，象征归妹之象，归妹有“女子出嫁”“归妹以娣”“不正之归”之意，此卦主婚嫁失正、阴柔乘阳，动而无度、悦而失正，婚嫁之道贵在正位、合礼，此卦长男配少女、动悦失正，故征凶无攸利，警示凡事不可妄动、宜守正合礼。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：归妹，天地之大义也。天地不交，而万物不兴。归妹，人之终始也。说以动，所归妹也。征凶，位不当也。无攸利，柔乘刚也。",
+    "translation": "彖传曰：归妹，是天地间的大道理。天地不交合，万物就不能生长兴盛。归妹，关乎人的生终始续。心怀和悦而有所行动，这就是归妹的含义。贸然前往则凶险，是因为爻位居守不当。没有任何好处，是因为阴柔乘凌阳刚。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：泽上有雷，归妹；君子以永终知敝。",
+    "translation": "象传曰：大泽之上有雷声，雷动泽悦、长男求少女，是归妹卦之象；君子因此思考事情的终始，知晓其中的弊端，见微知著，知敝而守正。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "归妹以娣，跛能履，征吉。",
+      "translation": "女子出嫁作为陪嫁的娣妾，如同跛脚的人能行走，贸然前往则吉祥，初爻居下，阳刚居卑，婚嫁失正而为娣，虽位卑却能行，征则吉。",
+      "xiang": "象曰：归妹以娣，以恒也。跛能履吉，相承也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "眇能视，利幽人之贞。",
+      "translation": "如同一目失明却能看见，利于幽居之人坚守正道，刚中守正，婚嫁失正而居柔，如眇目能视，唯幽居守正则利。",
+      "xiang": "象曰：利幽人之贞，未变常也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "归妹以须，反归以娣。",
+      "translation": "女子出嫁等待正妻之位，最终反而作为娣妾出嫁，居位不当，阴柔乘阳，贪求正位而不得，终为娣妾。",
+      "xiang": "象曰：归妹以须，未当也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "归妹愆期，迟归有时。",
+      "translation": "女子出嫁延误了婚期，推迟出嫁而等待适宜的时机，刚爻居柔，婚嫁失正，愆期待时，守正待合则吉。",
+      "xiang": "象曰：愆期之志，有待而行也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "帝乙归妹，其君之袂，不如其娣之袂良，月几望，吉。",
+      "translation": "帝乙嫁出女儿，王后的衣袖，不如娣妾的衣袖华美，月亮将近圆满，吉祥，柔中居尊，婚嫁得正，帝乙归妹以礼，贵而不奢，月近望而未盈，守中则吉。",
+      "xiang": "象曰：帝乙归妹，不如其娣之袂良也。其位在中，以贵行也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "女承筐无实，士刲羊无血，无攸利。",
+      "translation": "女子捧着竹筐却没有实物，男子宰杀羊却没有血，没有任何好处，归妹至极，婚嫁失正，虚有其表而无其实，故无攸利。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "木+金",
+    "nature": "归妹、女子出嫁、婚嫁失正、动而悦之、守正合礼",
+    "direction": "东偏南",
+    "season": "孟夏",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、长男、动求、上动",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "兑",
+        "symbol": "☱",
+        "nature": "和悦、泽、少女、悦应、下悦",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少女",
+    "body": "口",
+    "animal": "龙、羊",
+    "color": "青、白"
   },
   "category": {
-    "nature": "yin",
+    "nature": "mixed",
     "quality": "neutral",
-    "difficulty": "complex"
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "归妹",
+    "女子出嫁",
+    "泽上有雷",
+    "婚嫁失正",
+    "守正合礼",
+    "动而悦之"
   ]
 }

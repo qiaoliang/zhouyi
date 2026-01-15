@@ -1,101 +1,106 @@
 {
   "symbol": "䷙",
   "name": "山天大畜",
-  "pinyin": "",
+  "pinyin": "shān tiān dà xù",
   "sequence": 26,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "利贞。不家食，吉。利涉大川。",
+    "translation": "利于坚守正道。不在家中独享俸禄，而出仕为国效力，吉祥。利于渡过大河巨川。",
+    "annotation": "大畜卦上艮下乾，艮为山、为止，乾为天、为刚健，天藏于山，阳刚蓄于阴止，象征大蓄积之象，大畜有“大蓄积”“蓄德蓄才”“止健蓄行”之意，此卦主厚积薄发、蓄德蓄才，兼济天下而非独善其身，蓄足力量则可勇闯险难。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：大畜，刚健笃实，辉光日新。其德刚上而尚贤，能止健，大正也。不家食吉，养贤也。利涉大川，应乎天也。",
+    "translation": "彖传曰：大畜卦，刚健而笃实，德行的光辉日新月异。卦的德行阳刚向上而尊崇贤才，能够抑止刚健使其不妄动，这是至大的正道。不在家中独享俸禄而吉祥，是因为养育贤才、为国所用。利于渡过大河巨川，是因为顺应天道规律。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：天在山中，大畜；君子以多识前言往行，以畜其德。",
+    "translation": "象传曰：天空藏于山中，山能容天、大有所蓄，是大畜卦之象；君子因此要多记识前代圣贤的言语和行为，以此蓄积自身的德行与学识。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "有厉，利已。",
+      "translation": "有危险，利于停止行动，蓄势待时、不可冒进。",
+      "xiang": "象曰：有厉利已，不犯灾也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "舆说輹。",
+      "translation": "车子的车辕与车轴相脱离，停止前行，蓄养力量、不妄动。",
+      "xiang": "象曰：舆说輹，中无尤也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "良马逐，利艰贞。曰闲舆卫，利有攸往。",
+      "translation": "良马奔驰追逐，利于在艰难中坚守正道；平日勤加练习驾车与防卫之术，蓄足本领则利于有所前往。",
+      "xiang": "象曰：良马逐，利艰贞，志在外也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "童牛之牿，元吉。",
+      "translation": "在小牛的角上绑上木架，防止其触人，防患于未然，大为吉祥。",
+      "xiang": "象曰：六四元吉，有喜也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "豮豕之牙，吉。",
+      "translation": "阉割后的猪，即便有獠牙也无伤人之力，以柔止刚、化险为夷，吉祥。",
+      "xiang": "象曰：六五之吉，有庆也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "何天之衢，亨。",
+      "translation": "如同行走在上天开辟的大道上，亨通顺利，蓄积已满、势不可挡。",
+      "xiang": "象曰：何天之衢，道大行也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+金",
+    "nature": "大蓄积、蓄德蓄才、厚积薄发、止健蓄行、养贤用贤",
+    "direction": "西北",
+    "season": "冬末春初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、少男、止蓄、包容",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
+        "name": "乾",
         "symbol": "☰",
-        "nature": "待补充",
+        "nature": "刚健、天、君、父、才德",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "父",
+    "body": "首",
+    "animal": "马、狗",
+    "color": "白、黄"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "大蓄积",
+    "蓄德蓄才",
+    "天在山中",
+    "厚积薄发",
+    "养贤用贤",
+    "防患未然"
   ]
 }

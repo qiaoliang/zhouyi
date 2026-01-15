@@ -1,101 +1,105 @@
 {
   "symbol": "䷯",
   "name": "水风井",
-  "pinyin": "",
+  "pinyin": "shuǐ fēng jǐng",
   "sequence": 48,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。",
+    "translation": "改换城邑却不改换水井，没有丧失也没有获得，人们往来于水井边取水。井水几乎干涸，也尚未掏挖水井，打水的瓶子被碰碎，凶险。",
+    "annotation": "井卦上坎下巽，坎为水、为泉、为井，巽为木、为入、为绳，水在木上，井泉不竭、养人不已，城邑可改、井不可移，象征井养之象，井有“水井”“井养”“恒久养人”之意，此卦主井养万民、恒久守道，井的本质是养人，唯修井浚泉、坚守井养之德，方能无丧无得，若井泉将涸而不浚、汲水而碎瓶，则失井养之责，招至凶险。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：巽乎水而上水，井。井养而不穷也。改邑不改井，乃以刚中也。无丧无得，往来井井，汔至亦未繘井，未有功也。羸其瓶，是以凶也。",
+    "translation": "彖传曰：巽顺于水而向上提水，就是井。井水养育人而无穷无尽。改换城邑却不改换水井，是因为阳刚居守中道。没有丧失也没有获得，人们往来于井边，井水将涸而未掏挖，是因为尚未建立功绩。碰碎打水的瓶子，因此有凶险。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：木上有水，井；君子以劳民劝相。",
+    "translation": "象传曰：木材之上有水，以木为绳、汲水于井，是井卦之象；君子因此慰劳百姓、劝勉百姓相互帮助，效法井养之德，惠民利民、彼此相助。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "井泥不食，旧井无禽。",
+      "translation": "水井中的泥淤塞而不能饮用，废弃的水井没有禽兽前来，初爻居下，井泉淤塞，失却井养之能，沦为废井。",
+      "xiang": "象曰：井泥不食，下也。旧井无禽，时舍也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "井谷射鲋，瓮敝漏。",
+      "translation": "向井谷中射小鱼，水瓮破漏，刚中居下，井养之德未施，仅及小物，器敝则水漏，难成井养之功。",
+      "xiang": "象曰：井谷射鲋，无与也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "井渫不食，为我心恻，可用汲，王明，并受其福。",
+      "translation": "水井已经淘挖干净却无人饮用，让我心中悲伤，这井水可以汲取饮用，君王圣明，天下人都能蒙受井养的福泽，刚爻居正，浚井完毕，唯待君王启用，施惠万民。",
+      "xiang": "象曰：井渫不食，行恻也。求王明，受福也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "井甃，无咎。",
+      "translation": "用砖石砌好井壁，没有灾祸，柔爻居柔，修治井壁、固井防漏，井养之基已成，无咎。",
+      "xiang": "象曰：井甃无咎，修井也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "井冽，寒泉食。",
+      "translation": "井水清澈甘冽，清凉的泉水可以饮用，刚中居尊，井养之德大成，泉清冽而养人，天下蒙福。",
+      "xiang": "象曰：寒泉之食，中正也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "井收勿幕，有孚元吉。",
+      "translation": "水井的功用完成而不盖上井口，心怀诚信则大为吉祥，井极而施，柔爻居上，井养之功遍及天下，不掩井口、广施其惠，以诚养民则元吉。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "水+木",
+    "nature": "井养、恒久养人、惠民利民、修德浚才、守道不移",
+    "direction": "北偏东",
+    "season": "冬春之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、泉、井水、上泽",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "巽",
+        "symbol": "☴",
+        "nature": "巽顺、风、木、绳、下入",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长女",
+    "body": "股",
+    "animal": "豕、鸡",
+    "color": "黑、青"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "井养",
+    "恒久养人",
+    "木上有水",
+    "惠民利民",
+    "修德浚才",
+    "守道不移"
   ]
 }

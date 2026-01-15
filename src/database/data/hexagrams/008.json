@@ -1,101 +1,106 @@
 {
   "symbol": "䷇",
   "name": "水地比",
-  "pinyin": "",
+  "pinyin": "shuǐ dì bǐ",
   "sequence": 8,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。",
+    "translation": "吉祥。推究占筮结果，永久坚守正道则大为吉利，没有灾祸。内心不安的方国纷纷前来归附，迟迟后到的人会有凶险。",
+    "annotation": "比卦上坎下坤，坎为水、为君，坤为地、为民，水附于地、君附于民，象征亲比之象，比有“亲比”“依附”“团结”之意，此卦主与人亲比，强调诚信、主动，亲比需守正道、亲贤远佞。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：比，吉也，比，辅也，下顺从也。原筮元永贞无咎，以刚中也。不宁方来，上下应也。后夫凶，其道穷也。",
+    "translation": "彖传曰：比卦，是吉祥的，比的意思是辅助，下位者顺从上位者。推究占筮可知永久守正无灾祸，是因九五阳刚居守中道。不安的方国前来归附，是因上下阴阳相互应合。后到者凶险，是因其行事之道已然困穷。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：地上有水，比；先王以建万国，亲诸侯。",
+    "translation": "象传曰：大地上流淌着水，水与地相融，是比卦之象；古代先王因此建立万国，亲近诸侯，凝聚天下人心。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "有孚比之，无咎。有孚盈缶，终来有它吉。",
+      "translation": "心怀诚信与人亲比，没有灾祸。诚信如同美酒装满瓦罐般真挚，最终会有意外的吉祥降临。",
+      "xiang": "象曰：比之初六，有它吉也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "比之自内，贞吉。",
+      "translation": "从内部亲比贤良，坚守正道则吉祥。",
+      "xiang": "象曰：比之自内，不自失也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "比之匪人。",
+      "translation": "与品行不端、不合适的人亲比，必有祸患。",
+      "xiang": "象曰：比之匪人，不亦伤乎。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "外比之，贞吉。",
+      "translation": "向外亲比九五贤明之君，坚守正道则吉祥。",
+      "xiang": "象曰：外比于贤，以从上也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "显比，王用三驱，失前禽，邑人不诫，吉。",
+      "translation": "光明正大地与人亲比，君王田猎时三面驱兽、放走前方的禽兽，邑中百姓无需警戒，吉祥。",
+      "xiang": "象曰：显比之吉，位正中也。舍逆取顺，失前禽也。邑人不诫，上使中也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "比之无首，凶。",
+      "translation": "与人亲比却没有贤明的首领，群龙无首，凶险。",
+      "xiang": "象曰：比之无首，无所终也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "水+土",
+    "nature": "亲比、团结、依附、诚信、和同",
+    "direction": "北偏南",
+    "season": "冬夏之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、君、智、中男",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "柔顺、地、民、顺、包容",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中男",
+    "body": "耳",
+    "animal": "豕、牛",
+    "color": "黑、黄"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "亲比",
+    "团结",
+    "诚信",
+    "地上有水",
+    "亲诸侯",
+    "和同"
   ]
 }

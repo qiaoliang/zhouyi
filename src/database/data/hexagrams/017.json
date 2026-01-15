@@ -1,101 +1,106 @@
 {
   "symbol": "䷐",
   "name": "泽雷随",
-  "pinyin": "",
+  "pinyin": "zé léi suí",
   "sequence": 17,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "元亨，利贞，无咎。",
+    "translation": "大为亨通，利于坚守正道，没有灾祸。",
+    "annotation": "随卦上兑下震，兑为泽、为悦，震为雷、为动，泽随雷动，悦以从动，象征随顺之象，随有“随顺”“随从”“因势相随”之意，此卦主审时度势、顺势而从，心怀和悦且坚守正道，则能无咎而亨通。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：随，刚来而下柔，动而说，随。大亨贞无咎，而天下随时。随时之义大矣哉！",
+    "translation": "彖传曰：随卦，阳刚之爻前来居于阴柔之爻之下，有所行动而心怀和悦，所以称随。大为亨通、坚守正道而无灾祸，天下万物皆能顺应时节而动。随顺时机的意义太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：泽中有雷，随；君子以向晦入宴息。",
+    "translation": "象传曰：大泽之中响起雷声，雷声随泽势、泽气随雷动，是随卦之象；君子因此要顺应天时，向晚便入室休息，遵循作息之序，随顺自然规律。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "官有渝，贞吉。出门交有功。",
+      "translation": "居官任职的心意有所改变，坚守正道则吉祥；出门与人交往、顺势相随，能获得功业。",
+      "xiang": "象曰：官有渝，从正吉也。出门交有功，不失也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "系小子，失丈夫。",
+      "translation": "依附于年少无德的小子，就会失去贤明有位的大丈夫，择善而从方为正道。",
+      "xiang": "象曰：系小子，弗兼与也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "系丈夫，失小子。随有求得，利居贞。",
+      "translation": "依附于贤明有位的大丈夫，舍弃年少无德的小子，随顺贤能而有所求则有所得，利于安居坚守正道。",
+      "xiang": "象曰：系丈夫，志舍下也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "随有获，贞凶。有孚在道，以明，何咎？",
+      "translation": "随顺他人而有所收获，坚守正道仍有凶险；心怀诚信且行于正道，以光明之心处事，又有什么灾祸呢？",
+      "xiang": "象曰：随有获，其义凶也。有孚在道，明功也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "孚于嘉，吉。",
+      "translation": "对美善贤良之人心怀诚信，顺势相随，吉祥。",
+      "xiang": "象曰：孚于嘉吉，位正中也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "拘系之，乃从维之。王用亨于西山。",
+      "translation": "被拘系束缚，而后才真心相随、紧密相依；君王前往西山祭祀，以诚心感通神明。",
+      "xiang": "象曰：拘系之，上穷也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "金+木",
+    "nature": "随顺、随从、因势相随、和悦、顺势而为",
+    "direction": "东偏南",
+    "season": "春末夏初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "兑",
+        "symbol": "☱",
+        "nature": "和悦、泽、少女、柔润、顺应",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、长男、动进、刚劲",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长男",
+    "body": "足",
+    "animal": "龙、羊",
+    "color": "青、白"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "随顺",
+    "因势相随",
+    "泽中有雷",
+    "顺势而为",
+    "择善而从",
+    "和悦从动"
   ]
 }

@@ -1,101 +1,106 @@
 {
   "symbol": "䷠",
   "name": "天山遁",
-  "pinyin": "",
+  "pinyin": "tiān shān dùn",
   "sequence": 33,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "亨，小利贞。",
+    "translation": "亨通顺利，小有利益，宜坚守正道。",
+    "annotation": "遁卦上乾下艮，乾为天、为阳、为刚，艮为山、为止、为阴，天隐于山，阳刚渐退、阴柔渐长，君子避世隐遁，象征遁退之象，遁有“遁退”“隐避”“适时退藏”之意，此卦主世道衰微、阴盛阳消，宜审时度势、适时隐遁，守正退藏则亨通，小守正道则有微利。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：遁，亨，遁而亨也。刚当位而应，与时行也。小利贞，浸而长也。遁之时义大矣哉！",
+    "translation": "彖传曰：遁卦亨通，是因为适时遁退而获得亨通。阳刚之爻居守正位而与阴爻相应，顺应时势而行事。小有利益且利于坚守正道，是因为阴柔之气逐渐浸润增长。遁卦顺应时机退藏的意义太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：天下有山，遁；君子以远小人，不恶而严。",
+    "translation": "象传曰：天空之下有高山，天远避于山、阳退阴长，是遁卦之象；君子因此要远离小人，不显露憎恶之情而保持自身的威严，洁身自好、隐避小人。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "遁尾，厉，勿用有攸往。",
+      "translation": "遁退而落在末尾，有危险，不宜有所前往，迟遁则危、宜早作隐避。",
+      "xiang": "象曰：遁尾之厉，不往何灾也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "执之用黄牛之革，莫之胜说。",
+      "translation": "用黄牛的皮革捆绑束缚，无人能够解脱，阴柔缠缚阳刚、使其难以遁退，守正待时、不被缠缚方为正道。",
+      "xiang": "象曰：执用黄牛，固志也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "系遁，有疾厉，畜臣妾，吉。",
+      "translation": "被牵绊而难以遁退，有疾患且身处危厉，蓄养臣妾则吉祥，身被俗务牵绊宜守小吉、不图大事。",
+      "xiang": "象曰：系遁之厉，有疾惫也。畜臣妾吉，不可大事也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "好遁，君子吉，小人否。",
+      "translation": "欣然主动遁退，君子吉祥，小人则不能做到，君子知时退藏、小人贪利不舍。",
+      "xiang": "象曰：君子好遁，小人否也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "嘉遁，贞吉。",
+      "translation": "嘉美适时的遁退，坚守正道则吉祥，刚中守正、遁退得宜，为遁道之美。",
+      "xiang": "象曰：嘉遁贞吉，以正志也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "肥遁，无不利。",
+      "translation": "从容自得、无牵无挂的遁退，无所不利，阳刚至极、超然物外，遁退至善。",
+      "xiang": "象曰：肥遁无不利，无所疑也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "金+土",
+    "nature": "遁退、隐避、适时退藏、洁身自好、远小人",
+    "direction": "西北",
+    "season": "秋末冬初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
+        "name": "乾",
         "symbol": "☰",
-        "nature": "待补充",
+        "nature": "刚健、天、阳、君子、遁藏",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、阴、小人、阻隔",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少男",
+    "body": "手",
+    "animal": "马、狗",
+    "color": "白、黄"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "遁退",
+    "适时退藏",
+    "天下有山",
+    "洁身自好",
+    "远小人",
+    "嘉遁守正"
   ]
 }

@@ -1,101 +1,106 @@
 {
   "symbol": "䷏",
   "name": "雷地豫",
-  "pinyin": "",
+  "pinyin": "léi dì yù",
   "sequence": 16,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "利建侯行师。",
+    "translation": "利于封立诸侯、出动军队，顺时而动则万事顺遂。",
+    "annotation": "豫卦上震下坤，震为雷、为动，坤为地、为顺，雷声震动于大地之上，大地顺承雷动，象征安乐愉悦之象，豫有“愉悦”“安乐”“顺动”之意，此卦主顺时而动、因势而为，身心安乐则可建功立业，然安乐之中宜戒骄戒躁。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：豫，刚应而志行，顺以动，豫。豫，顺以动，故天地如之，而况建侯行师乎？天地以顺动，故日月不过，而四时不忒。圣人以顺动，则刑罚清而民服。豫之时义大矣哉！",
+    "translation": "彖传曰：豫卦，阳刚之爻得众阴相应而志向得以施行，顺承天道而有所行动，所以称豫。豫卦是顺承天道而行动，天地运行尚且遵循此道，更何况封立诸侯、出动军队呢？天地顺承时节而动，所以日月运行没有过失，四季更替没有偏差。圣人顺承民心而动，所以刑罚清明而百姓心悦诚服。豫卦顺应时机的意义太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+    "translation": "象传曰：雷声从大地中发出，大地震动奋发，是豫卦之象；古代先王因此制作音乐、推崇德行，以丰盛的祭品进献上帝，同时配享先祖考妣，以安乐之心敬天法祖。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "鸣豫，凶。",
+      "translation": "沉迷于安乐而自鸣得意，凶险，乐极生悲。",
+      "xiang": "象曰：初六鸣豫，志穷凶也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "介于石，不终日，贞吉。",
+      "translation": "坚贞如石，不沉溺于安乐之中，不到一天便能醒悟，坚守正道则吉祥。",
+      "xiang": "象曰：不终日贞吉，以中正也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "盱豫，悔。迟有悔。",
+      "translation": "仰承他人以求安乐，会有悔恨；迟疑不决不知醒悟，悔恨会更加深重。",
+      "xiang": "象曰：盱豫有悔，位不当也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "由豫，大有得。勿疑，朋盍簪。",
+      "translation": "众人因他而获得安乐，大有所得；不猜忌他人，朋友们都会汇聚而来如簪子绾发一般紧密。",
+      "xiang": "象曰：由豫大有得，志大行也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "贞疾，恒不死。",
+      "translation": "坚守正道却身患疾病，却能长久不死，虽处安乐却有小疾而无大患。",
+      "xiang": "象曰：六五贞疾，乘刚也。恒不死，中未亡也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "冥豫，成有渝，无咎。",
+      "translation": "沉迷于幽暗不明的安乐之中，最终能醒悟改变，没有灾祸。",
+      "xiang": "象曰：冥豫在上，何可长也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "木+土",
+    "nature": "愉悦、安乐、顺动、因势而为、戒骄戒躁",
+    "direction": "东偏北",
+    "season": "春初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、长男、动进、威严",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "柔顺、地、母、顺承、包容",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长男",
+    "body": "足",
+    "animal": "龙、兔",
+    "color": "青、黄"
   },
   "category": {
-    "nature": "yang",
+    "nature": "mixed",
     "quality": "neutral",
-    "difficulty": "complex"
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "愉悦",
+    "安乐",
+    "雷出地奋",
+    "顺时而动",
+    "戒骄戒躁",
+    "因势而为"
   ]
 }

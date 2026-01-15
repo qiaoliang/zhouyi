@@ -1,101 +1,106 @@
 {
   "symbol": "䷲",
   "name": "震为雷",
-  "pinyin": "",
+  "pinyin": "zhèn wéi léi",
   "sequence": 51,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。",
+    "translation": "亨通顺利。雷声传来，人们惶恐畏惧，随后便笑语欢声。雷声震惊百里之远，主祭之人却未丢失酒勺和鬯酒。",
+    "annotation": "震卦上下皆震，震为雷、为动、为阳、为威，雷相叠而震动，雷声轰鸣、威震天下，象征震动之象，震有“震动”“雷震”“戒惧”“威动”之意，此卦主威震天下、戒惧修省，雷声初至令人惶恐，惧而修守则后得安乐，君子闻雷而戒惧，虽威震百里，仍能守正持重、不失祭祀之礼，故亨通。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：震，亨。震来虩虩，恐致福也。笑言哑哑，后有则也。震惊百里，惊远而惧迩也。不丧匕鬯，出可以守宗庙社稷，以为祭主也。",
+    "translation": "彖传曰：震卦，亨通。雷声传来而惶恐畏惧，是因为恐惧而能修省，从而招致福泽。随后笑语欢声，是因为之后能遵循法则。雷声震惊百里，是使远方的人震惊、近处的人畏惧。未丢失酒勺和鬯酒，是因为外出可以守护宗庙社稷，成为祭祀的主人。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：洊雷，震；君子以恐惧修省。",
+    "translation": "象传曰：雷声相叠、接连震动，是震卦之象；君子因此心怀恐惧、修身自省，闻威而惧，惧而修德，以安其身。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "震来虩虩，后笑言哑哑，吉。",
+      "translation": "雷声传来而惶恐畏惧，随后笑语欢声，吉祥，初逢雷震，惧而修省，知惧则安，后得吉祥。",
+      "xiang": "象曰：震来虩虩，恐致福也。笑言哑哑，后有则也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "震来厉，亿丧贝，跻于九陵，勿逐，七日得。",
+      "translation": "雷声传来有危厉，意外丢失大量财贝，登上九重高陵，不必追逐，七日之内将会失而复得，柔中守正，虽遇雷震之危、失财之困，然守正待时，物归原主。",
+      "xiang": "象曰：震来厉，乘刚也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "震苏苏，震行无眚。",
+      "translation": "雷声震动而心神不安，因震动而前行则无灾祸，居位不当，遇震而惧、心神不宁，然顺震而行、戒惧修省，则无咎害。",
+      "xiang": "象曰：震苏苏，位不当也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "震遂泥。",
+      "translation": "雷声震动而陷入泥沼，刚爻居柔，威震过甚而失据，动而无方，陷入困厄，警示震极则乱、动宜有度。",
+      "xiang": "象曰：震遂泥，未光也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "震往来厉，亿无丧，有事。",
+      "translation": "雷声往来震动皆有危厉，意外却无任何损失，仍有祭祀之事可做，柔中居尊，虽遇雷震之危，然守正持重，不失祭祀之责，故无丧。",
+      "xiang": "象曰：震往来厉，危行也。其事在中，大无丧也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "震索索，视矍矍，征凶。震不于其躬，于其邻，无咎。婚媾有言。",
+      "translation": "雷声震动而畏缩不前，目光惶恐不安，贸然前往则凶险。雷声未震动自身，仅震动邻居，没有灾祸。婚嫁之事会有言语纷争，震极而惧，柔爻居上，畏震过甚，妄动则凶，震及邻而不及身，故无咎，唯婚媾小有言语之扰。",
+      "xiang": "象曰：震索索，中未得也。虽凶无咎，畏邻戒也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "木",
+    "nature": "震动、雷震、戒惧修省、威动天下、知惧则安",
+    "direction": "东",
+    "season": "春",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、威、上震、远震",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、动、下震、近震",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长男",
+    "body": "足",
+    "animal": "龙、蛙",
+    "color": "青"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "yang",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "震动",
+    "戒惧修省",
+    "洊雷震",
+    "威动天下",
+    "知惧则安",
+    "雷震守正"
   ]
 }

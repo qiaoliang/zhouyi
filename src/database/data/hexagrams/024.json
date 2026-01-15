@@ -1,101 +1,106 @@
 {
   "symbol": "䷗",
   "name": "地雷复",
-  "pinyin": "",
+  "pinyin": "dì léi fù",
   "sequence": 24,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "亨。出入无疾，朋来无咎。反复其道，七日来复，利有攸往。",
+    "translation": "亨通顺利。出入没有疾患，朋友前来没有灾祸。返归正道有其规律，七日之内阳刚复起，利于有所前往。",
+    "annotation": "复卦上坤下震，坤为地、为阴，震为雷、为阳，雷藏于地，阳刚之气初复，一阳生于五阴之下，象征复归之象，复有“复归”“复兴”“返本”之意，此卦主阳刚初复、世道复兴，宜顺时而动、返归正道，乘势前行则利。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：复，亨。刚反，动而以顺行，是以出入无疾，朋来无咎。反复其道，七日来复，天行也。利有攸往，刚长也。复其见天地之心乎！",
+    "translation": "彖传曰：复卦，亨通。阳刚返回本位，行动而顺承天道前行，因此出入没有疾患，朋友前来没有灾祸。返归正道有其规律，七日之内阳刚复起，这是上天的运行规律。利于有所前往，是因为阳刚之气逐渐增长。复卦大概能体现天地生育万物的本心吧！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：雷在地中，复；先王以至日闭关，商旅不行，后不省方。",
+    "translation": "象传曰：雷声藏于大地之中，阳刚初复、养精蓄锐，是复卦之象；古代先王因此在冬至日关闭关口，商人旅客不外出远行，君主不巡省四方，以静养阳、顺时复息。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "不远复，无祗悔，元吉。",
+      "translation": "行之不远便返归正道，没有大的悔恨，大为吉祥。",
+      "xiang": "象曰：不远之复，以修身也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "休复，吉。",
+      "translation": "休美地返归正道，吉祥，主动归正、心向光明。",
+      "xiang": "象曰：休复之吉，以下仁也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "频复，厉无咎。",
+      "translation": "屡次反复、艰难返归正道，虽处危厉却无灾祸，知错能改。",
+      "xiang": "象曰：频复之厉，义无咎也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "中行独复。",
+      "translation": "行于中道，独自返归正道，不随波逐流。",
+      "xiang": "象曰：中行独复，以从道也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "敦复，无悔。",
+      "translation": "敦厚笃实地返归正道，没有悔恨，诚心归正、始终不渝。",
+      "xiang": "象曰：敦复无悔，中以自考也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "迷复，凶，有灾眚。用行师，终有大败，以其国君，凶；至于十年，不克征。",
+      "translation": "沉迷迷途而不返归正道，凶险，有灾祸。出动军队，最终必遭大败，连及其国君，凶险；以至于十年之久，不能出征作战。",
+      "xiang": "象曰：迷复之凶，反君道也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+木",
+    "nature": "复归、复兴、阳刚初复、返本、顺时而动",
+    "direction": "东偏北",
+    "season": "冬至前后",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "柔顺、地、母、阴盛、包容",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、长男、阳初、动复",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长男",
+    "body": "足",
+    "animal": "龙、牛",
+    "color": "青、黄"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "复归",
+    "阳刚初复",
+    "雷在地中",
+    "返本归正",
+    "顺时而动",
+    "修身复道"
   ]
 }

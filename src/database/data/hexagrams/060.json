@@ -1,101 +1,106 @@
 {
-  "symbol": "䷻",
+  "symbol": "䷽",
   "name": "水泽节",
-  "pinyin": "",
+  "pinyin": "shuǐ zé jié",
   "sequence": 60,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "亨，苦节不可贞。",
+    "translation": "亨通顺利，以痛苦为代价的节制不可坚守正道。",
+    "annotation": "节卦上坎下兑，坎为水、为险、为满，兑为泽、为悦、为容，水在泽上、泽容水而有节，水满则溢、泽限而节，象征节制之象，节有“节制”“节度”“节止”“节用”之意，此卦主凡事宜有节度、适中而行，节制之道本自亨通，然节制过甚则为苦节，失却中和之理，苦节必不能久守，节道贵在适中、有度、悦而有节，过节则凶，适中则吉。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：节，亨，刚柔分，而刚得中。苦节不可贞，其道穷也。说以行险，当位以节，中正以通。天地节而四时成。节以制度，不伤财，不害民。",
+    "translation": "彖传曰：节卦，亨通，阳刚与阴柔分位而立，且阳刚居守中道。苦节不可守正，是因为其道走向困穷。心怀和悦而行走于险难之中，居位适当而施行节制，居中正直而亨通。天地施行节制而四季形成。以制度施行节制，不耗费财物，不伤害百姓。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：泽上有水，节；君子以制数度，议德行。",
+    "translation": "象传曰：大泽之上有水，泽限水而有节度，是节卦之象；君子因此制定礼仪法度，评议道德品行，立制明节、以德导节，使节制合于理、适于道。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "不出户庭，无咎。",
+      "translation": "不走出门户庭院，没有灾祸，初爻居下，阳刚居卑，知节守分、安于内庭，不妄出则无咎，节之于始、守正不逾。",
+      "xiang": "象曰：不出户庭，知通塞也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "不出门庭，凶。",
+      "translation": "不走出大门庭院，凶险，刚中守正，居节之时，当出而不出、节之过甚，失却行事之机，故招凶险。",
+      "xiang": "象曰：不出门庭凶，失时极也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "不节若，则嗟若，无咎。",
+      "translation": "不懂得节制，于是心生嗟叹，没有灾祸，居位不当，失却节制而致悔，然能嗟叹自省，知过则改，故无咎害。",
+      "xiang": "象曰：不节之嗟，又谁咎也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "安节，亨。",
+      "translation": "安于节制，亨通顺利，柔爻居柔，得位知节，安守节度、不偏不倚，节而安之，故能亨通。",
+      "xiang": "象曰：安节之亨，承上道也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "甘节，吉，往有尚。",
+      "translation": "甘美地享受节制，吉祥，有所前往则被尊崇，刚中居尊，节道之主，节制适中、合于情理，节而甘之，天下从之，往则有功。",
+      "xiang": "象曰：甘节之吉，居位中也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "苦节，贞凶，悔亡。",
+      "translation": "以痛苦为代价的节制，坚守正道仍有凶险，悔恨消亡，柔爻居上，节道之极，节制过甚而成苦节，失却中和，故守正仍凶，然苦节至极，知悔则亡。",
+      "xiang": "象曰：苦节贞凶，其道穷也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "水+金",
+    "nature": "节制、节度、适中而行、悦而有节、制数度",
+    "direction": "北偏西",
+    "season": "冬",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、满、上节、水限",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "兑",
+        "symbol": "☱",
+        "nature": "和悦、泽、容、下节、泽容",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少女",
+    "body": "口",
+    "animal": "豕、羊",
+    "color": "黑、白"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "节制",
+    "适中而行",
+    "泽上有水",
+    "悦而有节",
+    "制礼明节",
+    "节用有度"
   ]
 }

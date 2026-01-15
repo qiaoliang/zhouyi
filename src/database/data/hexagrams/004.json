@@ -1,101 +1,105 @@
 {
   "symbol": "䷃",
   "name": "山水蒙",
-  "pinyin": "",
+  "pinyin": "shān shuǐ méng",
   "sequence": 4,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。",
+    "translation": "亨通。不是我去求蒙昧的童子，而是蒙昧的童子来求我。初次占筮就告知结果，反复占筮是亵渎神灵，亵渎则不再告知。利于坚守正道。",
+    "annotation": "蒙卦上艮下坎，艮为山、为止，坎为水、为险，山下有险，险而止，象征蒙昧未开之象，蒙有“蒙昧”“启蒙”之意，此卦主启蒙教育，强调尊师重道、诚心求教。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：蒙，山下有险，险而止，蒙。蒙亨，以亨行时中也。匪我求童蒙，童蒙求我，志应也。初筮告，以刚中也。再三渎，渎则不告，渎蒙也。蒙以养正，圣功也。",
+    "translation": "彖传曰：蒙卦，山下有险，遇险而止，这就是蒙昧的含义。蒙卦亨通，是因依循亨通之道行事，把握时机且守持中道。不是我求童蒙，而是童蒙求我，是双方心意相互感应。初次占筮告知，是因阳刚居守中道。反复占筮是亵渎，亵渎就不告知，是因为亵渎了蒙昧求问的本意。通过启蒙培养正道，是圣人的功业。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：山下出泉，蒙；君子以果行育德。",
+    "translation": "象传曰：山下涌出泉水，是蒙卦之象；君子因此要果断行事，培育德行。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "发蒙，利用刑人，用说桎梏，以往吝。",
+      "translation": "启发蒙昧，适宜用刑罚惩戒人，使人摆脱桎梏的束缚，继续前往会有憾惜。",
+      "xiang": "象曰：利用刑人，以正法也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "包蒙，吉。纳妇，吉。子克家。",
+      "translation": "包容蒙昧的人，吉祥。迎娶妻子，吉祥。儿子能够持家。",
+      "xiang": "象曰：子克家，刚柔节也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "勿用取女，见金夫，不有躬，无攸利。",
+      "translation": "不宜娶这个女子，她见到有钱有势的男子就会失去自身节操，无任何好处。",
+      "xiang": "象曰：勿用取女，行不顺也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "困蒙，吝。",
+      "translation": "困在蒙昧之中，有憾惜。",
+      "xiang": "象曰：困蒙之吝，独远实也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "童蒙，吉。",
+      "translation": "孩童般的蒙昧，吉祥。",
+      "xiang": "象曰：童蒙之吉，顺以巽也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "击蒙，不利为寇，利御寇。",
+      "translation": "督责启发蒙昧的人，不宜主动侵犯别人，利于抵御别人的侵犯。",
+      "xiang": "象曰：利用御寇，上下顺也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+水",
+    "nature": "蒙昧、启蒙、阻滞、险止",
+    "direction": "东北",
+    "season": "冬春之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、少男、止",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、雨、智",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少男",
+    "body": "手",
+    "animal": "狗、鼠",
+    "color": "青、黑"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "蒙昧",
+    "启蒙",
+    "教育",
+    "山下有险",
+    "诚心求教"
   ]
 }

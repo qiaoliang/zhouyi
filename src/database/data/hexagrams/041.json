@@ -1,101 +1,105 @@
 {
   "symbol": "䷨",
   "name": "山泽损",
-  "pinyin": "",
+  "pinyin": "shān zé sǔn",
   "sequence": 41,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "有孚，元吉，无咎，可贞，利有攸往。曷之用？二簋可用享。",
+    "translation": "心怀诚信，大为吉祥，没有灾祸，可坚守正道，利于有所前往。用什么来祭祀？两碗饭就可以用来献祭。",
+    "annotation": "损卦上艮下兑，艮为山、为刚、为止，兑为泽、为柔、为悦，泽损而山益，柔损而刚益，下悦上止，象征损益之象，损有“减损”“损下益上”“损刚益柔”之意，此卦主减损私欲、增益德行，损己利人、以诚信行损，则吉无咎，行损贵在至诚，不在形式之繁。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：损，损下益上，其道上行。损而有孚，元吉无咎可贞利有攸往，曷之用二簋可用享，二簋应有时。损刚益柔有时，损益盈虚，与时偕行。",
+    "translation": "彖传曰：损卦，减损下方的增益上方的，其道理是向上推行。减损而心怀诚信，大为吉祥、无灾祸、可坚守正道、利于有所前往，用什么祭祀？两碗饭即可献祭，两碗饭献祭是顺应时机。减损刚健增益阴柔也有适宜的时机，减损、增益、盈满、亏虚，皆顺应时节而运行。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：山下有泽，损；君子以惩忿窒欲。",
+    "translation": "象传曰：高山之下有大泽，泽低山高、泽损以益山，是损卦之象；君子因此克制忿怒、遏制私欲，减损自身的妄念与私欲，增益德行与修养。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "已事遄往，无咎，酌损之。",
+      "translation": "办完私事便迅速前往助上，没有灾祸，酌情减损自身以益上，损下益上宜速、宜适度。",
+      "xiang": "象曰：已事遄往，尚合志也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "利贞，征凶。弗损，益之。",
+      "translation": "利于坚守正道，贸然前往则凶险。无需减损自身，反而会得到增益，刚中守正，德不配损则弗损，天自益之。",
+      "xiang": "象曰：九二利贞，中以为志也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "三人行，则损一人；一人行，则得其友。",
+      "translation": "三个人同行，会减损一人；一个人独行，会得到同伴，损卦贵诚，多则心散，独则志专，诚一则相得。",
+      "xiang": "象曰：一人行，三则疑也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "损其疾，使遄有喜，无咎。",
+      "translation": "减损自身的疾患，使其迅速痊愈而有喜报，没有灾祸，损己之过、速改则获吉，损不善则益善。",
+      "xiang": "象曰：损其疾，亦可喜也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "或益之，十朋之龟弗克违，元吉。",
+      "translation": "有人来增益他，即便是价值十朋的大宝龟也不能违背这种天意，大为吉祥，柔中居尊，以诚信行损，天与人皆益之。",
+      "xiang": "象曰：六五元吉，自上祐也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "弗损，益之，无咎，贞吉，利有攸往，得臣无家。",
+      "translation": "无需减损自身，反而会得到增益，没有灾祸，坚守正道则吉祥，利于有所前往，得到天下臣民的归附而不限于一家，损道至极，损己利天下，故天下归之。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+金",
+    "nature": "减损、损下益上、惩忿窒欲、损己利人、至诚行损",
+    "direction": "西南",
+    "season": "秋末冬初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、刚、上益、止欲",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "兑",
+        "symbol": "☱",
+        "nature": "和悦、泽、柔、下损、悦从",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少女",
+    "body": "口",
+    "animal": "狗、羊",
+    "color": "黄、白"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "减损",
+    "惩忿窒欲",
+    "山下有泽",
+    "损己利人",
+    "至诚行损",
+    "损益盈虚"
   ]
 }

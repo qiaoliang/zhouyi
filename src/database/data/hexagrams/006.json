@@ -1,101 +1,106 @@
 {
   "symbol": "䷅",
   "name": "天水讼",
-  "pinyin": "",
+  "pinyin": "tiān shuǐ sòng",
   "sequence": 6,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "有孚，窒惕，中吉，终凶。利见大人，不利涉大川。",
+    "translation": "心怀诚信，内心窒塞却保持警惕，守持中道则吉祥，最终执意争讼仍会凶险。适宜拜见有德位的大人物，不利于渡过大河巨川。",
+    "annotation": "讼卦上乾下坎，乾为天、为刚，坎为水、为险，刚险相违、上下相背，象征争讼之象，讼有“争讼”“争辩”之意，此卦主慎争、止讼，守中为吉，争讼难成。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：讼，上刚下险，险而健，讼。讼有孚窒惕，中吉，刚来而得中也。终凶，讼不可成也。利见大人，尚中正也。不利涉大川，入于渊也。",
+    "translation": "彖传曰：讼卦，上卦阳刚、下卦险陷，身处险地却刚健逞强，就会产生争讼。争讼时怀诚信、窒塞警惕且守中吉祥，是因阳刚之爻居守中道。最终凶险，是因为争讼终究难以获得成功。适宜拜见大人，是崇尚中正之道；不利于渡川，是因贸然行动会陷入深渊。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：天与水违行，讼；君子以作事谋始。",
+    "translation": "象传曰：天与水相背而行，是讼卦之象；君子因此做事情要在开端就谋划周全，防患于未然，避免引发争讼。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "不永所事，小有言，终吉。",
+      "translation": "不长久纠缠于争讼之事，稍有言语纷争，最终吉祥。",
+      "xiang": "象曰：不永所事，讼不可长也。虽小有言，其辩明也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "不克讼，归而逋，其邑人三百户，无眚。",
+      "translation": "争讼失败，归乡后暂避锋芒，其封邑三百户的百姓，不会遭受灾祸。",
+      "xiang": "象曰：不克讼，归逋窜也。自下讼上，患至掇也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "食旧德，贞厉，终吉。或从王事，无成。",
+      "translation": "安享旧日的德业与俸禄，坚守正道却仍有危险，最终吉祥。有时跟从君王做事，不可贪功，终究不会有成就。",
+      "xiang": "象曰：食旧德，从上吉也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "不克讼，复即命，渝，安贞吉。",
+      "translation": "争讼失败，回归顺应天命，改变争讼之心，安守正道则吉祥。",
+      "xiang": "象曰：复即命渝，安贞不失也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "讼，元吉。",
+      "translation": "秉持中正主持争讼，大为吉祥。",
+      "xiang": "象曰：讼元吉，以中正也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "或锡之鞶带，终朝三褫之。",
+      "translation": "有时因争讼胜诉被赐予官服革带，却在一天之内多次被剥夺，终究无福消受。",
+      "xiang": "象曰：以讼受服，亦不足敬也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "金+水",
+    "nature": "争讼、争辩、刚险相违、止讼",
+    "direction": "西北",
+    "season": "秋冬之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
+        "name": "乾",
         "symbol": "☰",
-        "nature": "待补充",
+        "nature": "刚健、天、君、父、决断",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、智、疑虑、中男",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "父",
+    "body": "首",
+    "animal": "龙、豕",
+    "color": "白、黑"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "negative",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "争讼",
+    "止讼",
+    "刚险相违",
+    "谋始",
+    "守中",
+    "慎争"
   ]
 }

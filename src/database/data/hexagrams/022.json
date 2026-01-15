@@ -1,101 +1,106 @@
 {
   "symbol": "䷕",
   "name": "山火贲",
-  "pinyin": "",
+  "pinyin": "shān huǒ bēn",
   "sequence": 22,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "亨。小利有攸往。",
+    "translation": "亨通顺利。小有利益，可有所前往，文饰适度则无往不利。",
+    "annotation": "贲卦上艮下离，艮为山、为质，离为火、为文，山下有火，文饰于质，质文相济，象征文饰之象，贲有“文饰”“修饰”“文质相和”之意，此卦主以文饰质、文质相宜，适度修饰则亨通，过度文饰则失本，宜守本崇实。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：贲，亨。柔来而文刚，故亨。分刚上而文柔，故小利有攸往。天文也；文明以止，人文也。观乎天文，以察时变；观乎人文，以化成天下。",
+    "translation": "彖传曰：贲卦，亨通。阴柔之爻前来文饰阳刚之爻，所以亨通。阳刚之爻分居上位而文饰阴柔之爻，所以小有利益可有所前往。天上的日月星辰是自然的文饰；以文明之德止于礼义，是人类的文饰。观察自然的文饰，以察觉时节的变化；观察人类的文饰，以教化成就天下。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：山下有火，贲；君子以明庶政，无敢折狱。",
+    "translation": "象传曰：山下燃起火光，文饰万物，是贲卦之象；君子因此要明察众多政务，却不敢轻易断狱，因文饰易掩真相，断狱宜重实质。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "贲其趾，舍车而徒。",
+      "translation": "修饰自己的脚趾，舍弃车子而徒步前行，安于质朴、文饰适度。",
+      "xiang": "象曰：舍车而徒，义弗乘也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "贲其须。",
+      "translation": "修饰自己的胡须，依附上位而适度文饰，相得益彰。",
+      "xiang": "象曰：贲其须，与上兴也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "贲如，濡如，永贞吉。",
+      "translation": "文饰美好，润泽和顺，长久坚守正道则吉祥。",
+      "xiang": "象曰：永贞之吉，终莫之陵也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "贲如，皤如，白马翰如，匪寇婚媾。",
+      "translation": "文饰美好，素白洁净，白马飞驰而来，并非强盗，而是前来求婚的人，以质朴为本的文饰，纯善美好。",
+      "xiang": "象曰：六四，当位疑也。匪寇婚媾，终无尤也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "贲于丘园，束帛戋戋，吝，终吉。",
+      "translation": "修饰山丘园囿，献上微薄的丝帛，虽有憾惜，最终仍会吉祥，质朴的文饰胜于奢华。",
+      "xiang": "象曰：六五之吉，有喜也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "白贲，无咎。",
+      "translation": "以素白质朴为文饰，返璞归真，没有灾祸。",
+      "xiang": "象曰：白贲无咎，上得志也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+火",
+    "nature": "文饰、修饰、文质相济、返璞归真、适度修饰",
+    "direction": "南偏东",
+    "season": "夏末秋初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、少男、质朴、本体",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "离",
+        "symbol": "☲",
+        "nature": "光明、火、中女、文饰、文明",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中女",
+    "body": "目",
+    "animal": "雉、狗",
+    "color": "赤、黄"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "文饰",
+    "文质相济",
+    "山下有火",
+    "返璞归真",
+    "适度修饰",
+    "崇实戒华"
   ]
 }

@@ -1,101 +1,106 @@
 {
   "symbol": "䷰",
   "name": "泽火革",
-  "pinyin": "",
+  "pinyin": "zé huǒ gé",
   "sequence": 49,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "己日乃孚，元亨，利贞，悔亡。",
+    "translation": "至己日方能获得众人信任，大为亨通，利于坚守正道，悔恨消亡。",
+    "annotation": "革卦上兑下离，兑为泽、为悦、为柔，离为火、为明、为刚，泽火相革，火炎上而泽润下，二物相违、必变其形，象征变革之象，革有“变革”“革新”“改易”之意，此卦主世道变易、宜行革新，变革之初难获信任，待至己日（顺时之日）则诚信立，唯守正革新、顺时应人，方能元亨利贞，消悔除咎。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：革，水火相息，二女同居，其志不相得，曰革。己日乃孚，革而信也。文明以说，大亨以正，革而当，其悔乃亡。天地革而四时成，汤武革命，顺乎天而应乎人。革之时大矣哉！",
+    "translation": "彖传曰：革卦，水火相互息灭，两个女子同居一处，心意不相投合，所以称为革。至己日方获信任，是因为变革之后建立了诚信。心怀文明而待人和悦，大为亨通而坚守正道，变革得当，悔恨就会消亡。天地变革而四季形成，商汤、周武王变革天命，顺从上天而顺应民心。革卦顺应时机的意义太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：泽中有火，革；君子以治历明时。",
+    "translation": "象传曰：大泽之中有火焰，水火相革、势不两立，是革卦之象；君子因此修治历法、明辨时节，顺天应时、因革制宜，以正时序。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "巩用黄牛之革。",
+      "translation": "用黄牛的皮革牢固束缚，初逢变革，时机未到，宜固守正道、厚积实力，不可贸然革变。",
+      "xiang": "象曰：巩用黄牛，不可以有为也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "己日乃革之，征吉，无咎。",
+      "translation": "至己日才施行变革，有所前往则吉祥，没有灾祸，柔中守正，顺时革变、应人而变，革变得当则吉。",
+      "xiang": "象曰：己日革之，行有嘉也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "征凶，贞厉。革言三就，有孚。",
+      "translation": "贸然前往则凶险，坚守正道仍有危厉。变革的言论多次商讨完善，方能获得众人信任，刚爻居下，革变心切，妄动则凶，三思而后革、立信则安。",
+      "xiang": "象曰：革言三就，又何之矣。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "悔亡，有孚改命，吉。",
+      "translation": "悔恨消亡，心怀诚信而改易天命，吉祥，刚爻居柔，近君革变，以诚信行革、顺天应人，革变成功则吉。",
+      "xiang": "象曰：改命之吉，信志也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "大人虎变，未占有孚。",
+      "translation": "大德之人的变革如虎纹一般鲜明昭著，无需占问便获得众人信任，刚中居尊，大人革变，顺天应人、威明昭著，民皆信之。",
+      "xiang": "象曰：大人虎变，其文炳也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "君子豹变，小人革面，征凶，居贞吉。",
+      "translation": "君子的变革如豹纹一般渐次明丽，小人仅改变表面容颜，贸然前往则凶险，静居坚守正道则吉祥，革变已成，君子润色其德、小人徒有其表，此时宜守不宜进。",
+      "xiang": "象曰：君子豹变，其文蔚也。小人革面，顺以从君也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "金+火",
+    "nature": "变革、革新、改易、顺天应人、守正革变",
+    "direction": "南偏西",
+    "season": "夏末秋初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "兑",
+        "symbol": "☱",
+        "nature": "和悦、泽、柔、悦民、革后安",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "离",
+        "symbol": "☲",
+        "nature": "光明、火、明、文明、革之明",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中女",
+    "body": "目",
+    "animal": "雉、羊",
+    "color": "赤、白"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
+    "nature": "mixed",
+    "quality": "positive",
     "difficulty": "complex"
   },
   "tags": [
-    "待补充"
+    "变革",
+    "顺天应人",
+    "泽中有火",
+    "守正革新",
+    "汤武革命",
+    "革变立信"
   ]
 }

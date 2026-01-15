@@ -1,101 +1,106 @@
 {
   "symbol": "䷛",
   "name": "泽风大过",
-  "pinyin": "",
+  "pinyin": "zé fēng dà guò",
   "sequence": 28,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "栋桡，利有攸往，亨。",
+    "translation": "房屋的栋梁弯曲变形，利于有所前往，亨通顺利。",
+    "annotation": "大过卦上兑下巽，兑为泽、为柔，巽为风、为木，泽淹于木上，柔乘刚、木被泽压，卦象阳刚过盛而阴柔不足，象征大过之象，大过有“太过”“过中”“拯弊救偏”之意，此卦主阳刚过盛、事物失度，却宜顺时行动、以刚济柔，拯弊救偏则能亨通。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：大过，大者过也。栋桡，本末弱也。刚过而中，巽而说行，利有攸往，乃亨。大过之时大矣哉！",
+    "translation": "彖传曰：大过，是指阳刚大者过盛。栋梁弯曲，是因为本末两端阴柔衰弱。阳刚过盛却居守中道，巽顺而和悦地行动，利于有所前往，因此亨通。大过之时顺时行事的意义太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：泽灭木，大过；君子以独立不惧，遁世无闷。",
+    "translation": "象传曰：大泽淹没树木，阳刚过盛、事物失度，是大过卦之象；君子因此要特立独行而无所畏惧，隐遁出世而没有烦闷，以刚健之心应对过盛之局。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "藉用白茅，无咎。",
+      "translation": "用洁白的茅草铺地放置物品，谨慎行事、以柔辅刚，没有灾祸。",
+      "xiang": "象曰：藉用白茅，柔在下也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "枯杨生稊，老夫得其女妻，无不利。",
+      "translation": "枯萎的杨树生出新芽，年老的男子娶得年轻的妻子，以刚济柔、枯木逢春，没有任何不利。",
+      "xiang": "象曰：老夫女妻，过以相与也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "栋桡，凶。",
+      "translation": "栋梁弯曲变形，凶险，阳刚过盛而无柔辅、支撑乏力。",
+      "xiang": "象曰：栋桡之凶，不可以有辅也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "栋隆，吉。有它吝。",
+      "translation": "栋梁隆起坚固，吉祥；若有其他变故则会有憾惜，守中则吉、妄动则吝。",
+      "xiang": "象曰：栋隆之吉，不桡乎下也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "枯杨生华，老妇得其士夫，无咎无誉。",
+      "translation": "枯萎的杨树开出花来，年老的妇人嫁得年轻的男子，虽无灾祸却也没有赞誉，花盛易落、华而不实。",
+      "xiang": "象曰：枯杨生华，何可久也。老妇士夫，亦可丑也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "过涉灭顶，凶，无咎。",
+      "translation": "涉水过河过于深入，水淹头顶，凶险；却无灾祸，因勇于拯弊、虽败无过。",
+      "xiang": "象曰：过涉之凶，不可咎也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "金+木",
+    "nature": "太过、过中、拯弊救偏、以刚济柔、矫枉过正",
+    "direction": "东南",
+    "season": "春夏之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "兑",
+        "symbol": "☱",
+        "nature": "和悦、泽、少女、柔、淹没",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "巽",
+        "symbol": "☴",
+        "nature": "巽顺、风、长女、木、柔弱",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长女",
+    "body": "股",
+    "animal": "鸡、羊",
+    "color": "青、白"
   },
   "category": {
-    "nature": "yang",
+    "nature": "mixed",
     "quality": "neutral",
     "difficulty": "complex"
   },
   "tags": [
-    "待补充"
+    "大过",
+    "拯弊救偏",
+    "泽灭木",
+    "以刚济柔",
+    "独立不惧",
+    "过中则正"
   ]
 }

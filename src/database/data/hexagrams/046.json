@@ -1,101 +1,105 @@
 {
   "symbol": "䷭",
   "name": "地风升",
-  "pinyin": "",
+  "pinyin": "dì fēng shēng",
   "sequence": 46,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "元亨，用见大人，勿恤，南征吉。",
+    "translation": "大为亨通，适宜拜见大德之人，无需忧虑，向南方征伐吉祥。",
+    "annotation": "升卦上坤下巽，坤为地、为顺、为厚，巽为风、为入、为木，木生于地，渐次上升、生生不息，地厚而木升，象征升进之象，升有“升进”“上升”“晋升”之意，此卦主循序渐进、厚积薄发的升进，柔顺巽入、得大人助则元亨，南方为离明之方，向明而进则吉祥，升进贵在守正、循序而不躁。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：柔以时升，巽而顺，刚中而应，是以大亨。用见大人勿恤，有庆也。南征吉，志行也。",
+    "translation": "彖传曰：阴柔顺应时机而升进，巽顺而又柔顺，阳刚居中而与阴爻相应，因此大为亨通。适宜拜见大德之人而无需忧虑，是因为有吉庆。向南方征伐吉祥，是因为志向得以施行。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：地中生木，升；君子以顺德，积小以高大。",
+    "translation": "象传曰：大地之中生长树木，由小到大、渐次上升，是升卦之象；君子因此顺应德行，积累微小的善行而成就高大的德业，升进以积善为基、循序而进。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "允升，大吉。",
+      "translation": "信实顺升，大为吉祥，初爻居巽，柔顺信实，循序升进则至吉。",
+      "xiang": "象曰：允升大吉，上合志也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "孚乃利用禴，无咎。",
+      "translation": "心怀诚信则即使用薄礼祭祀也适宜，没有灾祸，刚中守正，以诚相感，升进之时，礼薄而诚至则无咎。",
+      "xiang": "象曰：九二之孚，有喜也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "升虚邑。",
+      "translation": "升进如同进入无人的城邑，刚爻居巽，升进无阻，顺势而升则无往不利。",
+      "xiang": "象曰：升虚邑，无所疑也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "王用亨于岐山，吉，无咎。",
+      "translation": "君王在岐山举行祭祀，吉祥，没有灾祸，柔爻近君，顺升得位，借祭祀以固位，升进合道则吉。",
+      "xiang": "象曰：王用亨于岐山，顺事也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "贞吉，升阶。",
+      "translation": "坚守正道则吉祥，如同拾阶而上，柔中居尊，循序升进，步步为营则吉。",
+      "xiang": "象曰：贞吉升阶，大得志也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "冥升，利于不息之贞。",
+      "translation": "昏昧中仍在升进，利于恒久不息地坚守正道，升极而昏，柔爻居上，升进不已，唯守正不息则利。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+木",
+    "nature": "升进、上升、厚积薄发、循序升进、积小成大",
+    "direction": "南",
+    "season": "夏",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "柔顺、地、厚、顺升、承载",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "巽",
+        "symbol": "☴",
+        "nature": "巽顺、风、木、入升、生长",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长女",
+    "body": "股",
+    "animal": "鸡、牛",
+    "color": "青、黄"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "升进",
+    "厚积薄发",
+    "地中生木",
+    "循序升进",
+    "积小成大",
+    "向明而进"
   ]
 }

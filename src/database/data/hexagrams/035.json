@@ -1,101 +1,106 @@
 {
   "symbol": "䷢",
   "name": "火地晋",
-  "pinyin": "",
+  "pinyin": "huǒ dì jìn",
   "sequence": 35,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "康侯用锡马蕃庶，昼日三接。",
+    "translation": "康侯承蒙君王赏赐众多车马，一天之内三次接受君王接见，晋升显达、恩宠有加。",
+    "annotation": "晋卦上离下坤，离为火、为明、为阳，坤为地、为顺、为阴，火行地上，光明普照大地，阳刚上升、阴柔顺承，象征晋升之象，晋有“晋升”“进长”“光明上进”之意，此卦主光明磊落、顺理上进，德才兼备则能获晋升、得重用，光明普照则事业昌达。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：晋，进也。明出地上，顺而丽乎大明，柔进而上行，是以康侯用锡马蕃庶，昼日三接也。",
+    "translation": "彖传曰：晋，是晋升的意思。光明出现在大地之上，处事柔顺而附丽于宏大的光明，阴柔之爻渐进而向上前行，因此康侯承蒙君王赏赐众多车马，一天之内三次接受接见。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：明出地上，晋；君子以自昭明德。",
+    "translation": "象传曰：光明从大地上升起，普照万物、光明上进，是晋卦之象；君子因此要自我彰显光明的德行，修身明德、以明上进。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "晋如，摧如，贞吉。罔孚，裕无咎。",
+      "translation": "想要晋升却遭遇摧折，坚守正道则吉祥；尚未获得他人信任，宽宏隐忍则没有灾祸，初进遇阻、守正裕己则终进。",
+      "xiang": "象曰：晋如摧如，独行正也。裕无咎，未受命也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "晋如，愁如，贞吉。受兹介福，于其王母。",
+      "translation": "想要晋升而心怀忧愁，坚守正道则吉祥；从祖母那里承受宏大的福泽，柔中守正、德配其位则获福。",
+      "xiang": "象曰：受兹介福，以中正也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "众允，悔亡。",
+      "translation": "得到众人的信任与认可，悔恨消亡，与人同心、光明上进则众望所归。",
+      "xiang": "象曰：众允之，志上行也。"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "晋如鼫鼠，贞厉。",
+      "translation": "晋升如同技穷的鼫鼠，坚守正道仍有危厉，无德无才、贪位慕禄则晋升堪忧。",
+      "xiang": "象曰：晋如鼫鼠，位不当也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "悔亡，失得勿恤，往吉无不利。",
+      "translation": "悔恨消亡，不必忧虑得失，有所前往则吉祥、无所不利，柔中居尊、光明普照，晋升至善则无往不利。",
+      "xiang": "象曰：失得勿恤，往有庆也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "晋其角，维用伐邑，厉吉无咎，贞吝。",
+      "translation": "晋升至极致如兽角之尖，只适宜征伐自己的封邑，虽处危厉却最终吉祥、没有灾祸，坚守正道仍有憾惜，晋极则宜守、不宜再进，征伐内邑以正身则可。",
+      "xiang": "象曰：晋其角，道未光也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "火+土",
+    "nature": "晋升、进长、光明上进、修身明德、顺理上进",
+    "direction": "南偏东",
+    "season": "夏末秋初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "离",
+        "symbol": "☲",
+        "nature": "光明、火、明、阳、普照",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "柔顺、地、顺、阴、承载",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中女",
+    "body": "目",
+    "animal": "雉、牛",
+    "color": "赤、黄"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "晋升",
+    "光明上进",
+    "明出地上",
+    "修身明德",
+    "顺理上进",
+    "德才晋升"
   ]
 }

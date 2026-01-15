@@ -1,101 +1,105 @@
 {
   "symbol": "䷦",
   "name": "水山蹇",
-  "pinyin": "",
+  "pinyin": "shuǐ shān jiǎn",
   "sequence": 39,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "利西南，不利东北；利见大人，贞吉。",
+    "translation": "利于前往西南，不利于前往东北；利于拜见大德之人，坚守正道则吉祥，蹇难之时，顺柔则利、从刚则害，得贤助、守正则解蹇。",
+    "annotation": "蹇卦上坎下艮，坎为水、为险、为陷，艮为山、为止、为阻，水行山上，险阻相叠、进退两难，象征蹇难之象，蹇有“蹇难”“险阻”“行难”之意，此卦主身处重重险阻、进退维谷，宜顺柔向西南（坤方），亲贤见贵，守正待时，不可冒进东北（艮方），徒增蹇难。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：蹇，难也，险在前也。见险而能止，知矣哉！利西南，往得中也；不利东北，其道穷也。利见大人，往有功也。当位贞吉，以正邦也。蹇之时用大矣哉！",
+    "translation": "彖传曰：蹇，是艰难的意思，危险就在前方。看见危险而能停止行动，真是明智啊！利于前往西南，是因为往去能居守中道；不利于前往东北，是因为那条道路走到了尽头。利于拜见大德之人，是因为往去能建立功劳。居守正位而坚守正道吉祥，是因为可以端正邦国。蹇卦顺应时机的作用太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：山上有水，蹇；君子以反身修德。",
+    "translation": "象传曰：高山之上有水，水行山阻、险阻相叠，是蹇卦之象；君子因此反躬自省、修养德行，内修其身、外解其蹇，德厚则险自消。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "往蹇，来誉。",
+      "translation": "前往则遇蹇难，归来则获得赞誉，初遇蹇难、不宜冒进，退而修守则获誉。",
+      "xiang": "象曰：往蹇来誉，宜待也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "王臣蹇蹇，匪躬之故。",
+      "translation": "君王的臣子身处重重蹇难，并非为了自身的缘故，柔中守正、尽忠报国，蹇难之中不失其节。",
+      "xiang": "象曰：王臣蹇蹇，终无尤也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "往蹇，来反。",
+      "translation": "前往则遇蹇难，归来则返归本位，刚爻居艮，冒进则蹇，退而守正则安。",
+      "xiang": "象曰：往蹇来反，内喜之也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "往蹇，来连。",
+      "translation": "前往则遇蹇难，归来则与人相连相助，柔爻近险，独进则蹇，结众相助则能解蹇。",
+      "xiang": "象曰：往蹇来连，当位实也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "大蹇，朋来。",
+      "translation": "身处巨大的蹇难，朋友前来相助，刚中居尊，蹇难至极则众贤来助，合力解蹇。",
+      "xiang": "象曰：大蹇朋来，以中节也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "往蹇，来硕，吉；利见大人。",
+      "translation": "前往则遇蹇难，归来则成就大功，吉祥；利于拜见大德之人，蹇难终尽，得大人助则成硕功。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "水+土",
+    "nature": "蹇难、险阻、行难、反身修德、结众解蹇",
+    "direction": "北偏西",
+    "season": "冬末春初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、险、前阻、艰难",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、阻、止行、稳重",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少男",
+    "body": "手",
+    "animal": "豕、狗",
+    "color": "黑、黄"
   },
   "category": {
     "nature": "yin",
-    "quality": "neutral",
+    "quality": "negative",
     "difficulty": "complex"
   },
   "tags": [
-    "待补充"
+    "蹇难",
+    "反身修德",
+    "山上有水",
+    "结众解蹇",
+    "守正解蹇",
+    "见贵得助"
   ]
 }

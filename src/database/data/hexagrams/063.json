@@ -1,101 +1,106 @@
 {
-  "symbol": "䷾",
+  "symbol": "䷸",
   "name": "水火既济",
-  "pinyin": "",
+  "pinyin": "shuǐ huǒ jì jì",
   "sequence": 63,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "亨，小利贞，初吉终乱。",
+    "translation": "亨通顺利，小有利于坚守正道，起初吉祥最终混乱。",
+    "annotation": "既济卦上坎下离，坎为水、为险、为阴，离为火、为明、为阳，水在火上、火煮水沸，阴阳相交、刚柔正位，万事皆成、功成业就，象征事成之象，既济有“事已成功”“济渡已成”“既成”之意，此卦主万事已成、功成业就，然物极必反、成极则乱，既济之时，虽亨通小利，然初吉终乱，警示功成之后不可骄矜，宜守正慎终，济道贵在功成不居、慎终如始、守正防乱，骄矜则败，慎终则吉。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：既济，亨，小者亨也。利贞，刚柔正而位当也。初吉，柔得中也。终止则乱，其道穷也。",
+    "translation": "彖传曰：既济卦，亨通，是小的方面亨通。利于坚守正道，是因为阳刚与阴柔皆守正道而爻位居当。起初吉祥，是因为阴柔居守中道。最终停止则陷入混乱，是因为其道走向困穷。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：水在火上，既济；君子以思患而豫防之。",
+    "translation": "象传曰：水在火焰之上，火煮水沸、事已成功，是既济卦之象；君子因此思虑祸患而预先防备，功成之后，安不忘危、防患未然，以避成极则乱之祸。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "曳其轮，濡其尾，无咎。",
+      "translation": "拖住车轮，弄湿尾巴，没有灾祸，初爻居下，阳刚居卑，功成之初，慎行缓进、不妄动，如曳轮濡尾，虽有小阻，然防患未然，故无咎害。",
+      "xiang": "象曰：曳其轮，义无咎也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "妇丧其茀，勿逐，七日得。",
+      "translation": "妇人丢失了头饰，不必追逐，七日之内将会失而复得，柔中守正，既济之时，小有失物，守正待时，物归原主，无需妄求。",
+      "xiang": "象曰：七日得，以中道也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "高宗伐鬼方，三年克之，小人勿用。",
+      "translation": "高宗征伐鬼方，三年才攻克它，不可任用小人，刚爻居正，既济之时，建功立业如伐鬼方，历时长久而功成，功成之后，远小人、亲贤才，方保基业。",
+      "xiang": "象曰：三年克之，惫也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "繻有衣袽，终日戒。",
+      "translation": "华丽的衣服会变成破旧的麻衣，整日保持警戒，柔爻居柔，既济之时，居安思危，知荣华终成朽敝，故终日警戒、防患未然。",
+      "xiang": "象曰：终日戒，有所疑也。"
     },
     {
       "position": 5,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "东邻杀牛，不如西邻之禴祭，实受其福。",
+      "translation": "东边的邻国宰杀牛羊举行盛大祭祀，不如西边的邻国用薄礼举行的祭祀，能实际承受福泽，刚中居尊，既济之主，功成之后，不尚奢华、唯守至诚，薄祭而诚，胜于厚祭而伪，故实受其福。",
+      "xiang": "象曰：东邻杀牛，不如西邻之时也。实受其福，吉大来也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "濡其首，厉。",
+      "translation": "弄湿头部，有危厉，柔爻居上，既济之极，物极必反，功成之后骄矜妄动，如濡首于水，身陷危厉，警示成极则乱、慎终如始。",
+      "xiang": "象曰：濡其首厉，何可久也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "水+火",
+    "nature": "事已成功、济渡已成、功成不居、慎终如始、防患未然",
+    "direction": "南偏北",
+    "season": "秋末冬初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、阴、上险、水覆",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "离",
+        "symbol": "☲",
+        "nature": "光明、火、阳、下明、火煮",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中女",
+    "body": "目",
+    "animal": "豕、雉",
+    "color": "黑、赤"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
+    "nature": "mixed",
+    "quality": "positive",
     "difficulty": "complex"
   },
   "tags": [
-    "待补充"
+    "既济",
+    "事已成功",
+    "水在火上",
+    "慎终如始",
+    "功成不居",
+    "防患未然"
   ]
 }

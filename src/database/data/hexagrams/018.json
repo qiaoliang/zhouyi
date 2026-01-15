@@ -1,101 +1,106 @@
 {
   "symbol": "䷑",
   "name": "山风蛊",
-  "pinyin": "",
+  "pinyin": "shān fēng gǔ",
   "sequence": 18,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "元亨，利涉大川。先甲三日，后甲三日。",
+    "translation": "大为亨通，利于渡过大河巨川。做事要在甲日之前三天谋划，甲日之后三天施行，慎始慎终以整治弊乱。",
+    "annotation": "蛊卦上艮下巽，艮为山、为止，巽为风、为入，风入山下，山止风行，邪乱滋生，象征蛊弊之象，蛊有“蛊弊”“乱极必治”“整治”之意，此卦主世道弊乱之时，宜正本清源、谋定后动，整治乱象则能重获亨通。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：蛊，刚上而柔下，巽而止，蛊。蛊，元亨，而天下治也。利涉大川，往有事也。先甲三日，后甲三日，终则有始，天行也。",
+    "translation": "彖传曰：蛊卦，阳刚之爻居于上位，阴柔之爻居于下位，巽顺而入而又静止不动，弊乱因此滋生而成蛊。蛊卦大为亨通，是因为弊乱至极而天下必将得到整治。利于渡过大河巨川，是因为前往有所作为、整治蛊弊。甲日前三天谋划，甲日后三天施行，结束便有新的开始，这是上天运行的规律。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：山下有风，蛊；君子以振民育德。",
+    "translation": "象传曰：山下刮起大风，风遇山而回、邪乱萌生，是蛊卦之象；君子因此要振济百姓、培育德行，正本清源以整治蛊弊，重塑根基。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "干父之蛊，有子，考无咎，厉终吉。",
+      "translation": "整治父亲留下的蛊弊，有这样贤能的儿子，先父便无灾祸，虽处危厉之中最终仍会吉祥。",
+      "xiang": "象曰：干父之蛊，意承考也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "干母之蛊，不可贞。",
+      "translation": "整治母亲留下的蛊弊，不可过于刚直坚守正道，宜以柔婉之法处事。",
+      "xiang": "象曰：干母之蛊，得中道也。"
     },
     {
       "position": 3,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "干父小有晦，无大咎。",
+      "translation": "整治父亲留下的蛊弊，稍有隐晦不顺，却没有大的灾祸。",
+      "xiang": "象曰：干父之蛊，终无咎也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "裕父之蛊，往见吝。",
+      "translation": "宽容放任父亲留下的蛊弊，一味纵容下去，必会遭遇憾惜。",
+      "xiang": "象曰：裕父之蛊，往未得也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "干父之蛊，用誉。",
+      "translation": "整治父亲留下的蛊弊，凭借贤能获得赞誉，圆满解决乱象。",
+      "xiang": "象曰：干父之蛊，承以德也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "不事王侯，高尚其事。",
+      "translation": "不侍奉王侯君主，坚守高洁的节操，独善其身。",
+      "xiang": "象曰：不事王侯，志可则也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+木",
+    "nature": "蛊弊、整治、乱极必治、谋定后动、正本清源",
+    "direction": "东南",
+    "season": "春夏之交",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、少男、阻隔、稳重",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "巽",
+        "symbol": "☴",
+        "nature": "巽顺、风、长女、入、柔弱",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长女",
+    "body": "股",
+    "animal": "鸡、狗",
+    "color": "青、黄"
   },
   "category": {
-    "nature": "yang",
+    "nature": "mixed",
     "quality": "neutral",
     "difficulty": "complex"
   },
   "tags": [
-    "待补充"
+    "蛊弊",
+    "整治",
+    "山下有风",
+    "乱极必治",
+    "谋定后动",
+    "正本清源"
   ]
 }

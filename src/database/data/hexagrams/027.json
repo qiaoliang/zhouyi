@@ -1,101 +1,106 @@
 {
   "symbol": "䷚",
   "name": "山雷颐",
-  "pinyin": "",
+  "pinyin": "shān léi yí",
   "sequence": 27,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "贞吉。观颐，自求口实。",
+    "translation": "坚守正道则吉祥。观察颐养的道理，当自己谋求口中的食物，自食其力、颐养身心。",
+    "annotation": "颐卦上艮下震，艮为山、为止，震为雷、为动，卦象如口之形，上止下动为咀嚼，象征颐养之象，颐有“颐养”“养育”“自食其力”之意，此卦主颐养身心、自食其力，遵循颐养之道，守正自求则吉，贪求他人则凶。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：颐，贞吉，养正则吉也。观颐，观其所养也。自求口实，观其自养也。天地养万物，圣人养贤以及万民，颐之时大矣哉！",
+    "translation": "彖传曰：颐卦，坚守正道则吉祥，因为遵循正道颐养才会吉祥。观察颐养，是观察其所养育的对象。自己谋求口中的食物，是观察其自我颐养的方式。天地养育世间万物，圣人养育贤才并推及万民，颐养顺应时机的意义太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：山下有雷，颐；君子以慎言语，节饮食。",
+    "translation": "象传曰：山下响起雷声，雷动山止、如口咀嚼，是颐卦之象；君子因此要谨慎言语、节制饮食，修身养性、颐养身心。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "舍尔灵龟，观我朵颐，凶。",
+      "translation": "舍弃自己如同灵龟一般的天然食禄，却羡慕我垂涎进食的样子，贪求他人、妄羡外物，凶险。",
+      "xiang": "象曰：观我朵颐，亦不足贵也。"
     },
     {
       "position": 2,
-      "name": "初六",
+      "name": "六二",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "颠颐，拂经，于丘颐，征凶。",
+      "translation": "颠倒颐养之道，违背常理，向山丘上的人求取颐养，有所前往则凶险，不可反向求养。",
+      "xiang": "象曰：六二征凶，行失类也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "拂颐，贞凶，十年勿用，无攸利。",
+      "translation": "违背颐养之道，坚守正道仍有凶险，十年之内不可任用，没有任何好处。",
+      "xiang": "象曰：拂颐贞凶，道大悖也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "颠颐，吉。虎视眈眈，其欲逐逐，无咎。",
+      "translation": "颠倒颐养之道却获得吉祥；如老虎一般目光专注，求取颐养的欲望迫切而有节度，没有灾祸。",
+      "xiang": "象曰：颠颐之吉，上施光也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "拂经，居贞吉，不可涉大川。",
+      "translation": "违背常理，安居坚守正道则吉祥，不宜渡过大河巨川，不可冒进。",
+      "xiang": "象曰：居贞之吉，顺以从上也。"
     },
     {
       "position": 6,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "由颐，厉吉，利涉大川。",
+      "translation": "众人皆依靠他的颐养之道而生活，虽处危厉却最终吉祥，利于渡过大河巨川，德泽众人、堪当大任。",
+      "xiang": "象曰：由颐厉吉，大有庆也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+木",
+    "nature": "颐养、养育、自食其力、修身养性、节用慎行",
+    "direction": "东偏北",
+    "season": "春初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "艮",
+        "symbol": "☶",
+        "nature": "静止、山、少男、止、口上",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、长男、动、口下",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "长男",
+    "body": "口",
+    "animal": "龙、狗",
+    "color": "青、黄"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "颐养",
+    "自食其力",
+    "山下有雷",
+    "修身养性",
+    "节饮食慎言语",
+    "养贤及民"
   ]
 }

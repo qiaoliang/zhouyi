@@ -1,101 +1,106 @@
 {
   "symbol": "䷒",
   "name": "地泽临",
-  "pinyin": "",
+  "pinyin": "dì zé lín",
   "sequence": 19,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "元亨，利贞。至于八月有凶。",
+    "translation": "大为亨通，利于坚守正道。到了八月（季秋）会有凶险，盛极而衰宜戒慎。",
+    "annotation": "临卦上坤下兑，坤为地、为顺，兑为泽、为悦，泽居地之上，泽气下临万民，君主亲临下民，象征临御之象，临有“临御”“亲临”“教临”之意，此卦主阳刚渐长、德泽下施，亲政临民则亨通，然物极必反，盛时宜戒惧以避凶。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：临，刚浸而长，说而顺，刚中而应，大亨以正，天之道也。至于八月有凶，消不久也。",
+    "translation": "彖传曰：临卦，阳刚之气逐渐浸润增长，心怀和悦而处事柔顺，刚爻居守中道而与阴爻相应，大为亨通且坚守正道，这是上天的运行规律。到了八月有凶险，是因为阳刚之气的消退为时不远了。"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：泽上有地，临；君子以教思无穷，容保民无疆。",
+    "translation": "象传曰：大泽之上有大地，地包容泽、泽下临万物，是临卦之象；君子因此要教化百姓、思虑无穷，包容爱护百姓、福泽无疆，以仁政临御万民。"
   },
   "yaoci": [
     {
       "position": 1,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "咸临，贞吉。",
+      "translation": "以诚心感化、亲临下民，坚守正道则吉祥。",
+      "xiang": "象曰：咸临贞吉，志行正也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "咸临，吉无不利。",
+      "translation": "以诚心感化、亲临下民，吉祥而无所不利。",
+      "xiang": "象曰：咸临吉无不利，未顺命也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "甘临，无攸利。既忧之，无咎。",
+      "translation": "以甜言蜜语、虚情假意临御下民，没有任何好处；一旦心生忧惧、改过自新，便没有灾祸。",
+      "xiang": "象曰：甘临，位不当也。既忧之，咎不长也。"
     },
     {
       "position": 4,
-      "name": "上六",
+      "name": "六四",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "至临，无咎。",
+      "translation": "亲自至诚地临御下民，诚心相待，没有灾祸。",
+      "xiang": "象曰：至临无咎，位当也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "知临，大君之宜，吉。",
+      "translation": "以智慧临御下民，这是君主适宜的做法，吉祥。",
+      "xiang": "象曰：大君之宜，行中之谓也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "敦临，吉无咎。",
+      "translation": "以敦厚笃实之心临御下民，吉祥而没有灾祸。",
+      "xiang": "象曰：敦临之吉，志在内也。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "土+金",
+    "nature": "临御、亲临、德泽下施、教民、仁政",
+    "direction": "西偏南",
+    "season": "秋末冬初",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "柔顺、地、母、包容、承载",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "兑",
+        "symbol": "☱",
+        "nature": "和悦、泽、少女、柔润、施泽",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "少女",
+    "body": "口",
+    "animal": "羊、牛",
+    "color": "黄、白"
   },
   "category": {
-    "nature": "yang",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "临御",
+    "德泽下施",
+    "泽上有地",
+    "仁政",
+    "教民无穷",
+    "戒慎盛极"
   ]
 }

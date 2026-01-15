@@ -1,101 +1,105 @@
 {
   "symbol": "䷧",
   "name": "雷水解",
-  "pinyin": "",
+  "pinyin": "léi shuǐ jiě",
   "sequence": 40,
   "guaci": {
-    "original": "卦辞待补充",
-    "translation": "卦辞翻译待补充",
-    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+    "original": "利西南，无所往，其来复吉；有攸往，夙吉。",
+    "translation": "利于前往西南，没有必要前往的话，归来复归本位吉祥；若有所前往，趁早行动吉祥，解蹇之时，顺柔则利，速行则吉，迟则生变。",
+    "annotation": "解卦上震下坎，震为雷、为动、为阳，坎为水、为险、为阴，雷动雨降，阳动阴解，险难消散，象征解险之象，解有“解除”“解蹇”“释放”之意，此卦主蹇难终尽、险阻消解，宜顺柔向西南，当动则动、速行建功，当止则止、复归本位，动静合宜则吉。"
   },
   "tuanci": {
-    "original": "彖辞待补充",
-    "translation": "彖辞翻译待补充"
+    "original": "彖曰：解，险以动，动而免乎险，解。解利西南，往得众也。无所往其来复吉，乃得中也。有攸往夙吉，往有功也。天地解而雷雨作，雷雨作而百果草木皆甲坼。解之时大矣哉！",
+    "translation": "彖传曰：解卦，身处险难而有所行动，行动而得以脱离险难，就是解。解卦利于前往西南，是因为往去能得到众人的拥护。没有必要前往则归来复归本位吉祥，是因为能居守中道。若有所前往趁早行动吉祥，是因为往去能建立功劳。天地消解闭塞而雷雨兴起，雷雨兴起而百果草木都破壳发芽。解卦顺应时机的意义太伟大了！"
   },
   "xiangci": {
-    "original": "象辞待补充",
-    "translation": "象辞翻译待补充"
+    "original": "象曰：雷雨作，解；君子以赦过宥罪。",
+    "translation": "象传曰：雷雨兴起、阴阳相济、险难消解，是解卦之象；君子因此赦免过失、宽恕罪行，恩威并施、解怨释结，与民更始。"
   },
   "yaoci": [
     {
       "position": 1,
       "name": "初六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "无咎。",
+      "translation": "没有灾祸，初逢解卦，险难刚消，守正静处则无咎。",
+      "xiang": "象曰：刚柔之际，义无咎也。"
     },
     {
       "position": 2,
-      "name": "初六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "田获三狐，得黄矢，贞吉。",
+      "translation": "田猎捕获三只狐狸，得到黄色的箭镞，坚守正道则吉祥，刚中守正，解险除邪、获乎中道，吉无不利。",
+      "xiang": "象曰：九二贞吉，得中道也。"
     },
     {
       "position": 3,
-      "name": "初六",
+      "name": "六三",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "负且乘，致寇至，贞吝。",
+      "translation": "背着东西又乘坐车子，招致强盗前来，坚守正道仍有憾惜，德不配位、妄享其利，解蹇之时仍招祸患。",
+      "xiang": "象曰：负且乘，亦可丑也，自我致戎，又谁咎也？"
     },
     {
       "position": 4,
-      "name": "上六",
-      "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "解而拇，朋至斯孚。",
+      "translation": "解除脚上的束缚，朋友到来并心怀诚信相交，解去私缚、广结贤朋，诚信相感则众心归服。",
+      "xiang": "象曰：解而拇，未当位也。"
     },
     {
       "position": 5,
-      "name": "上六",
+      "name": "六五",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "君子维有解，吉；有孚于小人。",
+      "translation": "君子唯有解除险难，吉祥；对小人也心怀诚信，柔中居尊，解险安民，信及小人则天下归心。",
+      "xiang": "象曰：君子有解，小人退也。"
     },
     {
       "position": 6,
       "name": "上六",
       "yinYang": "yin",
-      "original": "爻辞待补充",
-      "translation": "爻辞翻译待补充",
-      "xiang": "象辞待补充"
+      "original": "公用射隼于高墉之上，获之，无不利。",
+      "translation": "王公在高墙上射杀隼鸟，将其捕获，无所不利，解险至终，除残去暴、功成于外，解卦之吉至极。"
     }
   ],
   "metadata": {
-    "element": "待补充",
-    "nature": "待补充",
-    "direction": "待补充",
-    "season": "待补充",
+    "element": "木+水",
+    "nature": "解险、解除、解蹇、速行建功、赦过宥罪",
+    "direction": "东偏北",
+    "season": "孟春",
     "trigrams": {
       "upper": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "震",
+        "symbol": "☳",
+        "nature": "震动、雷、动、解险、阳动",
         "position": "upper"
       },
       "lower": {
-        "name": "待补充",
-        "symbol": "☰",
-        "nature": "待补充",
+        "name": "坎",
+        "symbol": "☵",
+        "nature": "险陷、水、险、被解、阴柔",
         "position": "lower"
       }
     },
-    "family": "待补充",
-    "body": "待补充",
-    "animal": "待补充",
-    "color": "待补充"
+    "family": "中男",
+    "body": "耳",
+    "animal": "龙、豕",
+    "color": "青、黑"
   },
   "category": {
-    "nature": "yin",
-    "quality": "neutral",
-    "difficulty": "complex"
+    "nature": "mixed",
+    "quality": "positive",
+    "difficulty": "medium"
   },
   "tags": [
-    "待补充"
+    "解险",
+    "雷雨作",
+    "速行建功",
+    "赦过宥罪",
+    "解蹇安民",
+    "除残去暴"
   ]
 }
