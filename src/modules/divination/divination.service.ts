@@ -8,6 +8,7 @@ import {
   IHexagramLine,
   YinYang,
 } from '../../database/schemas/divination-record.schema';
+import { GuestDivination } from '../../database/schemas/guest-divination.schema';
 
 /**
  * 铜钱结果
@@ -65,6 +66,8 @@ export class DivinationService {
     private hexagramModel: Model<Hexagram>,
     @InjectModel('DivinationRecord')
     private divinationRecordModel: Model<DivinationRecord>,
+    @InjectModel(GuestDivination.name)
+    private guestDivinationModel: Model<GuestDivination>,
   ) {}
 
   /**
@@ -420,6 +423,26 @@ export class DivinationService {
         amount: 0,
         status: 'unpaid',
       },
+    });
+
+    return record.save();
+  }
+
+  /**
+   * 保存游客卜卦记录
+   */
+  async saveGuestDivinationRecord(
+    hexagram: any,
+    guestId: string,
+    device: any,
+    ip?: string,
+  ): Promise<any> {
+    const record = new this.guestDivinationModel({
+      guestId,
+      hexagram,
+      device,
+      ip,
+      createdAt: new Date(),
     });
 
     return record.save();
