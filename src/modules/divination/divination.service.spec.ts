@@ -4,6 +4,7 @@ import { BadRequestException } from '@nestjs/common';
 import { DivinationService } from './divination.service';
 import { Hexagram } from '../../database/schemas/hexagram.schema';
 import { DivinationRecord } from '../../database/schemas/divination-record.schema';
+import { GuestDivination } from '../../database/schemas/guest-divination.schema';
 import { Model } from 'mongoose';
 import { YinYang } from '../../database/schemas/divination-record.schema';
 
@@ -169,6 +170,17 @@ describe('DivinationService', () => {
   mockDivinationRecordModel.countDocuments = jest.fn();
   mockDivinationRecordModel.findOne = jest.fn().mockReturnValue({ exec: mockFindOneExec });
 
+  const mockGuestDivinationModel = function(data: any) {
+    return {
+      ...data,
+      _id: '507f1f77bcf86cd799439013',
+      save: jest.fn().mockResolvedValue({
+        _id: '507f1f77bcf86cd799439013',
+        ...data,
+      }),
+    };
+  } as any;
+
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [
@@ -180,6 +192,10 @@ describe('DivinationService', () => {
         {
           provide: getModelToken('DivinationRecord'),
           useValue: mockDivinationRecordModel,
+        },
+        {
+          provide: getModelToken(GuestDivination.name),
+          useValue: mockGuestDivinationModel,
         },
       ],
     }).compile();
@@ -238,6 +254,9 @@ describe('DivinationService', () => {
 
     it('should throw BadRequestException when hexagram not found', async () => {
       mockHexFindOneExec.mockResolvedValue(null);
+      mockHexagramModel.find.mockReturnValue({
+        exec: jest.fn().mockResolvedValue([]),
+      });
 
       await expect(service.performDivination()).rejects.toThrow(
         BadRequestException,
