@@ -32,6 +32,30 @@ if [ $attempt -eq $max_attempts ]; then
     exit 1
 fi
 
+# 检查是否需要刷新数据库
+if [ "${ZHOUYI_DB_REFRESH}" = "TRUE" ] || [ "${ZHOUYI_DB_REFRESH}" = "true" ]; then
+    echo "[ENTRYPOINT] 检测到 ZHOUYI_DB_REFRESH=TRUE，开始刷新数据库..."
+    
+    # 删除整个数据库
+    if node -e "
+        const { MongoClient } = require('mongodb');
+        const client = new MongoClient('mongodb://admin:admin123@mongodb:27017');
+        client.connect().then(async () => {
+            await client.db('zhouyi').dropDatabase();
+            console.log('Database dropped successfully');
+            process.exit(0);
+        }).catch((error) => {
+            console.error('Error dropping database:', error.message);
+            process.exit(1);
+        });
+    " 2>/dev/null; then
+        echo "[ENTRYPOINT] ✅ 数据库已删除"
+    else
+        echo "[ENTRYPOINT] ❌ 删除数据库失败"
+        exit 1
+    fi
+fi
+
 # 检查数据库是否需要初始化
 echo "[ENTRYPOINT] 检查数据库初始化状态..."
 if node -e "

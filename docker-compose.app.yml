@@ -62,6 +62,7 @@ services:
       JWT_SECRET: your-secret-key-change-in-production
       WECHAT_APP_ID: ${WECHAT_APP_ID}
       WECHAT_APP_SECRET: ${WECHAT_APP_SECRET}
+      ZHOUYI_DB_REFRESH: ${ZHOUYI_DB_REFRESH:-false}
     depends_on:
       mongodb:
         condition: service_healthy
