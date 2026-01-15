@@ -187,10 +187,18 @@ check_and_cleanup_ports() {
             if [ "$auto_cleanup" = true ]; then
                 print_info "自动停止占用端口的 Docker 容器..."
                 cleanup_port $port "$service_name"
+                if [ $? -ne 0 ]; then
+                    print_error "无法释放端口 $port"
+                    exit 1
+                fi
             else
                 read -p "$(echo -e ${YELLOW}是否停止占用端口的 Docker 容器? [y/N]: ${NC})" stop_container
                 if [ "$stop_container" = "y" ] || [ "$stop_container" = "Y" ]; then
                     cleanup_port $port "$service_name"
+                    if [ $? -ne 0 ]; then
+                        print_error "无法释放端口 $port"
+                        exit 1
+                    fi
                 else
                     print_error "端口冲突未解决，无法启动服务"
                     exit 1
@@ -202,10 +210,18 @@ check_and_cleanup_ports() {
             if [ "$auto_cleanup" = true ]; then
                 print_info "自动终止占用端口的进程..."
                 cleanup_port $port "$service_name"
+                if [ $? -ne 0 ]; then
+                    print_error "无法释放端口 $port"
+                    exit 1
+                fi
             else
                 read -p "$(echo -e ${YELLOW}是否终止占用端口的进程? [y/N]: ${NC})" kill_process
                 if [ "$kill_process" = "y" ] || [ "$kill_process" = "Y" ]; then
                     cleanup_port $port "$service_name"
+                    if [ $? -ne 0 ]; then
+                        print_error "无法释放端口 $port"
+                        exit 1
+                    fi
                 else
                     print_error "端口冲突未解决，无法启动服务"
                     exit 1
@@ -216,6 +232,8 @@ check_and_cleanup_ports() {
     
     if [ $conflicts_found -eq 0 ]; then
         print_success "所有端口可用"
+    else
+        print_success "所有端口冲突已解决"
     fi
 }
 
