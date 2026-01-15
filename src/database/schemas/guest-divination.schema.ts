@@ -20,10 +20,10 @@ export class GuestDivination {
   @Prop({ required: true, index: true })
   guestId: string;
 
-  @Prop({ required: true })
+  @Prop({ type: Object, required: true })
   hexagram: any;
 
-  @Prop({ required: true })
+  @Prop({ type: Object, required: true })
   device: DeviceInfo;
 
   @Prop()
