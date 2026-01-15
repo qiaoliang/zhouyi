@@ -204,19 +204,20 @@ export class DivinationService {
 
     if (!hexagram) {
       this.logger.warn(`No hexagram found for upper=${upperInfo.name}, lower=${lowerInfo.name}`);
-      // 临时解决方案：返回默认的乾卦（卦象数据不完整时使用）
+      // 当找不到匹配的卦象时，随机返回一个已有的卦象
       // TODO: 补充完整的 64 个卦象数据
-      const defaultHexagram = await this.hexagramModel.findOne({ sequence: 1 }).exec();
-      if (!defaultHexagram) {
-        this.logger.error('Default hexagram (乾卦) not found in database');
+      const allHexagrams = await this.hexagramModel.find().exec();
+      if (!allHexagrams || allHexagrams.length === 0) {
+        this.logger.error('No hexagrams found in database');
         return null;
       }
-      this.logger.warn(`Using default hexagram: ${defaultHexagram.name}`);
+      const randomHexagram = allHexagrams[Math.floor(Math.random() * allHexagrams.length)];
+      this.logger.warn(`Using random hexagram: ${randomHexagram.name} (sequence: ${randomHexagram.sequence})`);
       return {
-        name: defaultHexagram.name,
-        symbol: defaultHexagram.symbol,
-        pinyin: defaultHexagram.pinyin,
-        sequence: defaultHexagram.sequence,
+        name: randomHexagram.name,
+        symbol: randomHexagram.symbol,
+        pinyin: randomHexagram.pinyin,
+        sequence: randomHexagram.sequence,
       };
     }
 
