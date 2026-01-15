@@ -34,6 +34,12 @@ RUN npm ci --omit=dev && \
 # 从构建阶段复制构建产物
 COPY --from=builder /app/dist ./dist
 
+# 复制卦象数据文件
+COPY --from=builder /app/src/database/data/hexagrams ./src/database/data/hexagrams
+
+# 复制seed脚本
+COPY --from=builder /app/scripts ./scripts
+
 # 复制启动脚本
 COPY docker-entrypoint.sh /app/
 RUN chmod +x /app/docker-entrypoint.sh

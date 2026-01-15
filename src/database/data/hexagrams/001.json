@@ -1,0 +1,118 @@
+{
+  "symbol": "䷀",
+  "name": "乾为天",
+  "pinyin": "qián wéi tiān",
+  "sequence": 1,
+  "guaci": {
+    "original": "元，亨，利，贞。",
+    "translation": "元始，亨通，和谐有利，正固持久。",
+    "annotation": "乾卦象征天，代表刚健、进取、创造。"
+  },
+  "tuanci": {
+    "original": "大哉乾元，万物资始，乃统天。云行雨施，品物流形。大明始终，六位时成，时乘六龙以御天。乾道变化，各正性命，保合太和，乃利贞。首出庶物，万国咸宁。",
+    "translation": "伟大啊乾元！万物赖此而始，乃统帅天道。云行雨降，万物成形。太阳终而复始，六爻按时位而成，时乘六龙以驾御天道。乾道变化，万物各正性命，保持太和之气，乃利于正固。为首的创造万物，万国都安宁。"
+  },
+  "xiangci": {
+    "original": "天行健，君子以自强不息。",
+    "translation": "天道运行刚健有力，君子应效法天道，自我力求进步，永不停止。"
+  },
+  "yaoci": [
+    {
+      "position": 1,
+      "name": "初九",
+      "yinYang": "yang",
+      "original": "潜龙，勿用。",
+      "translation": "龙潜伏在深渊，暂时不宜有所作为。",
+      "xiang": "潜龙勿用，阳在下也。",
+      "annotation": "比喻时机未到，应当积蓄力量，等待时机。"
+    },
+    {
+      "position": 2,
+      "name": "九二",
+      "yinYang": "yang",
+      "original": "见龙在田，利见大人。",
+      "translation": "龙出现在田野上，有利于拜见大人。",
+      "xiang": "见龙在田，德施普也。",
+      "annotation": "比喻才华初露，应当积极展现，寻求贵人相助。"
+    },
+    {
+      "position": 3,
+      "name": "九三",
+      "yinYang": "yang",
+      "original": "君子终日乾乾，夕惕若，厉，无咎。",
+      "translation": "君子整天勤奋努力，夜晚警惕戒惧，虽处危境，也无灾祸。",
+      "xiang": "终日乾乾，反复道也。",
+      "annotation": "比喻处于上升期，必须持续努力，保持谨慎。"
+    },
+    {
+      "position": 4,
+      "name": "九四",
+      "yinYang": "yang",
+      "original": "或跃在渊，无咎。",
+      "translation": "或者跃进深渊，没有灾祸。",
+      "xiang": "或跃在渊，进无咎也。",
+      "annotation": "比喻面临抉择，需要审时度势，抓住时机。"
+    },
+    {
+      "position": 5,
+      "name": "九五",
+      "yinYang": "yang",
+      "original": "飞龙在天，利见大人。",
+      "translation": "龙飞在天上，有利于拜见大人。",
+      "xiang": "飞龙在天，大人造也。",
+      "annotation": "比喻事业达到顶峰，大展宏图的好时机。"
+    },
+    {
+      "position": 6,
+      "name": "上九",
+      "yinYang": "yang",
+      "original": "亢龙有悔。",
+      "translation": "龙飞得太高，会有悔恨。",
+      "xiang": "亢龙有悔，盈不可久也。",
+      "annotation": "比喻事物达到极点后会走向反面，应当知进退。"
+    }
+  ],
+  "yonggua": {
+    "original": "用九，见群龙无首，吉。",
+    "translation": "用九爻辞：出现群龙没有首领，吉利。",
+    "annotation": "比喻群龙共治，各尽其责，不用强求统一领导。"
+  },
+  "metadata": {
+    "element": "金",
+    "nature": "天",
+    "direction": "南",
+    "season": "秋",
+    "trigrams": {
+      "upper": {
+        "name": "乾",
+        "symbol": "☰",
+        "nature": "天",
+        "position": "upper"
+      },
+      "lower": {
+        "name": "乾",
+        "symbol": "☰",
+        "nature": "天",
+        "position": "lower"
+      }
+    },
+    "family": "父",
+    "body": "首",
+    "animal": "马",
+    "color": "赤"
+  },
+  "category": {
+    "nature": "yang",
+    "quality": "lucky",
+    "difficulty": "simple"
+  },
+  "tags": [
+    "天",
+    "阳",
+    "刚健",
+    "创造",
+    "进取",
+    "领导",
+    "父卦"
+  ]
+}

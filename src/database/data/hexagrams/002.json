@@ -1,0 +1,117 @@
+{
+  "symbol": "䷁",
+  "name": "坤为地",
+  "pinyin": "kūn wéi dì",
+  "sequence": 2,
+  "guaci": {
+    "original": "元，亨，利牝马之贞。君子有攸往，先迷后得主。利西南得朋，东北丧朋。安贞吉。",
+    "translation": "元始，亨通，利于像母马那样坚守正道。君子有所前往，起初迷路，后来找到主人。利于在西南方得到朋友，在东北方失去朋友。安于正道吉利。",
+    "annotation": "坤卦象征地，代表柔顺、包容、承载。牝马象征柔顺而有耐力。"
+  },
+  "tuanci": {
+    "original": "至哉坤元，万物资生，乃顺承天。坤厚载物，德合无疆。含弘光大，品物咸亨。牝马地类，行地无疆，柔顺利贞。君子攸行，先迷失道，后顺得常。西南得朋，乃与类行。东北丧朋，乃终有庆。安贞之吉，应地无疆。",
+    "translation": "至极啊坤元！万物赖此而生，乃顺承天道。大地深厚承载万物，德性广大无边。包含弘大光大，万物都亨通。母马与地同类，行地无疆，柔顺利于正固。君子有所前往，起初迷失道路，后来顺应得到常道。西南得朋，是与同类同行。东北丧朋，是终有喜庆。安于正道的吉利，应合大地无疆。"
+  },
+  "xiangci": {
+    "original": "地势坤，君子以厚德载物。",
+    "translation": "地势柔顺，君子应效法大地，以深厚的德行承载万物。"
+  },
+  "yaoci": [
+    {
+      "position": 1,
+      "name": "初六",
+      "yinYang": "yin",
+      "original": "履霜，坚冰至。",
+      "translation": "踩到霜，坚冰就要到来。",
+      "xiang": "履霜坚冰，阴始凝也。驯致其道，至坚冰也。",
+      "annotation": "比喻见微知著，防患于未然。"
+    },
+    {
+      "position": 2,
+      "name": "六二",
+      "yinYang": "yin",
+      "original": "直，方，大，不习无不利。",
+      "translation": "正直，方正，广大，不需要学习也没有什么不利的。",
+      "xiang": "六二之动，直以方也。不习无不利，地道光也。",
+      "annotation": "比喻具备良好品德，自然能够顺利。"
+    },
+    {
+      "position": 3,
+      "name": "六三",
+      "yinYang": "yin",
+      "original": "含章可贞。或从王事，无成有终。",
+      "translation": "蕴含美德，可以保持正固。或者从事君王的事业，虽然不能居功，但会有好的结果。",
+      "xiang": "含章可贞，以时发也。或从王事，知光大也。",
+      "annotation": "比喻内敛含蓄，尽职尽责，不求虚名。"
+    },
+    {
+      "position": 4,
+      "name": "六四",
+      "yinYang": "yin",
+      "original": "括囊，无咎无誉。",
+      "translation": "束紧口袋，没有灾祸也没有赞誉。",
+      "xiang": "括囊无咎，慎不害也。",
+      "annotation": "比喻谨言慎行，明哲保身。"
+    },
+    {
+      "position": 5,
+      "name": "六五",
+      "yinYang": "yin",
+      "original": "黄裳，元吉。",
+      "translation": "黄色的下裳，大吉大利。",
+      "xiang": "黄裳元吉，文在中也。",
+      "annotation": "比喻居高位而谦虚，保持中庸之道。"
+    },
+    {
+      "position": 6,
+      "name": "上六",
+      "yinYang": "yin",
+      "original": "龙战于野，其血玄黄。",
+      "translation": "龙在野外战斗，其血是黑黄色的。",
+      "xiang": "龙战于野，其道穷也。",
+      "annotation": "比喻阴阳相争，两败俱伤。"
+    }
+  ],
+  "yonggua": {
+    "original": "用六，利永贞。",
+    "translation": "用六爻辞：利于永远坚守正道。",
+    "annotation": "比喻始终柔顺，保持正固。"
+  },
+  "metadata": {
+    "element": "土",
+    "nature": "地",
+    "direction": "北",
+    "season": "冬",
+    "trigrams": {
+      "upper": {
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "地",
+        "position": "upper"
+      },
+      "lower": {
+        "name": "坤",
+        "symbol": "☷",
+        "nature": "地",
+        "position": "lower"
+      }
+    },
+    "family": "母",
+    "body": "腹",
+    "animal": "牛",
+    "color": "黄"
+  },
+  "category": {
+    "nature": "yin",
+    "quality": "lucky",
+    "difficulty": "simple"
+  },
+  "tags": [
+    "地",
+    "阴",
+    "柔顺",
+    "包容",
+    "母卦",
+    "承载"
+  ]
+}

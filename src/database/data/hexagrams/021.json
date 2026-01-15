@@ -1,0 +1,101 @@
+{
+  "symbol": "䷔",
+  "name": "火雷噬嗑",
+  "pinyin": "",
+  "sequence": 21,
+  "guaci": {
+    "original": "卦辞待补充",
+    "translation": "卦辞翻译待补充",
+    "annotation": "注：此卦象数据为简化版本，后续需要补充完整的卦辞、爻辞等详细信息。"
+  },
+  "tuanci": {
+    "original": "彖辞待补充",
+    "translation": "彖辞翻译待补充"
+  },
+  "xiangci": {
+    "original": "象辞待补充",
+    "translation": "象辞翻译待补充"
+  },
+  "yaoci": [
+    {
+      "position": 1,
+      "name": "初六",
+      "yinYang": "yin",
+      "original": "爻辞待补充",
+      "translation": "爻辞翻译待补充",
+      "xiang": "象辞待补充"
+    },
+    {
+      "position": 2,
+      "name": "初六",
+      "yinYang": "yin",
+      "original": "爻辞待补充",
+      "translation": "爻辞翻译待补充",
+      "xiang": "象辞待补充"
+    },
+    {
+      "position": 3,
+      "name": "初六",
+      "yinYang": "yin",
+      "original": "爻辞待补充",
+      "translation": "爻辞翻译待补充",
+      "xiang": "象辞待补充"
+    },
+    {
+      "position": 4,
+      "name": "上六",
+      "yinYang": "yin",
+      "original": "爻辞待补充",
+      "translation": "爻辞翻译待补充",
+      "xiang": "象辞待补充"
+    },
+    {
+      "position": 5,
+      "name": "上六",
+      "yinYang": "yin",
+      "original": "爻辞待补充",
+      "translation": "爻辞翻译待补充",
+      "xiang": "象辞待补充"
+    },
+    {
+      "position": 6,
+      "name": "上六",
+      "yinYang": "yin",
+      "original": "爻辞待补充",
+      "translation": "爻辞翻译待补充",
+      "xiang": "象辞待补充"
+    }
+  ],
+  "metadata": {
+    "element": "待补充",
+    "nature": "待补充",
+    "direction": "待补充",
+    "season": "待补充",
+    "trigrams": {
+      "upper": {
+        "name": "待补充",
+        "symbol": "☰",
+        "nature": "待补充",
+        "position": "upper"
+      },
+      "lower": {
+        "name": "待补充",
+        "symbol": "☰",
+        "nature": "待补充",
+        "position": "lower"
+      }
+    },
+    "family": "待补充",
+    "body": "待补充",
+    "animal": "待补充",
+    "color": "待补充"
+  },
+  "category": {
+    "nature": "yang",
+    "quality": "neutral",
+    "difficulty": "complex"
+  },
+  "tags": [
+    "待补充"
+  ]
+}

@@ -72,21 +72,8 @@ if node -e "
 " 2>/dev/null | grep -q "^0$"; then
     echo "[ENTRYPOINT] 数据库未初始化，开始导入卦象数据..."
 
-    # 创建一个临时包装脚本来运行 seed-hexagrams.js
-    cat > /tmp/seed-wrapper.js << 'EOF'
-const { spawn } = require('child_process');
-
-const child = spawn('node', ['dist/scripts/seed-hexagrams.js'], {
-    stdio: 'inherit',
-    env: process.env
-});
-
-child.on('close', (code) => {
-    process.exit(0); // 总是返回成功，即使 seed-hexagrams.js 失败
-});
-EOF
-
-    node /tmp/seed-wrapper.js || {
+    # 使用简化的seed脚本
+    node scripts/seed-hexagrams-simple.js || {
         echo "[ENTRYPOINT] WARNING: 卦象数据导入失败，但服务将继续启动"
     }
 else
