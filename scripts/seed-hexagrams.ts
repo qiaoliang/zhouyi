@@ -4,11 +4,11 @@
  */
 
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from '../src/app.module';
+import { AppModule } from 'src/app.module';
 import { getModelToken } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Hexagram } from '../src/database/schemas/hexagram.schema';
-import { HEXAGRAMS_DATA } from '../src/database/data/hexagrams-data';
+import { Hexagram } from 'src/database/schemas/hexagram.schema';
+import { HEXAGRAMS_DATA } from 'src/database/data/hexagrams-data';
 import { Logger } from '@nestjs/common';
 
 async function bootstrap() {

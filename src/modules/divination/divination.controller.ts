@@ -8,6 +8,8 @@ import {
   UseGuards,
   Req,
 } from '@nestjs/common';
+import { ApiProperty } from '@nestjs/swagger';
+import { IsOptional, IsString, IsNumber } from 'class-validator';
 import { DivinationService } from './divination.service';
 import { HexagramAnalysisService } from './hexagram-analysis.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
@@ -15,22 +17,20 @@ import { SubscriptionGuard, RequireSubscription } from '../membership/guards/sub
 import { Public } from '../../common/decorators/public.decorator';
 import { CurrentUser } from '../../common/decorators/current-user.decorator';
 import { PreciseInterpretationDto, UpdatePreciseInfoDto } from './dto/precise-interpretation.dto';
-
-/**
- * 起卦请求DTO
- */
-export class DivinateDto {
-  device?: {
-    platform: string;
-    model?: string;
-  };
-}
+import { DivinateDto } from './dto/divinate.dto';
 
 /**
  * 分页查询DTO
  */
 export class PaginationDto {
+  @ApiProperty({ description: '页码', required: false })
+  @IsOptional()
+  @IsNumber()
   page?: number = 1;
+
+  @ApiProperty({ description: '每页数量', required: false })
+  @IsOptional()
+  @IsNumber()
   limit?: number = 20;
 }
 
@@ -59,7 +59,7 @@ export class DivinationController {
     const userId = req.user?.userId;
     const guestId = !userId ? req.headers['x-guest-id'] as string : undefined;
 
-    // 保存记录
+    // 保存记录（直接传递device对象）
     const record = await this.divinationService.saveDivinationRecord(
       hexagram,
       userId,

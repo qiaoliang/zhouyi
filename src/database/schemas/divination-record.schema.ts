@@ -97,6 +97,36 @@ export interface IPayment {
 }
 
 /**
+ * 支付信息 Schema
+ */
+@Schema({ _id: false })
+export class Payment {
+  @Prop({
+    type: String,
+    enum: ['free', 'single', 'membership'],
+    default: 'free',
+    required: true,
+  })
+  type: 'free' | 'single' | 'membership';
+
+  @Prop({ type: Types.ObjectId })
+  orderId?: Types.ObjectId;
+
+  @Prop({ type: Number, default: 0 })
+  amount: number;
+
+  @Prop({
+    type: String,
+    enum: ['unpaid', 'paid', 'refunded'],
+    default: 'unpaid',
+    required: true,
+  })
+  status: 'unpaid' | 'paid' | 'refunded';
+}
+
+export const PaymentSchema = SchemaFactory.createForClass(Payment);
+
+/**
  * 设备信息接口
  */
 export interface IDevice {
@@ -242,15 +272,7 @@ export class DivinationRecord {
   /**
    * 支付信息
    */
-  @Prop({
-    type: {
-      type: { type: String, enum: ['free', 'single', 'membership'], default: 'free' },
-      orderId: { type: Types.ObjectId },
-      amount: { type: Number, default: 0 },
-      status: { type: String, enum: ['unpaid', 'paid', 'refunded'], default: 'unpaid' },
-    },
-    _id: false,
-  })
+  @Prop({ type: PaymentSchema, default: undefined })
   payment?: IPayment;
 
   /**

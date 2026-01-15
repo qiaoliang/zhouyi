@@ -51,9 +51,6 @@ LICENSE
 # 前端代码(不在后端镜像中)
 frontend
 
-# 脚本
-scripts
-
 # 其他
 *.log
 logs

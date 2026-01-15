@@ -368,7 +368,7 @@ export class DivinationService {
     hexagram: IHexagram,
     userId?: string,
     guestId?: string,
-    device?: { platform: string; model?: string },
+    device?: { platform?: string; model?: string },
   ): Promise<DivinationRecord> {
     // 获取主卦数据以填充基础解卦
     const hexagramData = await this.hexagramModel
