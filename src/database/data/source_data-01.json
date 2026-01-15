@@ -1,0 +1,414 @@
+[
+  {
+    "symbol": "䷀",
+    "name": "乾为天",
+    "pinyin": "qián wéi tiān",
+    "sequence": 1,
+    "guaci": {
+      "original": "元亨利贞。",
+      "translation": "大为亨通，利于坚守正道。",
+      "annotation": "乾为纯阳之卦，象征天、刚健、君道，元亨利贞为乾卦四德，代表始、通、和、正，是万物生长的根本法则。"
+    },
+    "tuanci": {
+      "original": "彖曰：大哉乾元，万物资始，乃统天。云行雨施，品物流形。大明终始，六位时成，时乘六龙以御天。乾道变化，各正性命，保合大和，乃利贞。首出庶物，万国咸宁。",
+      "translation": "彖传曰：伟大的乾阳元始之气，是万物产生的根源，统摄天地自然。云气运行，雨水布施，各类事物顺其本性发展成形。太阳东升西落完成昼夜循环，六爻位置依时序确定，如同六条龙依时驾御苍天。乾道的变化使万物各得其本性与命运，保持完满的和谐，因此利于坚守正道。乾阳之气超出万物之上，天下万国皆安宁太平。"
+    },
+    "xiangci": {
+      "original": "象曰：天行健，君子以自强不息。",
+      "translation": "象传曰：天的运行刚健不息，君子因此要自我勉励、奋发图强，永不停歇。"
+    },
+    "yaoci": [
+      {
+        "position": 1,
+        "name": "初九",
+        "yinYang": "yang",
+        "original": "潜龙勿用。",
+        "translation": "潜藏的龙，不宜有所作为。",
+        "xiang": "象曰：潜龙勿用，阳在下也。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "yinYang": "yang",
+        "original": "见龙在田，利见大人。",
+        "translation": "龙出现在田野之上，适宜拜见有德位的大人物。",
+        "xiang": "象曰：见龙在田，德施普也。"
+      },
+      {
+        "position": 3,
+        "name": "九三",
+        "yinYang": "yang",
+        "original": "君子终日乾乾，夕惕若厉，无咎。",
+        "translation": "君子整天刚健奋发，夜晚仍保持警惕，如同身处危境，如此则无灾祸。",
+        "xiang": "象曰：终日乾乾，反复道也。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "yinYang": "yang",
+        "original": "或跃在渊，无咎。",
+        "translation": "龙有时跃出水面，有时潜回深渊，没有灾祸。",
+        "xiang": "象曰：或跃在渊，进无咎也。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "yinYang": "yang",
+        "original": "飞龙在天，利见大人。",
+        "translation": "龙飞腾在天空之上，适宜拜见有德位的大人物。",
+        "xiang": "象曰：飞龙在天，大人造也。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "yinYang": "yang",
+        "original": "亢龙有悔。",
+        "translation": "飞得过高的龙，会有悔恨之事发生。",
+        "xiang": "象曰：亢龙有悔，盈不可久也。"
+      },
+      {
+        "position": 7,
+        "name": "用九",
+        "yinYang": "yang",
+        "original": "见群龙无首，吉。",
+        "translation": "看见一群龙没有首领，吉祥。",
+        "xiang": "象曰：用九，天德不可为首也。"
+      }
+    ],
+    "metadata": {
+      "element": "金",
+      "nature": "刚健、进取、尊贵、纯粹",
+      "direction": "西北",
+      "season": "秋冬之交",
+      "trigrams": {
+        "upper": {
+          "name": "乾",
+          "symbol": "☰",
+          "nature": "刚健、天、君、父",
+          "position": "upper"
+        },
+        "lower": {
+          "name": "乾",
+          "symbol": "☰",
+          "nature": "刚健、天、君、父",
+          "position": "lower"
+        }
+      },
+      "family": "父",
+      "body": "首",
+      "animal": "龙",
+      "color": "大赤、金黄"
+    },
+    "category": {
+      "nature": "yang",
+      "quality": "positive",
+      "difficulty": "simple"
+    },
+    "tags": ["纯阳", "天", "刚健", "君道", "自强不息", "元亨利贞"]
+  },
+  {
+    "symbol": "䷁",
+    "name": "坤为地",
+    "pinyin": "kūn wéi dì",
+    "sequence": 2,
+    "guaci": {
+      "original": "元亨，利牝马之贞。君子有攸往，先迷后得主，利。西南得朋，东北丧朋。安贞吉。",
+      "translation": "大为亨通，利于雌马坚守正道。君子有所前往，起初会迷失方向，后会得到主人指引，吉祥有利。向西南走得朋友相助，向东北走失朋友，安守正道则吉祥。",
+      "annotation": "坤为纯阴之卦，象征地、柔顺、臣道，与乾卦相呼应，坤道顺承天道，雌马象征柔顺而健行的坤德，安贞是坤卦核心要义。"
+    },
+    "tuanci": {
+      "original": "彖曰：至哉坤元，万物资生，乃顺承天。坤厚载物，德合无疆。含弘光大，品物咸亨。牝马地类，行地无疆，柔顺利贞。君子攸行，先迷失道，后顺得常。西南得朋，乃与类行；东北丧朋，乃终有庆。安贞之吉，应地无疆。",
+      "translation": "彖传曰：极致的坤阴元始之气，是万物滋生的基础，顺承上天的法则。大地厚实承载万物，德行广大无边。包容弘厚、光大明耀，各类事物皆亨通顺利。雌马与大地同类，在地上行走无边界，性情柔顺而利于坚守正道。君子有所行动，起初迷失方向，后顺随天道回归常道。向西南得朋是与同类同行，向东北丧朋最终却有吉庆，安守正道的吉祥，对应大地的无疆之德。"
+    },
+    "xiangci": {
+      "original": "象曰：地势坤，君子以厚德载物。",
+      "translation": "象传曰：大地的气势柔顺宽厚，君子因此要培养深厚的德行，承载包容万物。"
+    },
+    "yaoci": [
+      {
+        "position": 1,
+        "name": "初六",
+        "yinYang": "yin",
+        "original": "履霜，坚冰至。",
+        "translation": "踩到寒霜，坚硬的冰层即将到来。",
+        "xiang": "象曰：履霜坚冰，阴始凝也。驯致其道，至坚冰也。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "yinYang": "yin",
+        "original": "直，方，大，不习无不利。",
+        "translation": "正直、方正、宽大，即便不刻意学习练习，也无不利。",
+        "xiang": "象曰：六二之动，直以方也。不习无不利，地道光也。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "yinYang": "yin",
+        "original": "含章可贞，或从王事，无成有终。",
+        "translation": "蕴含美好的文采，可坚守正道；有时跟从君王做事，虽不居功，却能获得善终。",
+        "xiang": "象曰：含章可贞，以时发也。或从王事，知光大也。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "yinYang": "yin",
+        "original": "括囊，无咎无誉。",
+        "translation": "扎紧口袋，没有灾祸，也没有赞誉。",
+        "xiang": "象曰：括囊无咎，慎不害也。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "yinYang": "yin",
+        "original": "黄裳，元吉。",
+        "translation": "黄色的下裳，大为吉祥。",
+        "xiang": "象曰：黄裳元吉，文在中也。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "yinYang": "yin",
+        "original": "龙战于野，其血玄黄。",
+        "translation": "龙在郊野相互争斗，流出青黄混杂的血。",
+        "xiang": "象曰：龙战于野，其道穷也。"
+      },
+      {
+        "position": 7,
+        "name": "用六",
+        "yinYang": "yin",
+        "original": "利永贞。",
+        "translation": "利于永久坚守正道。",
+        "xiang": "象曰：用六永贞，以大终也。"
+      }
+    ],
+    "metadata": {
+      "element": "土",
+      "nature": "柔顺、包容、承载、静守",
+      "direction": "西南",
+      "season": "夏秋之交",
+      "trigrams": {
+        "upper": {
+          "name": "坤",
+          "symbol": "☷",
+          "nature": "柔顺、地、母、臣",
+          "position": "upper"
+        },
+        "lower": {
+          "name": "坤",
+          "symbol": "☷",
+          "nature": "柔顺、地、母、臣",
+          "position": "lower"
+        }
+      },
+      "family": "母",
+      "body": "腹",
+      "animal": "牛",
+      "color": "黄、黑"
+    },
+    "category": {
+      "nature": "yin",
+      "quality": "positive",
+      "difficulty": "simple"
+    },
+    "tags": ["纯阴", "地", "柔顺", "臣道", "厚德载物", "安贞"]
+  },
+  {
+    "symbol": "䷂",
+    "name": "水雷屯",
+    "pinyin": "shuǐ léi tún",
+    "sequence": 3,
+    "guaci": {
+      "original": "元亨，利贞。勿用有攸往，利建侯。",
+      "translation": "大为亨通，利于坚守正道。不宜有所前往，利于封立诸侯。",
+      "annotation": "屯卦上坎下震，坎为水、为险，震为雷、为动，动于险中，象征万物初生的艰难之象，屯有“难”“聚”之意，此时宜守不宜进，宜立君聚众。"
+    },
+    "tuanci": {
+      "original": "彖曰：屯，刚柔始交而难生，动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+      "translation": "彖传曰：屯卦，阳刚与阴柔开始相交，艰难由此产生，在危险中行动，大为亨通而坚守正道。雷雨的变动充塞天地，上天创造万物于草创蒙昧之时，适宜封立诸侯，而天下尚未安宁。"
+    },
+    "xiangci": {
+      "original": "象曰：云雷，屯；君子以经纶。",
+      "translation": "象传曰：云气与雷声相合，是屯卦之象；君子因此要经营筹划，整顿天下大事。"
+    },
+    "yaoci": [
+      {
+        "position": 1,
+        "name": "初九",
+        "yinYang": "yang",
+        "original": "磐桓，利居贞，利建侯。",
+        "translation": "徘徊不前，利于安守正道，利于封立诸侯。",
+        "xiang": "象曰：虽磐桓，志行正也。以贵下贱，大得民也。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "yinYang": "yin",
+        "original": "屯如邅如，乘马班如。匪寇婚媾，女子贞不字，十年乃字。",
+        "translation": "艰难不前、徘徊不进，骑着马盘旋而行。不是强盗，而是来求婚的；女子坚守正道不嫁人，十年后才出嫁。",
+        "xiang": "象曰：六二之难，乘刚也。十年乃字，反常也。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "yinYang": "yin",
+        "original": "即鹿无虞，惟入于林中，君子几不如舍，往吝。",
+        "translation": "追逐鹿却没有管山的人引导，只会进入树林，君子见机行事不如舍弃，继续前往会有憾惜。",
+        "xiang": "象曰：即鹿无虞，以从禽也。君子舍之，往吝穷也。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "yinYang": "yin",
+        "original": "乘马班如，求婚媾，往吉，无不利。",
+        "translation": "骑着马盘旋而行，前去求婚，前往吉祥，无任何不利。",
+        "xiang": "象曰：求而往，明也。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "yinYang": "yang",
+        "original": "屯其膏，小贞吉，大贞凶。",
+        "translation": "囤积膏泽（恩惠）不施，占问小事吉祥，占问大事凶险。",
+        "xiang": "象曰：屯其膏，施未光也。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "yinYang": "yin",
+        "original": "乘马班如，泣血涟如。",
+        "translation": "骑着马盘旋而行，哭得血泪涟涟。",
+        "xiang": "象曰：泣血涟如，何可长也。"
+      }
+    ],
+    "metadata": {
+      "element": "水+木",
+      "nature": "艰难、初创、积聚、动险",
+      "direction": "北东",
+      "season": "冬春之交",
+      "trigrams": {
+        "upper": {
+          "name": "坎",
+          "symbol": "☵",
+          "nature": "险陷、水、雨、智",
+          "position": "upper"
+        },
+        "lower": {
+          "name": "震",
+          "symbol": "☳",
+          "nature": "动、雷、龙、勇",
+          "position": "lower"
+        }
+      },
+      "family": "长男",
+      "body": "耳",
+      "animal": "龙、鱼",
+      "color": "黑、青"
+    },
+    "category": {
+      "nature": "mixed",
+      "quality": "neutral",
+      "difficulty": "complex"
+    },
+    "tags": ["初创", "艰难", "动于险中", "积聚", "建侯"]
+  },
+  {
+    "symbol": "䷃",
+    "name": "山水蒙",
+    "pinyin": "shān shuǐ méng",
+    "sequence": 4,
+    "guaci": {
+      "original": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。",
+      "translation": "亨通。不是我去求蒙昧的童子，而是蒙昧的童子来求我。初次占筮就告知结果，反复占筮是亵渎神灵，亵渎则不再告知。利于坚守正道。",
+      "annotation": "蒙卦上艮下坎，艮为山、为止，坎为水、为险，山下有险，险而止，象征蒙昧未开之象，蒙有“蒙昧”“启蒙”之意，此卦主启蒙教育，强调尊师重道、诚心求教。"
+    },
+    "tuanci": {
+      "original": "彖曰：蒙，山下有险，险而止，蒙。蒙亨，以亨行时中也。匪我求童蒙，童蒙求我，志应也。初筮告，以刚中也。再三渎，渎则不告，渎蒙也。蒙以养正，圣功也。",
+      "translation": "彖传曰：蒙卦，山下有险，遇险而止，这就是蒙昧的含义。蒙卦亨通，是因依循亨通之道行事，把握时机且守持中道。不是我求童蒙，而是童蒙求我，是双方心意相互感应。初次占筮告知，是因阳刚居守中道。反复占筮是亵渎，亵渎就不告知，是因为亵渎了蒙昧求问的本意。通过启蒙培养正道，是圣人的功业。"
+    },
+    "xiangci": {
+      "original": "象曰：山下出泉，蒙；君子以果行育德。",
+      "translation": "象传曰：山下涌出泉水，是蒙卦之象；君子因此要果断行事，培育德行。"
+    },
+    "yaoci": [
+      {
+        "position": 1,
+        "name": "初六",
+        "yinYang": "yin",
+        "original": "发蒙，利用刑人，用说桎梏，以往吝。",
+        "translation": "启发蒙昧，适宜用刑罚惩戒人，使人摆脱桎梏的束缚，继续前往会有憾惜。",
+        "xiang": "象曰：利用刑人，以正法也。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "yinYang": "yang",
+        "original": "包蒙，吉。纳妇，吉。子克家。",
+        "translation": "包容蒙昧的人，吉祥。迎娶妻子，吉祥。儿子能够持家。",
+        "xiang": "象曰：子克家，刚柔节也。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "yinYang": "yin",
+        "original": "勿用取女，见金夫，不有躬，无攸利。",
+        "translation": "不宜娶这个女子，她见到有钱有势的男子就会失去自身节操，无任何好处。",
+        "xiang": "象曰：勿用取女，行不顺也。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "yinYang": "yin",
+        "original": "困蒙，吝。",
+        "translation": "困在蒙昧之中，有憾惜。",
+        "xiang": "象曰：困蒙之吝，独远实也。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "yinYang": "yin",
+        "original": "童蒙，吉。",
+        "translation": "孩童般的蒙昧，吉祥。",
+        "xiang": "象曰：童蒙之吉，顺以巽也。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "yinYang": "yang",
+        "original": "击蒙，不利为寇，利御寇。",
+        "translation": "督责启发蒙昧的人，不宜主动侵犯别人，利于抵御别人的侵犯。",
+        "xiang": "象曰：利用御寇，上下顺也。"
+      }
+    ],
+    "metadata": {
+      "element": "土+水",
+      "nature": "蒙昧、启蒙、阻滞、险止",
+      "direction": "东北",
+      "season": "冬春之交",
+      "trigrams": {
+        "upper": {
+          "name": "艮",
+          "symbol": "☶",
+          "nature": "静止、山、少男、止",
+          "position": "upper"
+        },
+        "lower": {
+          "name": "坎",
+          "symbol": "☵",
+          "nature": "险陷、水、雨、智",
+          "position": "lower"
+        }
+      },
+      "family": "少男",
+      "body": "手",
+      "animal": "狗、鼠",
+      "color": "青、黑"
+    },
+    "category": {
+      "nature": "mixed",
+      "quality": "positive",
+      "difficulty": "medium"
+    },
+    "tags": ["蒙昧", "启蒙", "教育", "山下有险", "诚心求教"]
+  }
+]

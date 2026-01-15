@@ -1,0 +1,398 @@
+[
+  {
+    "symbol": "䷄",
+    "name": "水天需",
+    "pinyin": "shuǐ tiān xū",
+    "sequence": 5,
+    "guaci": {
+      "original": "有孚，光亨，贞吉。利涉大川。",
+      "translation": "心怀诚信，光明亨通，坚守正道则吉祥。利于渡过大河巨川。",
+      "annotation": "需卦上坎下乾，坎为水、为险，乾为天、为刚健，刚健居下险陷在上，象征需待之时，需有“等待”“需养”之意，此时宜怀诚信静待时机，不可贸然行动。"
+    },
+    "tuanci": {
+      "original": "彖曰：需，须也，险在前也。刚健而不陷，其义不困穷矣。需有孚，光亨贞吉，位乎天位，以正中也。利涉大川，往有功也。",
+      "translation": "彖传曰：需，是等待的意思，因为危险就在前方。阳刚健劲而不陷入险地，从道理上来说就不会困窘穷厄。需卦心怀诚信、光明亨通且坚守正道吉祥，是因九五居天之位且守中正。利于渡过大河巨川，前往行动会有成效。"
+    },
+    "xiangci": {
+      "original": "象曰：云上于天，需；君子以饮食宴乐。",
+      "translation": "象传曰：云气升腾至天空，是需卦之象；君子因此要饮食调养、安乐休憩，以此蓄养身心，等待时机。"
+    },
+    "yaoci": [
+      {
+        "position": 1,
+        "name": "初九",
+        "yinYang": "yang",
+        "original": "需于郊，利用恒，无咎。",
+        "translation": "在郊外等待，利于保持恒心，没有灾祸。",
+        "xiang": "象曰：需于郊，不犯难行也。利用恒无咎，未失常也。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "yinYang": "yang",
+        "original": "需于沙，小有言，终吉。",
+        "translation": "在沙滩上等待，稍有言语纷争，最终吉祥。",
+        "xiang": "象曰：需于沙，衍在中也。虽小有言，以吉终也。"
+      },
+      {
+        "position": 3,
+        "name": "九三",
+        "yinYang": "yang",
+        "original": "需于泥，致寇至。",
+        "translation": "在泥泞中等待，招致盗寇到来。",
+        "xiang": "象曰：需于泥，灾在外也。自我致寇，敬慎不败也。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "yinYang": "yin",
+        "original": "需于血，出自穴。",
+        "translation": "在险境的血泊旁等待，最终能从险穴中逃出。",
+        "xiang": "象曰：需于血，顺以听也。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "yinYang": "yang",
+        "original": "需于酒食，贞吉。",
+        "translation": "在酒食宴饮中从容等待，坚守正道则吉祥。",
+        "xiang": "象曰：酒食贞吉，以中正也。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "yinYang": "yin",
+        "original": "入于穴，有不速之客三人来，敬之终吉。",
+        "translation": "进入险穴之中，有三位不请自来的客人到来，恭敬相待最终吉祥。",
+        "xiang": "象曰：不速之客来，敬之终吉。虽不当位，未大失也。"
+      }
+    ],
+    "metadata": {
+      "element": "水+金",
+      "nature": "等待、需养、刚健、待时、避险",
+      "direction": "北偏西",
+      "season": "冬秋之交",
+      "trigrams": {
+        "upper": {
+          "name": "坎",
+          "symbol": "☵",
+          "nature": "险陷、水、雨、智、中男",
+          "position": "upper"
+        },
+        "lower": {
+          "name": "乾",
+          "symbol": "☰",
+          "nature": "刚健、天、君、父、纯阳",
+          "position": "lower"
+        }
+      },
+      "family": "中男",
+      "body": "耳",
+      "animal": "龙、豕",
+      "color": "白、黑"
+    },
+    "category": {
+      "nature": "mixed",
+      "quality": "positive",
+      "difficulty": "medium"
+    },
+    "tags": ["等待", "待时", "心怀诚信", "云上于天", "刚健避险", "蓄养身心"]
+  },
+  {
+    "symbol": "䷅",
+    "name": "天水讼",
+    "pinyin": "tiān shuǐ sòng",
+    "sequence": 6,
+    "guaci": {
+      "original": "有孚，窒惕，中吉，终凶。利见大人，不利涉大川。",
+      "translation": "心怀诚信，内心窒塞却保持警惕，守持中道则吉祥，最终执意争讼仍会凶险。适宜拜见有德位的大人物，不利于渡过大河巨川。",
+      "annotation": "讼卦上乾下坎，乾为天、为刚，坎为水、为险，刚险相违、上下相背，象征争讼之象，讼有“争讼”“争辩”之意，此卦主慎争、止讼，守中为吉，争讼难成。"
+    },
+    "tuanci": {
+      "original": "彖曰：讼，上刚下险，险而健，讼。讼有孚窒惕，中吉，刚来而得中也。终凶，讼不可成也。利见大人，尚中正也。不利涉大川，入于渊也。",
+      "translation": "彖传曰：讼卦，上卦阳刚、下卦险陷，身处险地却刚健逞强，就会产生争讼。争讼时怀诚信、窒塞警惕且守中吉祥，是因阳刚之爻居守中道。最终凶险，是因为争讼终究难以获得成功。适宜拜见大人，是崇尚中正之道；不利于渡川，是因贸然行动会陷入深渊。"
+    },
+    "xiangci": {
+      "original": "象曰：天与水违行，讼；君子以作事谋始。",
+      "translation": "象传曰：天与水相背而行，是讼卦之象；君子因此做事情要在开端就谋划周全，防患于未然，避免引发争讼。"
+    },
+    "yaoci": [
+      {
+        "position": 1,
+        "name": "初六",
+        "yinYang": "yin",
+        "original": "不永所事，小有言，终吉。",
+        "translation": "不长久纠缠于争讼之事，稍有言语纷争，最终吉祥。",
+        "xiang": "象曰：不永所事，讼不可长也。虽小有言，其辩明也。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "yinYang": "yang",
+        "original": "不克讼，归而逋，其邑人三百户，无眚。",
+        "translation": "争讼失败，归乡后暂避锋芒，其封邑三百户的百姓，不会遭受灾祸。",
+        "xiang": "象曰：不克讼，归逋窜也。自下讼上，患至掇也。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "yinYang": "yin",
+        "original": "食旧德，贞厉，终吉。或从王事，无成。",
+        "translation": "安享旧日的德业与俸禄，坚守正道却仍有危险，最终吉祥。有时跟从君王做事，不可贪功，终究不会有成就。",
+        "xiang": "象曰：食旧德，从上吉也。"
+      },
+      {
+        "position": 4,
+        "name": "九四",
+        "yinYang": "yang",
+        "original": "不克讼，复即命，渝，安贞吉。",
+        "translation": "争讼失败，回归顺应天命，改变争讼之心，安守正道则吉祥。",
+        "xiang": "象曰：复即命渝，安贞不失也。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "yinYang": "yang",
+        "original": "讼，元吉。",
+        "translation": "秉持中正主持争讼，大为吉祥。",
+        "xiang": "象曰：讼元吉，以中正也。"
+      },
+      {
+        "position": 6,
+        "name": "上九",
+        "yinYang": "yang",
+        "original": "或锡之鞶带，终朝三褫之。",
+        "translation": "有时因争讼胜诉被赐予官服革带，却在一天之内多次被剥夺，终究无福消受。",
+        "xiang": "象曰：以讼受服，亦不足敬也。"
+      }
+    ],
+    "metadata": {
+      "element": "金+水",
+      "nature": "争讼、争辩、刚险相违、止讼",
+      "direction": "西北",
+      "season": "秋冬之交",
+      "trigrams": {
+        "upper": {
+          "name": "乾",
+          "symbol": "☰",
+          "nature": "刚健、天、君、父、决断",
+          "position": "upper"
+        },
+        "lower": {
+          "name": "坎",
+          "symbol": "☵",
+          "nature": "险陷、水、智、疑虑、中男",
+          "position": "lower"
+        }
+      },
+      "family": "父",
+      "body": "首",
+      "animal": "龙、豕",
+      "color": "白、黑"
+    },
+    "category": {
+      "nature": "mixed",
+      "quality": "negative",
+      "difficulty": "medium"
+    },
+    "tags": ["争讼", "止讼", "刚险相违", "谋始", "守中", "慎争"]
+  },
+  {
+    "symbol": "䷆",
+    "name": "地水师",
+    "pinyin": "dì shuǐ shī",
+    "sequence": 7,
+    "guaci": {
+      "original": "贞，丈人吉，无咎。",
+      "translation": "坚守正道，由贤明有威望的长者主持军事，吉祥，没有灾祸。",
+      "annotation": "师卦上坤下坎，坤为地、为顺，坎为水、为险，顺行险道，象征军旅之象，师为“军队”“出师”之意，此卦主用兵，强调选贤任能、以正用兵，用兵必以仁政为本。"
+    },
+    "tuanci": {
+      "original": "彖曰：师，众也；贞，正也。能以众正，可以王矣。刚中而应，行险而顺，以此毒天下，而民从之，吉又何咎矣。",
+      "translation": "彖传曰：师，是众人的意思；贞，是中正的意思。能使众人坚守中正之道，便可以成就王业。阳刚居守中道且与阴柔相应，行于险道却顺合天道，以此治理天下，百姓都会跟从，吉祥又何来灾祸呢。"
+    },
+    "xiangci": {
+      "original": "象曰：地中有水，师；君子以容民畜众。",
+      "translation": "象传曰：大地中蕴藏着水，是师卦之象；君子因此要包容百姓、蓄养众人，凝聚民心。"
+    },
+    "yaoci": [
+      {
+        "position": 1,
+        "name": "初六",
+        "yinYang": "yin",
+        "original": "师出以律，否臧凶。",
+        "translation": "军队出征必须遵循军纪，军纪不善、号令不明则凶险。",
+        "xiang": "象曰：师出以律，失律凶也。"
+      },
+      {
+        "position": 2,
+        "name": "九二",
+        "yinYang": "yang",
+        "original": "在师中，吉，无咎。王三锡命。",
+        "translation": "在军队中秉持中正主持军务，吉祥，没有灾祸。君王多次赐予诏命，以示恩宠与信任。",
+        "xiang": "象曰：在师中吉，承天宠也。王三锡命，怀万邦也。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "yinYang": "yin",
+        "original": "师或舆尸，凶。",
+        "translation": "军队出征若指挥不当，有时会载着尸体归来，凶险。",
+        "xiang": "象曰：师或舆尸，大无功也。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "yinYang": "yin",
+        "original": "师左次，无咎。",
+        "translation": "军队审时度势退守驻扎，没有灾祸。",
+        "xiang": "象曰：左次无咎，未失常也。"
+      },
+      {
+        "position": 5,
+        "name": "六五",
+        "yinYang": "yin",
+        "original": "田有禽，利执言，无咎。长子帅师，弟子舆尸，贞凶。",
+        "translation": "田野中有禽兽来犯，适宜直言讨伐，没有灾祸。由长子率领军队则可，若让无才的弟子领兵，必会战败载尸而归，即便坚守正道仍凶险。",
+        "xiang": "象曰：长子帅师，以中行也。弟子舆尸，使不当也。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "yinYang": "yin",
+        "original": "大君有命，开国承家，小人勿用。",
+        "translation": "天子颁布诏命，为有功者封邦开国、立家承爵，切记不要任用小人。",
+        "xiang": "象曰：大君有命，以正功也。小人勿用，必乱邦也。"
+      }
+    ],
+    "metadata": {
+      "element": "土+水",
+      "nature": "军旅、用兵、顺险、聚众、选贤",
+      "direction": "西南",
+      "season": "夏秋之交",
+      "trigrams": {
+        "upper": {
+          "name": "坤",
+          "symbol": "☷",
+          "nature": "柔顺、地、母、民、包容",
+          "position": "upper"
+        },
+        "lower": {
+          "name": "坎",
+          "symbol": "☵",
+          "nature": "险陷、水、兵、智、中男",
+          "position": "lower"
+        }
+      },
+      "family": "母",
+      "body": "腹",
+      "animal": "牛、豕",
+      "color": "黄、黑"
+    },
+    "category": {
+      "nature": "mixed",
+      "quality": "neutral",
+      "difficulty": "complex"
+    },
+    "tags": ["军旅", "用兵", "选贤任能", "容民畜众", "军纪", "以正用兵"]
+  },
+  {
+    "symbol": "䷇",
+    "name": "水地比",
+    "pinyin": "shuǐ dì bǐ",
+    "sequence": 8,
+    "guaci": {
+      "original": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。",
+      "translation": "吉祥。推究占筮结果，永久坚守正道则大为吉利，没有灾祸。内心不安的方国纷纷前来归附，迟迟后到的人会有凶险。",
+      "annotation": "比卦上坎下坤，坎为水、为君，坤为地、为民，水附于地、君附于民，象征亲比之象，比有“亲比”“依附”“团结”之意，此卦主与人亲比，强调诚信、主动，亲比需守正道、亲贤远佞。"
+    },
+    "tuanci": {
+      "original": "彖曰：比，吉也，比，辅也，下顺从也。原筮元永贞无咎，以刚中也。不宁方来，上下应也。后夫凶，其道穷也。",
+      "translation": "彖传曰：比卦，是吉祥的，比的意思是辅助，下位者顺从上位者。推究占筮可知永久守正无灾祸，是因九五阳刚居守中道。不安的方国前来归附，是因上下阴阳相互应合。后到者凶险，是因其行事之道已然困穷。"
+    },
+    "xiangci": {
+      "original": "象曰：地上有水，比；先王以建万国，亲诸侯。",
+      "translation": "象传曰：大地上流淌着水，水与地相融，是比卦之象；古代先王因此建立万国，亲近诸侯，凝聚天下人心。"
+    },
+    "yaoci": [
+      {
+        "position": 1,
+        "name": "初六",
+        "yinYang": "yin",
+        "original": "有孚比之，无咎。有孚盈缶，终来有它吉。",
+        "translation": "心怀诚信与人亲比，没有灾祸。诚信如同美酒装满瓦罐般真挚，最终会有意外的吉祥降临。",
+        "xiang": "象曰：比之初六，有它吉也。"
+      },
+      {
+        "position": 2,
+        "name": "六二",
+        "yinYang": "yin",
+        "original": "比之自内，贞吉。",
+        "translation": "从内部亲比贤良，坚守正道则吉祥。",
+        "xiang": "象曰：比之自内，不自失也。"
+      },
+      {
+        "position": 3,
+        "name": "六三",
+        "yinYang": "yin",
+        "original": "比之匪人。",
+        "translation": "与品行不端、不合适的人亲比，必有祸患。",
+        "xiang": "象曰：比之匪人，不亦伤乎。"
+      },
+      {
+        "position": 4,
+        "name": "六四",
+        "yinYang": "yin",
+        "original": "外比之，贞吉。",
+        "translation": "向外亲比九五贤明之君，坚守正道则吉祥。",
+        "xiang": "象曰：外比于贤，以从上也。"
+      },
+      {
+        "position": 5,
+        "name": "九五",
+        "yinYang": "yang",
+        "original": "显比，王用三驱，失前禽，邑人不诫，吉。",
+        "translation": "光明正大地与人亲比，君王田猎时三面驱兽、放走前方的禽兽，邑中百姓无需警戒，吉祥。",
+        "xiang": "象曰：显比之吉，位正中也。舍逆取顺，失前禽也。邑人不诫，上使中也。"
+      },
+      {
+        "position": 6,
+        "name": "上六",
+        "yinYang": "yin",
+        "original": "比之无首，凶。",
+        "translation": "与人亲比却没有贤明的首领，群龙无首，凶险。",
+        "xiang": "象曰：比之无首，无所终也。"
+      }
+    ],
+    "metadata": {
+      "element": "水+土",
+      "nature": "亲比、团结、依附、诚信、和同",
+      "direction": "北偏南",
+      "season": "冬夏之交",
+      "trigrams": {
+        "upper": {
+          "name": "坎",
+          "symbol": "☵",
+          "nature": "险陷、水、君、智、中男",
+          "position": "upper"
+        },
+        "lower": {
+          "name": "坤",
+          "symbol": "☷",
+          "nature": "柔顺、地、民、顺、包容",
+          "position": "lower"
+        }
+      },
+      "family": "中男",
+      "body": "耳",
+      "animal": "豕、牛",
+      "color": "黑、黄"
+    },
+    "category": {
+      "nature": "mixed",
+      "quality": "positive",
+      "difficulty": "medium"
+    },
+    "tags": ["亲比", "团结", "诚信", "地上有水", "亲诸侯", "和同"]
+  }
+]
