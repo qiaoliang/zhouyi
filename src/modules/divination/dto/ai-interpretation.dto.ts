@@ -1,4 +1,4 @@
-import { IsOptional, IsString } from 'class-validator';
+import { IsBoolean, IsOptional, IsString } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 /**
@@ -19,17 +19,14 @@ export class RequestAIInterpretationDto {
  */
 export class AIInterpretationResponseDto {
   @ApiProperty({ description: '记录ID' })
+  @IsString()
   recordId: string;
 
   @ApiProperty({ description: 'AI 解读结果' })
-  aiInterpretation: {
-    summary: string;
-    detailedAnalysis: string;
-    advice: string;
-    createdAt: Date;
-  };
+  aiInterpretation: AIInterpretationContentDto;
 
   @ApiProperty({ description: '是否来自缓存' })
+  @IsBoolean()
   cached: boolean;
 }
 
