@@ -8,7 +8,7 @@ import {
   UseGuards,
   Req,
 } from '@nestjs/common';
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty, ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { IsOptional, IsString, IsNumber } from 'class-validator';
 import { DivinationService } from './divination.service';
 import { HexagramAnalysisService } from './hexagram-analysis.service';
@@ -22,7 +22,7 @@ import { CurrentUser } from '../../common/decorators/current-user.decorator';
 import { PreciseInterpretationDto, UpdatePreciseInfoDto } from './dto/precise-interpretation.dto';
 import { DivinateDto } from './dto/divinate.dto';
 import { GuestDivinateDto } from './dto/guest-divinate.dto';
-import { RequestAIInterpretationDto } from './dto/ai-interpretation.dto';
+import { RequestAIInterpretationDto, AIInterpretationResponseDto } from './dto/ai-interpretation.dto';
 
 /**
  * 分页查询DTO
@@ -43,6 +43,7 @@ export class PaginationDto {
  * 卜卦控制器
  * 提供起卦和历史记录API
  */
+@ApiTags('divination')
 @Controller('divination')
 export class DivinationController {
   constructor(
@@ -489,6 +490,27 @@ export class DivinationController {
    * 获取 AI 深度解读
    * 需要登录
    */
+  @ApiOperation({
+    summary: '获取 AI 深度解读',
+    description: '为登录用户提供基于 GLM 大语言模型的智能解卦服务。每个用户每小时最多请求 10 次。',
+  })
+  @ApiResponse({
+    status: 200,
+    description: '获取成功',
+    type: AIInterpretationResponseDto,
+  })
+  @ApiResponse({
+    status: 400,
+    description: '请求参数错误',
+  })
+  @ApiResponse({
+    status: 401,
+    description: '未登录',
+  })
+  @ApiResponse({
+    status: 429,
+    description: '请求频率超限',
+  })
   @UseGuards(JwtAuthGuard)
   @Post('record/:id/ai-interpretation')
   async getAIInterpretation(
