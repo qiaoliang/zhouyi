@@ -102,6 +102,33 @@ class DivinationService {
   async getDetailedDivination(recordId: string): Promise<any> {
     return apiClient.get(`/divination/record/${recordId}/detailed`);
   }
+
+  /**
+   * 获取 AI 深度解读
+   * @param recordId 卜卦记录 ID
+   * @param question 用户的问题（可选）
+   * @returns AI 解读结果
+   */
+  async getAIInterpretation(
+    recordId: string,
+    question?: string,
+  ): Promise<{
+    success: boolean;
+    data: {
+      recordId: string;
+      aiInterpretation: {
+        summary: string;
+        detailedAnalysis: string;
+        advice: string;
+        createdAt: Date;
+      };
+      cached: boolean;
+    };
+    message: string;
+    timestamp: number;
+  }> {
+    return apiClient.post(`/divination/record/${recordId}/ai-interpretation`, { question });
+  }
 }
 
 export const divinationService = new DivinationService();
