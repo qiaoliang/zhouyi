@@ -87,6 +87,19 @@ export interface IInterpretation {
 }
 
 /**
+ * AI 智能解读接口
+ */
+export interface IAIInterpretation {
+  summary: string;         // 摘要
+  detailedAnalysis: string; // 详细分析
+  advice: string;          // 建议
+  prompt?: string;         // 提示词
+  model?: string;          // 使用的 AI 模型
+  createdAt: Date;         // 创建时间
+  cached: boolean;         // 是否缓存
+}
+
+/**
  * 支付信息接口
  */
 export interface IPayment {
@@ -284,15 +297,7 @@ export class DivinationRecord {
     },
     _id: false,
   })
-  aiInterpretation?: {
-    summary: string;
-    detailedAnalysis: string;
-    advice: string;
-    prompt?: string;
-    model?: string;
-    createdAt: Date;
-    cached: boolean;
-  };
+  aiInterpretation?: IAIInterpretation;
 
   /**
    * 支付信息
