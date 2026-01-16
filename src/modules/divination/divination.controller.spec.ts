@@ -3,6 +3,7 @@ import { DivinationController } from './divination.controller';
 import { DivinationService } from './divination.service';
 import { HexagramAnalysisService } from './hexagram-analysis.service';
 import { InterpretationService } from './interpretation.service';
+import { GLMService } from './glm.service';
 import { RateLimitGuard } from './guards/rate-limit.guard';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { SubscriptionGuard } from '../membership/guards/subscription.guard';
@@ -123,6 +124,18 @@ describe('DivinationController', () => {
           },
         },
         {
+          provide: GLMService,
+          useValue: {
+            generateAIInterpretation: jest.fn().mockResolvedValue({
+              summary: '测试摘要',
+              detailedAnalysis: '测试分析',
+              advice: '测试建议',
+              createdAt: new Date(),
+              cached: false,
+            }),
+          },
+        },
+        {
           provide: getModelToken(GuestDivination.name),
           useValue: mockGuestDivinationModel,
         },
@@ -195,6 +208,34 @@ describe('DivinationController', () => {
         dto.device,
         '127.0.0.1',
       );
+    });
+  });
+
+  describe('POST /record/:id/ai-interpretation', () => {
+    let glmService: any;
+
+    beforeEach(() => {
+      glmService = controller['glmService'];
+    });
+
+    it('should return AI interpretation for authenticated user', async () => {
+      const mockUser = { userId: 'user-123' };
+      const mockAIInterpretation = {
+        summary: '测试摘要',
+        detailedAnalysis: '测试分析',
+        advice: '测试建议',
+        createdAt: new Date(),
+        cached: false,
+      };
+
+      jest.spyOn(glmService, 'generateAIInterpretation')
+        .mockResolvedValue(mockAIInterpretation);
+
+      const response = await controller.getAIInterpretation('record-123', mockUser, {});
+
+      expect(response.success).toBe(true);
+      expect(response.data.aiInterpretation).toBeDefined();
+      expect(response.message).toBe('获取 AI 解卦成功');
     });
   });
 });

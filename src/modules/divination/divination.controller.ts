@@ -13,6 +13,7 @@ import { IsOptional, IsString, IsNumber } from 'class-validator';
 import { DivinationService } from './divination.service';
 import { HexagramAnalysisService } from './hexagram-analysis.service';
 import { InterpretationService } from './interpretation.service';
+import { GLMService } from './glm.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { SubscriptionGuard, RequireSubscription } from '../membership/guards/subscription.guard';
 import { RateLimitGuard } from './guards/rate-limit.guard';
@@ -21,6 +22,7 @@ import { CurrentUser } from '../../common/decorators/current-user.decorator';
 import { PreciseInterpretationDto, UpdatePreciseInfoDto } from './dto/precise-interpretation.dto';
 import { DivinateDto } from './dto/divinate.dto';
 import { GuestDivinateDto } from './dto/guest-divinate.dto';
+import { RequestAIInterpretationDto } from './dto/ai-interpretation.dto';
 
 /**
  * 分页查询DTO
@@ -47,6 +49,7 @@ export class DivinationController {
     private readonly divinationService: DivinationService,
     private readonly analysisService: HexagramAnalysisService,
     private readonly interpretationService: InterpretationService,
+    private readonly glmService: GLMService,
   ) {}
 
   /**
@@ -478,6 +481,40 @@ export class DivinationController {
         personalizedAdvice: result.personalizedAdvice,
       },
       message: '获取精准解卦成功',
+      timestamp: Date.now(),
+    };
+  }
+
+  /**
+   * 获取 AI 深度解读
+   * 需要登录
+   */
+  @UseGuards(JwtAuthGuard)
+  @Post('record/:id/ai-interpretation')
+  async getAIInterpretation(
+    @Param('id') id: string,
+    @CurrentUser() user: any,
+    @Body() dto: RequestAIInterpretationDto,
+  ) {
+    const result = await this.glmService.generateAIInterpretation(
+      id,
+      user.userId,
+      dto.question,
+    );
+
+    return {
+      success: true,
+      data: {
+        recordId: id,
+        aiInterpretation: {
+          summary: result.summary,
+          detailedAnalysis: result.detailedAnalysis,
+          advice: result.advice,
+          createdAt: result.createdAt,
+        },
+        cached: result.cached,
+      },
+      message: '获取 AI 解卦成功',
       timestamp: Date.now(),
     };
   }
