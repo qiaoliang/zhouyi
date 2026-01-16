@@ -21,7 +21,7 @@ Converts an existing standalone task into a subtask of another task.
 ## Execution
 
 ```bash
-ztm add-subtask --parent=<parent-id> --task-id=<task-to-convert>
+task-master add-subtask --parent=<parent-id> --task-id=<task-to-convert>
 ```
 
 ## Pre-Conversion Checks

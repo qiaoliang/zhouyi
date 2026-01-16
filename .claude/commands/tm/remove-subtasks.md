@@ -14,7 +14,7 @@ Bulk removal of all subtasks from a parent task.
 ## Execution
 
 ```bash
-ztm remove-subtasks --id=$ARGUMENTS
+task-master remove-subtasks --id=$ARGUMENTS
 ```
 
 ## Pre-Clear Analysis

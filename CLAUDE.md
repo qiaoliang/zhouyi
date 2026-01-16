@@ -251,3 +251,7 @@ A: 确保 `frontend/packages/mini/project.config.json` 存在且配置正确。
 
 **Q: 前端 API 请求失败？**
 A: 检查各应用中的 API 基础 URL 配置，以及后端服务是否正在运行。
+
+## Task Master AI Instructions
+**Import Task Master's development workflow commands and guidelines, treat as if import is in the main CLAUDE.md file.**
+@./.taskmaster/CLAUDE.md

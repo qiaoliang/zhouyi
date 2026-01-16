@@ -169,6 +169,7 @@ describe('DivinationService', () => {
   mockDivinationRecordModel.find = jest.fn().mockReturnValue(mockSortSkipLimit);
   mockDivinationRecordModel.countDocuments = jest.fn();
   mockDivinationRecordModel.findOne = jest.fn().mockReturnValue({ exec: mockFindOneExec });
+  mockDivinationRecordModel.findOneAndUpdate = jest.fn().mockReturnValue({ exec: jest.fn().mockResolvedValue(mockDivinationRecord) });
 
   const mockGuestDivinationModel = function(data: any) {
     return {
@@ -389,6 +390,212 @@ describe('DivinationService', () => {
       const result = await service.getDivinationRecord('invalid-id', 'user123');
 
       expect(result).toBeNull();
+    });
+  });
+
+  describe('savePreciseInfo', () => {
+    it('should save precise info to divination record', async () => {
+      const preciseInfo = {
+        name: '张三',
+        gender: 'male' as const,
+        birthDate: new Date('1990-01-01'),
+        question: '事业发展如何？',
+      };
+
+      const updatedRecord = {
+        ...mockDivinationRecord,
+        preciseInfo,
+      };
+
+      mockFindOneExec.mockResolvedValue(mockDivinationRecord);
+      mockFindOneExec.mockImplementation(() => ({
+        exec: jest.fn().mockResolvedValue(updatedRecord),
+      }) as any);
+
+      const result = await service.savePreciseInfo('record123', preciseInfo, 'user123');
+
+      expect(result).toBeDefined();
+      expect(result.preciseInfo).toEqual(preciseInfo);
+    });
+
+    it('should return null if record not found', async () => {
+      mockFindOneExec.mockResolvedValue(null);
+
+      const preciseInfo = {
+        name: '张三',
+        gender: 'male' as const,
+        birthDate: new Date('1990-01-01'),
+        question: '事业发展如何？',
+      };
+
+      const result = await service.savePreciseInfo('record123', preciseInfo, 'user123');
+
+      expect(result).toBeNull();
+    });
+  });
+
+  describe('generatePreciseInterpretation', () => {
+    it('should generate precise interpretation with valid data', async () => {
+      const recordWithPreciseInfo = {
+        ...mockDivinationRecord,
+        preciseInfo: {
+          name: '张三',
+          gender: 'male' as const,
+          birthDate: new Date('1990-01-01'),
+          question: '事业发展如何？',
+        },
+      };
+
+      mockFindOneExec.mockResolvedValue(recordWithPreciseInfo);
+
+      const result = await service.generatePreciseInterpretation('record123', 'user123');
+
+      expect(result).toBeDefined();
+      expect(result.precise).toBeDefined();
+      expect(result.personalizedAdvice).toBeDefined();
+      expect(result.precise).toContain('张三');
+      expect(result.precise).toContain('事业发展如何？');
+    });
+
+    it('should return null if record not found', async () => {
+      mockFindOneExec.mockResolvedValue(null);
+
+      const result = await service.generatePreciseInterpretation('record123', 'user123');
+
+      expect(result).toBeNull();
+    });
+
+    it('should return null if record has no precise info', async () => {
+      mockFindOneExec.mockResolvedValue(mockDivinationRecord);
+
+      const result = await service.generatePreciseInterpretation('record123', 'user123');
+
+      expect(result).toBeNull();
+    });
+
+    it('should generate age-appropriate interpretation for young user', async () => {
+      const youngUserRecord = {
+        ...mockDivinationRecord,
+        preciseInfo: {
+          name: '小明',
+          gender: 'male' as const,
+          birthDate: new Date('2000-01-01'), // 26岁
+          question: '学业如何？',
+        },
+      };
+
+      mockFindOneExec.mockResolvedValue(youngUserRecord);
+
+      const result = await service.generatePreciseInterpretation('record123', 'user123');
+
+      expect(result).toBeDefined();
+      expect(result.precise).toContain('青春年华');
+    });
+
+    it('should generate age-appropriate interpretation for middle-aged user', async () => {
+      const middleAgedUserRecord = {
+        ...mockDivinationRecord,
+        preciseInfo: {
+          name: '李四',
+          gender: 'female' as const,
+          birthDate: new Date('1980-01-01'), // 46岁
+          question: '事业如何？',
+        },
+      };
+
+      mockFindOneExec.mockResolvedValue(middleAgedUserRecord);
+
+      const result = await service.generatePreciseInterpretation('record123', 'user123');
+
+      expect(result).toBeDefined();
+      expect(result.precise).toContain('人生黄金时期');
+    });
+
+    it('should generate age-appropriate interpretation for elderly user', async () => {
+      const elderlyUserRecord = {
+        ...mockDivinationRecord,
+        preciseInfo: {
+          name: '王五',
+          gender: 'male' as const,
+          birthDate: new Date('1950-01-01'), // 76岁
+          question: '健康如何？',
+        },
+      };
+
+      mockFindOneExec.mockResolvedValue(elderlyUserRecord);
+
+      const result = await service.generatePreciseInterpretation('record123', 'user123');
+
+      expect(result).toBeDefined();
+      expect(result.precise).toContain('阅历丰富');
+    });
+
+    it('should handle changing lines in interpretation', async () => {
+      const recordWithChangingLines = {
+        ...mockDivinationRecord,
+        preciseInfo: {
+          name: '赵六',
+          gender: 'female' as const,
+          birthDate: new Date('1995-01-01'),
+          question: '婚姻如何？',
+        },
+        hexagram: {
+          ...mockDivinationRecord.hexagram,
+          changingLines: [1, 3],
+        },
+      };
+
+      mockFindOneExec.mockResolvedValue(recordWithChangingLines);
+
+      const result = await service.generatePreciseInterpretation('record123', 'user123');
+
+      expect(result).toBeDefined();
+      expect(result.precise).toContain('变爻');
+    });
+
+    it('should handle no changing lines in interpretation', async () => {
+      const recordWithoutChangingLines = {
+        ...mockDivinationRecord,
+        preciseInfo: {
+          name: '孙七',
+          gender: 'male' as const,
+          birthDate: new Date('1992-01-01'),
+          question: '财运如何？',
+        },
+        hexagram: {
+          ...mockDivinationRecord.hexagram,
+          changingLines: [],
+        },
+      };
+
+      mockFindOneExec.mockResolvedValue(recordWithoutChangingLines);
+
+      const result = await service.generatePreciseInterpretation('record123', 'user123');
+
+      expect(result).toBeDefined();
+      expect(result.precise).toContain('稳定');
+    });
+  });
+
+  describe('saveGuestDivinationRecord', () => {
+    it('should save guest divination record', async () => {
+      const hexagram = {
+        primary: { name: '乾', symbol: '䷀', pinyin: 'qián', sequence: 1 },
+        lines: [],
+        changed: { name: '乾', symbol: '䷀', pinyin: 'qián', sequence: 1 },
+        mutual: { name: '乾', symbol: '䷀', pinyin: 'qián', sequence: 1 },
+        changingLines: [],
+      };
+
+      const device = {
+        platform: 'ios',
+        model: 'iPhone 14',
+      };
+
+      const result = await service.saveGuestDivinationRecord(hexagram, 'guest123', device, '127.0.0.1');
+
+      expect(result).toBeDefined();
+      expect(result.guestId).toBe('guest123');
     });
   });
 });

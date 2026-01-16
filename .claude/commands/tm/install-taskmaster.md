@@ -7,11 +7,11 @@ This command helps you get Task Master set up globally on your system.
 
 1. **Check Current Installation**
    ```bash
-   # Check if ztm command exists
-   which ztm || echo "ZTM not found"
+   # Check if task-master command exists
+   which task-master || echo "Task Master not found"
 
    # Check npm global packages
-   npm list -g ztm-ai
+   npm list -g task-master-ai
    ```
 
 2. **System Requirements Check**
@@ -28,29 +28,29 @@ This command helps you get Task Master set up globally on your system.
 3. **Install Task Master Globally**
    If not installed, run:
    ```bash
-   npm install -g ztm-ai
+   npm install -g task-master-ai
    ```
 
 4. **Verify Installation**
    ```bash
    # Check version
-   ztm --version
+   task-master --version
 
    # Verify command is available
-   which ztm
+   which task-master
    ```
 
 5. **Initial Setup**
    ```bash
    # Initialize in current directory
-   ztm init
+   task-master init
    ```
 
 6. **Configure AI Provider**
    Ensure you have at least one AI provider API key set:
    ```bash
    # Check current configuration
-   ztm models --status
+   task-master models --status
 
    # If no API keys found, guide setup
    echo "You'll need at least one API key:"
@@ -67,7 +67,7 @@ This command helps you get Task Master set up globally on your system.
    echo "Build a simple hello world API" > test-prd.txt
 
    # Try parsing it
-   ztm parse-prd test-prd.txt -n 3
+   task-master parse-prd test-prd.txt -n 3
    ```
 
 ## Troubleshooting
@@ -77,7 +77,7 @@ If installation fails:
 **Permission Errors:**
 ```bash
 # Try with sudo (macOS/Linux)
-sudo npm install -g ztm-ai
+sudo npm install -g task-master-ai
 
 # Or fix npm permissions
 npm config set prefix ~/.npm-global
@@ -87,7 +87,7 @@ export PATH=~/.npm-global/bin:$PATH
 **Network Issues:**
 ```bash
 # Use different registry
-npm install -g ztm-ai --registry https://registry.npmjs.org/
+npm install -g task-master-ai --registry https://registry.npmjs.org/
 ```
 
 **Node Version Issues:**
@@ -102,12 +102,12 @@ nvm use 20
 
 Once installed, you should see:
 ```
-✅ ZTM installed
-✅ Command 'ztm' available globally
+✅ Task Master installed
+✅ Command 'task-master' available globally
 ✅ AI provider configured
 ✅ Ready to use slash commands!
 
-Try: /tm:init your-prd.md
+Try: /taskmaster:init your-prd.md
 ```
 
 ## Next Steps

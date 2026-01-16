@@ -19,7 +19,7 @@ This status indicates work is complete but needs verification before final appro
 ## Execution
 
 ```bash
-ztm set-status --id=$ARGUMENTS --status=review
+task-master set-status --id=$ARGUMENTS --status=review
 ```
 
 ## Review Preparation

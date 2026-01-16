@@ -22,7 +22,7 @@ Optional filters:
 ## Execution
 
 ```bash
-ztm sync-readme [--with-subtasks] [--status=<status>]
+task-master sync-readme [--with-subtasks] [--status=<status>]
 ```
 
 ## README Generation

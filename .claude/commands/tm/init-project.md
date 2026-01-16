@@ -16,7 +16,7 @@ Parse arguments to determine initialization preferences.
 
 2. **Project Setup**
    ```bash
-   ztm init
+   task-master init
    ```
 
 3. **Smart Initialization**

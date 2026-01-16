@@ -22,7 +22,7 @@ Natural language updates:
 ## Execution
 
 ```bash
-ztm update-task --id=<id> --prompt="<context>"
+task-master update-task --id=<id> --prompt="<context>"
 ```
 
 ## Update Types

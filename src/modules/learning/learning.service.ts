@@ -69,7 +69,7 @@ export class LearningService {
     const courses = await this.courseModel.find({ published: true }).sort({
       'module.order': 1,
       order: 1,
-    });
+    }).exec();
 
     // 按模块分组
     const modulesMap = new Map<string, any>();
@@ -113,7 +113,7 @@ export class LearningService {
       'module.id': moduleId,
       courseDataId: courseId,
       published: true,
-    });
+    }).exec();
 
     if (!course) {
       throw new NotFoundException('课程不存在');
@@ -147,7 +147,7 @@ export class LearningService {
       'module.id': moduleId,
       courseDataId: courseId,
       published: true,
-    });
+    }).exec();
 
     if (!course || !course.quiz) {
       throw new NotFoundException('测验不存在');
@@ -185,7 +185,7 @@ export class LearningService {
       'module.id': moduleId,
       courseDataId: courseId,
       published: true,
-    });
+    }).exec();
 
     if (!course || !course.quiz) {
       throw new NotFoundException('测验不存在');
@@ -250,14 +250,14 @@ export class LearningService {
    * 获取用户学习进度
    */
   async getUserProgress(userId: string): Promise<LearningProgressDocument> {
-    let progress = await this.progressModel.findOne({ userId });
+    let progress = await this.progressModel.findOne({ userId }).exec();
 
     if (!progress) {
       // 初始化学习进度
       const courses = await this.courseModel.find({ published: true }).sort({
         'module.order': 1,
         order: 1,
-      });
+      }).exec();
 
       const courseProgressList: ICourseProgress[] = courses.map((c) => ({
         id: c.courseDataId,
@@ -393,7 +393,7 @@ export class LearningService {
    * 使用完成奖励（免费详细解卦）
    */
   async useCompletionReward(userId: string, divinationId: string): Promise<boolean> {
-    const progress = await this.progressModel.findOne({ userId });
+    const progress = await this.progressModel.findOne({ userId }).exec();
 
     if (!progress || !progress.rewards?.freeDetailedDivination?.available) {
       throw new BadRequestException('奖励不可用');
@@ -418,7 +418,7 @@ export class LearningService {
    * 检查用户是否有可用奖励
    */
   async checkCompletionReward(userId: string): Promise<{ available: boolean; used: boolean }> {
-    const progress = await this.progressModel.findOne({ userId });
+    const progress = await this.progressModel.findOne({ userId }).exec();
 
     if (!progress || !progress.rewards?.freeDetailedDivination) {
       return { available: false, used: false };

@@ -8,7 +8,7 @@ Remove all subtasks across the entire project. Use with extreme caution.
 ## Execution
 
 ```bash
-ztm clear-subtasks --all
+task-master clear-subtasks --all
 ```
 
 ## Pre-Clear Analysis

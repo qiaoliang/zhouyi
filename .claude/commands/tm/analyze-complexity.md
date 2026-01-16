@@ -14,7 +14,7 @@ Uses AI to analyze tasks and recommend which ones need breakdown.
 ## Execution Options
 
 ```bash
-ztm analyze-complexity [--research] [--threshold=5]
+task-master analyze-complexity [--research] [--threshold=5]
 ```
 
 ## Analysis Parameters

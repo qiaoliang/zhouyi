@@ -8,7 +8,7 @@ Shows the currently configured AI providers and models for Task Master.
 ## Execution
 
 ```bash
-ztm models
+task-master models
 ```
 
 ## Information Displayed

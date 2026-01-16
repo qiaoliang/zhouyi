@@ -10,7 +10,7 @@ Initialize a Task Master project without prompts, accepting all defaults.
 ## Quick Setup
 
 ```bash
-ztm init -y
+task-master init -y
 ```
 
 ## What It Does

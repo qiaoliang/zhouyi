@@ -14,7 +14,7 @@ Shows comprehensive task complexity analysis with actionable insights.
 ## Execution
 
 ```bash
-ztm complexity-report [--file=<path>]
+task-master complexity-report [--file=<path>]
 ```
 
 ## Report Location

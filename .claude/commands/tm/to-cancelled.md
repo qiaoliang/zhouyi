@@ -27,7 +27,7 @@ This status indicates a task is no longer needed and won't be completed.
 ## Execution
 
 ```bash
-ztm set-status --id=$ARGUMENTS --status=cancelled
+task-master set-status --id=$ARGUMENTS --status=cancelled
 ```
 
 ## Cancellation Impact

@@ -94,3 +94,7 @@ coverage/
 
 # Redis 数据库文件
 dump.rdb
+
+# Task files
+# tasks.json
+# tasks/ 

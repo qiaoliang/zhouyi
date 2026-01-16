@@ -22,7 +22,7 @@ Parse natural language or IDs:
 ## Execution
 
 ```bash
-ztm remove-dependency --id=<task-id> --depends-on=<dependency-id>
+task-master remove-dependency --id=<task-id> --depends-on=<dependency-id>
 ```
 
 ## Pre-Removal Checks

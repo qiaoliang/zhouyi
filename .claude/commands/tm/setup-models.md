@@ -8,7 +8,7 @@ Guides you through setting up AI providers for Task Master.
 ## Execution
 
 ```bash
-ztm models --setup
+task-master models --setup
 ```
 
 ## Setup Process

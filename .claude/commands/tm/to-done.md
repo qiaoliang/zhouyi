@@ -19,7 +19,7 @@ This command validates task completion and updates project state intelligently.
 ## Execution
 
 ```bash
-ztm set-status --id=$ARGUMENTS --status=done
+task-master set-status --id=$ARGUMENTS --status=done
 ```
 
 ## Post-Completion Actions

@@ -1,19 +1,19 @@
 {
   "models": {
     "main": {
-      "provider": "tm-direct",
+      "provider": "zai",
       "modelId": "glm-4.7",
       "maxTokens": 204800,
       "temperature": 0.2
     },
     "research": {
-      "provider": "tm-direct",
+      "provider": "zai",
       "modelId": "glm-4.7",
       "maxTokens": 204800,
-      "temperature": 0.2
+      "temperature": 0.1
     },
     "fallback": {
-      "provider": "tm-direct",
+      "provider": "zai",
       "modelId": "glm-4.7",
       "maxTokens": 204800,
       "temperature": 0.2
@@ -31,9 +31,7 @@
     "responseLanguage": "Chinese",
     "enableCodebaseAnalysis": true,
     "enableProxy": false,
-    "anonymousTelemetry": true,
-    "defaultTag": "master",
-    "userId": "1234567890"
+    "anonymousTelemetry": true
   },
   "claudeCode": {},
   "codexCli": {},

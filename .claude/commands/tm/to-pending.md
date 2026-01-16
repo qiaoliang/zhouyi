@@ -15,7 +15,7 @@ This moves a task back to the pending state, useful for:
 ## Execution
 
 ```bash
-ztm set-status --id=$ARGUMENTS --status=pending
+task-master set-status --id=$ARGUMENTS --status=pending
 ```
 
 ## Validation

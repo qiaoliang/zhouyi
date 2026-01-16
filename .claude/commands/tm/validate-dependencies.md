@@ -8,7 +8,7 @@ Comprehensive check for dependency problems across the entire project.
 ## Execution
 
 ```bash
-ztm validate-dependencies
+task-master validate-dependencies
 ```
 
 ## Validation Checks

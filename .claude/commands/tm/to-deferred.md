@@ -20,7 +20,7 @@ This status indicates a task is valid but not currently actionable or prioritize
 ## Execution
 
 ```bash
-ztm set-status --id=$ARGUMENTS --status=deferred
+task-master set-status --id=$ARGUMENTS --status=deferred
 ```
 
 ## Deferral Management

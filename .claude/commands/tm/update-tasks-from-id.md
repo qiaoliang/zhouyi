@@ -20,7 +20,7 @@ Update multiple related tasks based on new requirements or context changes.
 ## Execution
 
 ```bash
-ztm update --from=<id> --prompt="<context>"
+task-master update --from=<id> --prompt="<context>"
 ```
 
 ## Update Process
