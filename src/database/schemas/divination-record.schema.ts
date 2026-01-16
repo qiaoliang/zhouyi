@@ -270,6 +270,31 @@ export class DivinationRecord {
   interpretation: IInterpretation;
 
   /**
+   * AI 智能解读 (可选)
+   */
+  @Prop({
+    type: {
+      summary: { type: String },
+      detailedAnalysis: { type: String },
+      advice: { type: String },
+      prompt: { type: String },
+      model: { type: String },
+      createdAt: { type: Date, required: true },
+      cached: { type: Boolean, default: false },
+    },
+    _id: false,
+  })
+  aiInterpretation?: {
+    summary: string;
+    detailedAnalysis: string;
+    advice: string;
+    prompt?: string;
+    model?: string;
+    createdAt: Date;
+    cached: boolean;
+  };
+
+  /**
    * 支付信息
    */
   @Prop({ type: PaymentSchema, default: undefined })
