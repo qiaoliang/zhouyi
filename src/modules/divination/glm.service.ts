@@ -5,6 +5,13 @@ import { InjectRedis } from '@nestjs-modules/ioredis';
 import Redis from 'ioredis';
 import { firstValueFrom } from 'rxjs';
 import { createHash } from 'crypto';
+import { AxiosError } from 'axios';
+
+/**
+ * 常量定义
+ */
+const HOUR_IN_MS = 3600000;
+const HOUR_IN_SECONDS = 3600;
 
 /**
  * AI 解读结果接口
@@ -44,6 +51,7 @@ export class GLMService {
   private readonly maxTokens: number;
   private readonly rateLimit: number;
   private readonly cacheTTL: number;
+  private readonly lockTTL: number;
 
   constructor(
     private readonly configService: ConfigService,
@@ -57,6 +65,7 @@ export class GLMService {
     this.maxTokens = this.configService.get<number>('GLM_MAX_TOKENS') || 2000;
     this.rateLimit = this.configService.get<number>('AI_INTERPRETATION_RATE_LIMIT') || 10;
     this.cacheTTL = this.configService.get<number>('AI_INTERPRETATION_CACHE_TTL') || 86400;
+    this.lockTTL = this.configService.get<number>('AI_INTERPRETATION_LOCK_TTL') || 60;
 
     if (!this.apiKey) {
       this.logger.warn('GLM_API_KEY is not configured');
@@ -69,13 +78,13 @@ export class GLMService {
    * @returns 是否允许请求
    */
   async checkRateLimit(userId: string): Promise<boolean> {
-    const currentHour = Math.floor(Date.now() / 3600000);
+    const currentHour = Math.floor(Date.now() / HOUR_IN_MS);
     const key = `ai:interpretation:rate:${userId}:${currentHour}`;
 
     const count = await this.redis.incr(key);
 
     if (count === 1) {
-      await this.redis.expire(key, 3600);
+      await this.redis.expire(key, HOUR_IN_SECONDS);
     }
 
     return count <= this.rateLimit;
@@ -141,7 +150,7 @@ export class GLMService {
    */
   async acquireLock(recordId: string): Promise<boolean> {
     const lockKey = `ai:interpretation:lock:${recordId}`;
-    const result = await this.redis.set(lockKey, '1', 'EX', 60, 'NX');
+    const result = await this.redis.set(lockKey, '1', 'EX', this.lockTTL, 'NX');
 
     return result === 'OK';
   }
@@ -193,23 +202,60 @@ export class GLMService {
       }
 
       return data.choices[0].message.content;
-    } catch (error: any) {
-      this.logger.error(`GLM API Error: ${error.message}`);
+    } catch (error: unknown) {
+      // 类型守卫：检查是否为 AxiosError
+      if (this.isAxiosError(error)) {
+        const sanitizedMessage = this.sanitizeErrorMessage(error.message);
+        this.logger.error(`GLM API Error: ${sanitizedMessage}`);
 
-      if (error.code === 'ECONNABORTED') {
-        throw new InternalServerErrorException('GLM API 请求超时');
+        if (error.code === 'ECONNABORTED') {
+          throw new InternalServerErrorException('GLM API 请求超时');
+        }
+
+        if (error.response?.status === 401) {
+          throw new InternalServerErrorException('GLM API 密钥无效');
+        }
+
+        if (error.response?.status === 429) {
+          throw new InternalServerErrorException('GLM API 请求频率超限');
+        }
+
+        throw new InternalServerErrorException('AI 解读服务暂时不可用');
       }
 
-      if (error.response?.status === 401) {
-        throw new InternalServerErrorException('GLM API 密钥无效');
+      // 处理非 Axios 错误
+      if (error instanceof Error) {
+        this.logger.error(`GLM Service Error: ${error.message}`);
+        throw new InternalServerErrorException('AI 解读服务暂时不可用');
       }
 
-      if (error.response?.status === 429) {
-        throw new InternalServerErrorException('GLM API 请求频率超限');
-      }
-
+      // 处理未知错误类型
+      this.logger.error('GLM Service Unknown Error');
       throw new InternalServerErrorException('AI 解读服务暂时不可用');
     }
+  }
+
+  /**
+   * 类型守卫：检查是否为 AxiosError
+   */
+  private isAxiosError(error: unknown): error is AxiosError {
+    return (
+      typeof error === 'object' &&
+      error !== null &&
+      'isAxiosError' in error &&
+      (error as AxiosError).isAxiosError === true
+    );
+  }
+
+  /**
+   * 清理错误消息，移除敏感信息
+   */
+  private sanitizeErrorMessage(message: string): string {
+    // 移除可能的 API key
+    let sanitized = message.replace(new RegExp(this.apiKey, 'g'), '***');
+    // 移除 Bearer token
+    sanitized = sanitized.replace(/Bearer\s+[A-Za-z0-9\-._~+/]+=*/g, 'Bearer ***');
+    return sanitized;
   }
 
   /**
@@ -220,7 +266,16 @@ export class GLMService {
     userId: string,
     question?: string,
   ): Promise<AIInterpretation> {
-    throw new Error('Not implemented yet');
+    // 输入验证
+    if (!recordId || recordId.trim() === '') {
+      throw new InternalServerErrorException('记录ID不能为空');
+    }
+
+    if (!userId || userId.trim() === '') {
+      throw new InternalServerErrorException('用户ID不能为空');
+    }
+
+    throw new InternalServerErrorException('AI 解读功能暂未实现');
   }
 
   /**
@@ -230,6 +285,6 @@ export class GLMService {
     hexagram: any,
     question?: string,
   ): Promise<string> {
-    throw new Error('Not implemented yet');
+    throw new InternalServerErrorException('卦象提示词生成功能暂未实现');
   }
 }

@@ -19,6 +19,7 @@ describe('GLMService', () => {
         GLM_MAX_TOKENS: 2000,
         AI_INTERPRETATION_RATE_LIMIT: 10,
         AI_INTERPRETATION_CACHE_TTL: 86400,
+        AI_INTERPRETATION_LOCK_TTL: 60,
       };
       return config[key] || null;
     }),
@@ -171,6 +172,28 @@ describe('GLMService', () => {
       await service.releaseLock('record-123');
 
       expect(mockRedis.del).toHaveBeenCalledWith('ai:interpretation:lock:record-123');
+    });
+  });
+
+  describe('generateAIInterpretation', () => {
+    it('should throw error when recordId is empty', async () => {
+      await expect(service.generateAIInterpretation('', 'user-123')).rejects.toThrow('记录ID不能为空');
+    });
+
+    it('should throw error when recordId is only whitespace', async () => {
+      await expect(service.generateAIInterpretation('   ', 'user-123')).rejects.toThrow('记录ID不能为空');
+    });
+
+    it('should throw error when userId is empty', async () => {
+      await expect(service.generateAIInterpretation('record-123', '')).rejects.toThrow('用户ID不能为空');
+    });
+
+    it('should throw error when userId is only whitespace', async () => {
+      await expect(service.generateAIInterpretation('record-123', '   ')).rejects.toThrow('用户ID不能为空');
+    });
+
+    it('should throw not implemented error with valid inputs', async () => {
+      await expect(service.generateAIInterpretation('record-123', 'user-123')).rejects.toThrow('AI 解读功能暂未实现');
     });
   });
 });
