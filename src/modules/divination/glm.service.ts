@@ -8,13 +8,32 @@ import { firstValueFrom } from 'rxjs';
 import { createHash } from 'crypto';
 import { AxiosError } from 'axios';
 import { Model } from 'mongoose';
-import { Hexagram } from '../../database/schemas/hexagram.schema';
+import { Hexagram, IYaoCi } from '../../database/schemas/hexagram.schema';
 
 /**
  * 常量定义
  */
 const HOUR_IN_MS = 3600000;
 const HOUR_IN_SECONDS = 3600;
+
+/**
+ * 卦象基本信息接口（用于生成提示词）
+ */
+interface IHexagramInfo {
+  sequence: number;
+  name: string;
+  symbol: string;
+}
+
+/**
+ * 卦象提示词输入接口
+ */
+interface IHexagramPromptInput {
+  primary: IHexagramInfo;
+  changed?: IHexagramInfo;
+  mutual?: IHexagramInfo;
+  changingLines?: number[];
+}
 
 /**
  * AI 解读结果接口
@@ -289,7 +308,7 @@ export class GLMService {
    * @returns 提示词
    */
   private async buildHexagramPrompt(
-    hexagram: any,
+    hexagram: IHexagramPromptInput,
     question?: string,
   ): Promise<string> {
     // 获取主卦数据
@@ -311,7 +330,7 @@ export class GLMService {
 
     // 六爻分析
     prompt += `【六爻分析】\n`;
-    primaryHexagram.yaoci.forEach((yao: any) => {
+    primaryHexagram.yaoci.forEach((yao: IYaoCi) => {
       prompt += `${yao.position}爻：${yao.original} - ${yao.translation}\n`;
     });
     prompt += `\n`;
