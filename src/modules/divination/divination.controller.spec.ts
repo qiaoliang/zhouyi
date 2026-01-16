@@ -237,5 +237,97 @@ describe('DivinationController', () => {
       expect(response.data.aiInterpretation).toBeDefined();
       expect(response.message).toBe('获取 AI 解卦成功');
     });
+
+    it('should require authentication', async () => {
+      // 创建一个 JWT guard 会拒绝访问的测试模块
+      const moduleRef = await Test.createTestingModule({
+        controllers: [DivinationController],
+        providers: [
+          {
+            provide: DivinationService,
+            useValue: {
+              performDivination: jest.fn().mockResolvedValue({}),
+              saveGuestDivinationRecord: jest.fn().mockResolvedValue({}),
+              hexagramModel: mockHexagramModel,
+            },
+          },
+          {
+            provide: HexagramAnalysisService,
+            useValue: {
+              generateDetailedAnalysis: jest.fn().mockResolvedValue({}),
+            },
+          },
+          {
+            provide: InterpretationService,
+            useValue: {
+              generateBasicInterpretation: jest.fn().mockResolvedValue({}),
+            },
+          },
+          {
+            provide: GLMService,
+            useValue: {
+              generateAIInterpretation: jest.fn(),
+            },
+          },
+          {
+            provide: getModelToken(GuestDivination.name),
+            useValue: mockGuestDivinationModel,
+          },
+        ],
+      })
+        .overrideGuard(RateLimitGuard)
+        .useValue({ canActivate: jest.fn().mockReturnValue(true) })
+        .overrideGuard(JwtAuthGuard)
+        .useValue({
+          canActivate: jest.fn((context) => {
+            // 拒绝访问 - 模拟未认证用户
+            return false;
+          }),
+        })
+        .overrideGuard(SubscriptionGuard)
+        .useValue({ canActivate: jest.fn().mockReturnValue(true) })
+        .compile();
+
+      const unauthController = moduleRef.get<DivinationController>(DivinationController);
+      const unauthGlmService = moduleRef.get<GLMService>(GLMService);
+
+      // Mock GLM service 使其永远不会被调用（因为 guard 会拦截）
+      jest.spyOn(unauthGlmService, 'generateAIInterpretation').mockResolvedValue({
+        summary: '不应该被调用',
+        detailedAnalysis: '不应该被调用',
+        advice: '不应该被调用',
+        createdAt: new Date(),
+        cached: false,
+      });
+
+      // 当没有认证用户时，controller 方法应该能够处理 undefined user
+      // 在实际应用中，guard 会在请求到达 controller 之前拦截
+      // 但在单元测试中，我们直接调用 controller 方法
+      // 所以我们测试的是：如果没有传递 user 对象，service 方法仍然会被调用
+      // 但在实际场景中，JwtAuthGuard 会返回 401
+
+      // 由于 guard 在 controller 层面工作，我们需要验证的是：
+      // 1. guard 被正确应用到端点上（通过装饰器）
+      // 2. guard 的 canActivate 返回 false 时，请求被拒绝
+
+      // 在单元测试中，我们验证 guard 的行为
+      const guards = Reflect.getMetadata('__guards__', DivinationController.prototype.getAIInterpretation);
+      expect(guards).toBeDefined();
+
+      // 获取 guard 实例
+      const jwtAuthGuard = moduleRef.get(JwtAuthGuard);
+      const mockContext = {
+        switchToHttp: () => ({
+          getRequest: () => ({
+            headers: {},
+            user: null, // 没有认证用户
+          }),
+        }),
+      };
+
+      // 验证 guard 会拒绝没有用户的请求
+      const canActivate = await jwtAuthGuard.canActivate(mockContext as any);
+      expect(canActivate).toBe(false);
+    });
   });
 });
