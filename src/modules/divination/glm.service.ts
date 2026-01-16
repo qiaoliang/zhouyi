@@ -1,4 +1,4 @@
-import { Injectable, Logger, InternalServerErrorException } from '@nestjs/common';
+import { Injectable, Logger, InternalServerErrorException, HttpException, HttpStatus, BadRequestException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { HttpService } from '@nestjs/axios';
 import { InjectRedis } from '@nestjs-modules/ioredis';
@@ -9,6 +9,7 @@ import { createHash } from 'crypto';
 import { AxiosError } from 'axios';
 import { Model } from 'mongoose';
 import { Hexagram, IYaoCi } from '../../database/schemas/hexagram.schema';
+import { DivinationRecord } from '../../database/schemas/divination-record.schema';
 
 /**
  * 常量定义
@@ -80,6 +81,7 @@ export class GLMService {
     private readonly httpService: HttpService,
     @InjectRedis() private readonly redis: Redis,
     @InjectModel('Hexagram') private readonly hexagramModel: Model<Hexagram>,
+    @InjectModel('DivinationRecord') private readonly divinationRecordModel: Model<DivinationRecord>,
   ) {
     this.apiKey = this.configService.get<string>('GLM_API_KEY') || '';
     this.baseUrl = this.configService.get<string>('GLM_BASE_URL') || 'https://open.bigmodel.cn/api/paas/v4';
@@ -282,23 +284,140 @@ export class GLMService {
   }
 
   /**
-   * 生成 AI 解读（主要方法，待实现）
+   * 生成 AI 解读（主要方法）
+   * @param recordId 记录ID
+   * @param userId 用户ID
+   * @param question 用户问题
+   * @returns AI 解读结果
    */
   async generateAIInterpretation(
     recordId: string,
     userId: string,
     question?: string,
   ): Promise<AIInterpretation> {
-    // 输入验证
-    if (!recordId || recordId.trim() === '') {
-      throw new InternalServerErrorException('记录ID不能为空');
+    // 1. 检查限流
+    const allowed = await this.checkRateLimit(userId);
+    if (!allowed) {
+      throw new HttpException(
+        '请求过于频繁，请稍后再试',
+        HttpStatus.TOO_MANY_REQUESTS,
+      );
     }
 
-    if (!userId || userId.trim() === '') {
-      throw new InternalServerErrorException('用户ID不能为空');
+    // 2. 获取记录
+    const record = await this.divinationRecordModel
+      .findOne({ _id: recordId, userId })
+      .exec();
+
+    if (!record) {
+      throw new BadRequestException('卜卦记录不存在');
     }
 
-    throw new InternalServerErrorException('AI 解读功能暂未实现');
+    // 3. 如果已有 AI 解读，直接返回
+    if (record.aiInterpretation) {
+      this.logger.log(`Returning existing AI interpretation for record ${recordId}`);
+      return record.aiInterpretation;
+    }
+
+    // 4. 检查缓存
+    const cached = await this.getCachedInterpretation(
+      record.hexagram.primary.sequence,
+      question,
+    );
+
+    if (cached) {
+      // 保存到记录
+      await this.divinationRecordModel
+        .updateOne(
+          { _id: recordId },
+          { $set: { aiInterpretation: cached } },
+        )
+        .exec();
+
+      return cached;
+    }
+
+    // 5. 获取分布式锁
+    const lockAcquired = await this.acquireLock(recordId);
+    if (!lockAcquired) {
+      throw new HttpException(
+        '正在处理中，请稍后再试',
+        HttpStatus.CONFLICT,
+      );
+    }
+
+    try {
+      // 6. 组织提示词
+      const prompt = await this.buildHexagramPrompt(
+        record.hexagram,
+        question,
+      );
+
+      this.logger.log(`Calling GLM API for record ${recordId}`);
+
+      // 7. 调用 GLM API
+      const responseText = await this.callGLM(prompt);
+
+      // 8. 解析响应
+      let parsedResponse: any;
+
+      try {
+        // 尝试提取 JSON（处理可能的代码块格式）
+        const jsonMatch = responseText.match(/```json\s*([\s\S]*?)\s*```/) ||
+                         responseText.match(/\{[\s\S]*\}/);
+
+        if (jsonMatch) {
+          const jsonString = jsonMatch[1] || jsonMatch[0];
+          parsedResponse = JSON.parse(jsonString);
+        } else {
+          parsedResponse = JSON.parse(responseText);
+        }
+      } catch (e) {
+        // JSON 解析失败，使用文本分段
+        this.logger.warn('Failed to parse GLM response as JSON, using text extraction');
+
+        const sections = responseText.split(/\n\n+|\n\s*-/);
+        parsedResponse = {
+          summary: sections[0] || '解读生成中...',
+          detailedAnalysis: sections[1] || responseText,
+          advice: sections[2] || '请根据卦象谨慎行事',
+        };
+      }
+
+      // 9. 构建解读结果
+      const interpretation: AIInterpretation = {
+        summary: parsedResponse.summary || '',
+        detailedAnalysis: parsedResponse.detailedAnalysis || '',
+        advice: parsedResponse.advice || '',
+        prompt, // 保存提示词用于调试
+        model: this.model,
+        createdAt: new Date(),
+        cached: false,
+      };
+
+      // 10. 保存到记录
+      await this.divinationRecordModel
+        .updateOne(
+          { _id: recordId },
+          { $set: { aiInterpretation: interpretation } },
+        )
+        .exec();
+
+      // 11. 保存到缓存
+      await this.setCachedInterpretation(
+        record.hexagram.primary.sequence,
+        interpretation,
+        question,
+      );
+
+      this.logger.log(`AI interpretation generated for record ${recordId}`);
+
+      return interpretation;
+
+    } finally {
+      // 12. 释放锁
+      await this.releaseLock(recordId);
+    }
   }
 
   /**

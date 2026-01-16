@@ -5,7 +5,7 @@ import { HttpService } from '@nestjs/axios';
 import { getRedisConnectionToken } from '@nestjs-modules/ioredis';
 import { getModelToken } from '@nestjs/mongoose';
 import { Redis } from 'ioredis';
-import { InternalServerErrorException } from '@nestjs/common';
+import { InternalServerErrorException, BadRequestException, HttpException } from '@nestjs/common';
 
 describe('GLMService', () => {
   let service: GLMService;
@@ -48,6 +48,15 @@ describe('GLMService', () => {
     }),
   };
 
+  const mockDivinationRecordModel = {
+    findOne: jest.fn().mockReturnValue({
+      exec: jest.fn(),
+    }),
+    updateOne: jest.fn().mockReturnValue({
+      exec: jest.fn(),
+    }),
+  };
+
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [
@@ -67,6 +76,10 @@ describe('GLMService', () => {
         {
           provide: getModelToken('Hexagram'),
           useValue: mockHexagramModel,
+        },
+        {
+          provide: getModelToken('DivinationRecord'),
+          useValue: mockDivinationRecordModel,
         },
       ],
     }).compile();
@@ -188,24 +201,47 @@ describe('GLMService', () => {
   });
 
   describe('generateAIInterpretation', () => {
-    it('should throw error when recordId is empty', async () => {
-      await expect(service.generateAIInterpretation('', 'user-123')).rejects.toThrow('记录ID不能为空');
+    it('should return existing interpretation if already exists', async () => {
+      const mockRecord = {
+        _id: 'record-123',
+        userId: 'user-123',
+        hexagram: { primary: { sequence: 1 } },
+        aiInterpretation: {
+          summary: 'existing',
+          detailedAnalysis: 'existing',
+          advice: 'existing',
+          createdAt: new Date(),
+          cached: false,
+        },
+      };
+
+      jest.spyOn(service, 'checkRateLimit').mockResolvedValue(true);
+      jest.spyOn(service['divinationRecordModel'], 'findOne').mockReturnValue({
+        exec: jest.fn().mockResolvedValue(mockRecord),
+      } as any);
+
+      const result = await service.generateAIInterpretation('record-123', 'user-123');
+
+      expect(result).toEqual(mockRecord.aiInterpretation);
     });
 
-    it('should throw error when recordId is only whitespace', async () => {
-      await expect(service.generateAIInterpretation('   ', 'user-123')).rejects.toThrow('记录ID不能为空');
+    it('should throw 404 when record not found', async () => {
+      jest.spyOn(service, 'checkRateLimit').mockResolvedValue(true);
+      jest.spyOn(service['divinationRecordModel'], 'findOne').mockReturnValue({
+        exec: jest.fn().mockResolvedValue(null),
+      } as any);
+
+      await expect(
+        service.generateAIInterpretation('record-123', 'user-123'),
+      ).rejects.toThrow(BadRequestException);
     });
 
-    it('should throw error when userId is empty', async () => {
-      await expect(service.generateAIInterpretation('record-123', '')).rejects.toThrow('用户ID不能为空');
-    });
+    it('should throw 429 when rate limit exceeded', async () => {
+      jest.spyOn(service, 'checkRateLimit').mockResolvedValue(false);
 
-    it('should throw error when userId is only whitespace', async () => {
-      await expect(service.generateAIInterpretation('record-123', '   ')).rejects.toThrow('用户ID不能为空');
-    });
-
-    it('should throw not implemented error with valid inputs', async () => {
-      await expect(service.generateAIInterpretation('record-123', 'user-123')).rejects.toThrow('AI 解读功能暂未实现');
+      await expect(
+        service.generateAIInterpretation('record-123', 'user-123'),
+      ).rejects.toThrow(HttpException);
     });
   });
 
@@ -240,6 +276,7 @@ describe('GLMService', () => {
           { provide: HttpService, useValue: mockHttpService },
           { provide: getRedisConnectionToken(), useValue: mockRedis },
           { provide: getModelToken('Hexagram'), useValue: mockHexagramModel },
+          { provide: getModelToken('DivinationRecord'), useValue: mockDivinationRecordModel },
         ],
       }).compile();
 
