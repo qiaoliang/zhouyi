@@ -2,10 +2,13 @@ import { Injectable, Logger, InternalServerErrorException } from '@nestjs/common
 import { ConfigService } from '@nestjs/config';
 import { HttpService } from '@nestjs/axios';
 import { InjectRedis } from '@nestjs-modules/ioredis';
+import { InjectModel } from '@nestjs/mongoose';
 import Redis from 'ioredis';
 import { firstValueFrom } from 'rxjs';
 import { createHash } from 'crypto';
 import { AxiosError } from 'axios';
+import { Model } from 'mongoose';
+import { Hexagram } from '../../database/schemas/hexagram.schema';
 
 /**
  * 常量定义
@@ -57,6 +60,7 @@ export class GLMService {
     private readonly configService: ConfigService,
     private readonly httpService: HttpService,
     @InjectRedis() private readonly redis: Redis,
+    @InjectModel('Hexagram') private readonly hexagramModel: Model<Hexagram>,
   ) {
     this.apiKey = this.configService.get<string>('GLM_API_KEY') || '';
     this.baseUrl = this.configService.get<string>('GLM_BASE_URL') || 'https://open.bigmodel.cn/api/paas/v4';
@@ -279,12 +283,92 @@ export class GLMService {
   }
 
   /**
-   * 组织卦象提示词（待实现）
+   * 组织卦象提示词
+   * @param hexagram 卦象数据
+   * @param question 用户问题
+   * @returns 提示词
    */
   private async buildHexagramPrompt(
     hexagram: any,
     question?: string,
   ): Promise<string> {
-    throw new InternalServerErrorException('卦象提示词生成功能暂未实现');
+    // 获取主卦数据
+    const primaryHexagram = await this.hexagramModel
+      .findOne({ sequence: hexagram.primary.sequence })
+      .exec();
+
+    if (!primaryHexagram) {
+      throw new InternalServerErrorException('卦象数据不存在');
+    }
+
+    let prompt = `你是一位精通周易的解卦大师。请根据以下卦象信息，结合周易传统理论，为用户提供专业、深刻的解卦分析。\n\n`;
+
+    // 基本信息
+    prompt += `【卦象基本信息】\n`;
+    prompt += `主卦：${primaryHexagram.name}（${primaryHexagram.symbol}）- 第${primaryHexagram.sequence}卦\n`;
+    prompt += `卦辞：${primaryHexagram.guaci.original}\n`;
+    prompt += `卦辞译文：${primaryHexagram.guaci.translation}\n\n`;
+
+    // 六爻分析
+    prompt += `【六爻分析】\n`;
+    primaryHexagram.yaoci.forEach((yao: any) => {
+      prompt += `${yao.position}爻：${yao.original} - ${yao.translation}\n`;
+    });
+    prompt += `\n`;
+
+    // 变卦信息
+    if (hexagram.changingLines && hexagram.changingLines.length > 0) {
+      prompt += `【变卦信息】\n`;
+      prompt += `变爻位置：${hexagram.changingLines.join('、')}爻\n`;
+      prompt += `变卦：${hexagram.changed.name}（${hexagram.changed.symbol}）\n`;
+
+      const changedHexagram = await this.hexagramModel
+        .findOne({ sequence: hexagram.changed.sequence })
+        .exec();
+
+      if (changedHexagram) {
+        prompt += `变卦卦辞：${changedHexagram.guaci.original}\n`;
+      }
+      prompt += `\n`;
+    }
+
+    // 互卦信息
+    if (hexagram.mutual) {
+      prompt += `【互卦信息】\n`;
+      prompt += `互卦：${hexagram.mutual.name}（${hexagram.mutual.symbol}）\n`;
+
+      const mutualHexagram = await this.hexagramModel
+        .findOne({ sequence: hexagram.mutual.sequence })
+        .exec();
+
+      if (mutualHexagram) {
+        prompt += `互卦说明：互卦由二三四爻和三四五爻组成，代表事情发展的中间过程。\n`;
+      }
+      prompt += `\n`;
+    }
+
+    // 用户问题
+    if (question) {
+      prompt += `【用户问题】\n`;
+      prompt += `${question}\n\n`;
+    }
+
+    // 解读要求
+    prompt += `【解读要求】\n`;
+    prompt += `请从以下几个方面进行解读：\n`;
+    prompt += `1. 核心卦意：用简洁的语言概括卦象的核心含义（100-150字）\n`;
+    prompt += `2. 详细分析：结合卦辞、爻辞、变爻、互卦进行深入分析（500-800字）\n`;
+    prompt += `3. 实践建议：给出具体的行动建议和注意事项（200-300字）\n\n`;
+
+    prompt += `请用专业但不晦涩的语言，让现代读者能够理解并应用。\n\n`;
+
+    prompt += `请以 JSON 格式返回：\n`;
+    prompt += `{\n`;
+    prompt += `  "summary": "核心解读摘要",\n`;
+    prompt += `  "detailedAnalysis": "详细分析",\n`;
+    prompt += `  "advice": "行动建议"\n`;
+    prompt += `}\n`;
+
+    return prompt;
   }
 }

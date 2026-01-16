@@ -3,7 +3,9 @@ import { GLMService } from './glm.service';
 import { ConfigService } from '@nestjs/config';
 import { HttpService } from '@nestjs/axios';
 import { getRedisConnectionToken } from '@nestjs-modules/ioredis';
+import { getModelToken } from '@nestjs/mongoose';
 import { Redis } from 'ioredis';
+import { InternalServerErrorException } from '@nestjs/common';
 
 describe('GLMService', () => {
   let service: GLMService;
@@ -40,6 +42,12 @@ describe('GLMService', () => {
     del: jest.fn(),
   };
 
+  const mockHexagramModel = {
+    findOne: jest.fn().mockReturnValue({
+      exec: jest.fn(),
+    }),
+  };
+
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [
@@ -55,6 +63,10 @@ describe('GLMService', () => {
         {
           provide: getRedisConnectionToken(),
           useValue: mockRedis,
+        },
+        {
+          provide: getModelToken('Hexagram'),
+          useValue: mockHexagramModel,
         },
       ],
     }).compile();
@@ -194,6 +206,57 @@ describe('GLMService', () => {
 
     it('should throw not implemented error with valid inputs', async () => {
       await expect(service.generateAIInterpretation('record-123', 'user-123')).rejects.toThrow('AI 解读功能暂未实现');
+    });
+  });
+
+  describe('buildHexagramPrompt', () => {
+    it('should build prompt with all hexagram data', async () => {
+      const mockHexagramModel = {
+        findOne: jest.fn().mockReturnValue({
+          exec: jest.fn().mockResolvedValue({
+            name: '乾',
+            symbol: '☰',
+            sequence: 1,
+            guaci: {
+              original: '元亨利贞',
+              translation: '元始、亨通、和谐、贞正',
+            },
+            yaoci: [
+              {
+                position: '初',
+                original: '初九：潜龙勿用',
+                translation: '初九：潜藏的龙，不要轻举妄动',
+              },
+            ],
+          }),
+        }),
+      };
+
+      // Override the module with hexagramModel
+      const module: TestingModule = await Test.createTestingModule({
+        providers: [
+          GLMService,
+          { provide: ConfigService, useValue: mockConfigService },
+          { provide: HttpService, useValue: mockHttpService },
+          { provide: getRedisConnectionToken(), useValue: mockRedis },
+          { provide: getModelToken('Hexagram'), useValue: mockHexagramModel },
+        ],
+      }).compile();
+
+      const testService = module.get<GLMService>(GLMService);
+
+      const hexagram = {
+        primary: { sequence: 1, name: '乾', symbol: '☰' },
+        changed: { sequence: 1, name: '乾', symbol: '☰' },
+        mutual: { sequence: 1, name: '乾', symbol: '☰' },
+        changingLines: [1],
+      };
+
+      const prompt = await testService['buildHexagramPrompt'](hexagram, '测试问题');
+
+      expect(prompt).toContain('你是一位精通周易的解卦大师');
+      expect(prompt).toContain('乾');
+      expect(prompt).toContain('测试问题');
     });
   });
 });
