@@ -61,6 +61,15 @@ interface GLMResponse {
 }
 
 /**
+ * 解析后的 AI 解读响应接口
+ */
+interface IParsedInterpretationResponse {
+  summary?: string;
+  detailedAnalysis?: string;
+  advice?: string;
+}
+
+/**
  * GLM 服务
  * 负责调用 GLM API 生成 AI 解卦内容
  */
@@ -359,7 +368,7 @@ export class GLMService {
       const responseText = await this.callGLM(prompt);
 
       // 8. 解析响应
-      let parsedResponse: any;
+      let parsedResponse: IParsedInterpretationResponse;
 
       try {
         // 尝试提取 JSON（处理可能的代码块格式）
