@@ -1,9 +1,11 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
+import { HttpModule } from '@nestjs/axios';
 import { DivinationService } from './divination.service';
 import { DivinationController } from './divination.controller';
 import { HexagramAnalysisService } from './hexagram-analysis.service';
 import { InterpretationService } from './interpretation.service';
+import { GLMService } from './glm.service';
 import { DivinationRecordSchema, DivinationRecord } from '../../database/schemas/divination-record.schema';
 import { HexagramSchema } from '../../database/schemas/hexagram.schema';
 import { GuestDivinationSchema, GuestDivination } from '../../database/schemas/guest-divination.schema';
@@ -16,6 +18,7 @@ import { UserModule } from '../../services/user/user.module';
  */
 @Module({
   imports: [
+    HttpModule,
     MongooseModule.forFeature([
       {
         name: DivinationRecord.name,
@@ -34,7 +37,7 @@ import { UserModule } from '../../services/user/user.module';
     UserModule,
   ],
   controllers: [DivinationController],
-  providers: [DivinationService, HexagramAnalysisService, InterpretationService],
-  exports: [DivinationService, HexagramAnalysisService, InterpretationService],
+  providers: [DivinationService, HexagramAnalysisService, InterpretationService, GLMService],
+  exports: [DivinationService, HexagramAnalysisService, InterpretationService, GLMService],
 })
 export class DivinationModule {}
